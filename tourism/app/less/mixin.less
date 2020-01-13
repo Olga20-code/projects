@@ -1,0 +1,75 @@
+.transition(@element: all, @time: .2s, @function: linear ) {
+	transition: @element @time @function;
+}
+.pos-center{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.gradient {
+	background: rgb(116,203,250);
+	background: linear-gradient(180deg, rgba(116,203,250,1) 0%, rgba(43,155,239,1) 50%, rgba(31,133,231,1) 100%);
+}
+.grad {
+	background: rgb(109,210,88);
+	background: linear-gradient(180deg, rgba(109,210,88,1) 0%, rgba(77,190,58,1) 50%, rgba(53,175,35,1) 100%);
+}
+.text-center{
+	text-align: center;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: start;
+	margin: 0 -15px; 
+
+	& > *{ 
+		margin: 15px;
+
+		.flex-container{
+			margin: -15px;
+
+			& > *{ 
+				margin: 15px;
+			}
+		}
+	}
+	&.direction-column{
+		flex-direction: column;
+	}
+	&.align-stretch{
+		align-items: stretch;
+	}
+	&.align-start{
+		align-items: flex-start;
+	}
+	&.align-center{
+	  align-items: center;
+	}
+	&.justify-between{
+		justify-content: space-between;
+	}
+	&.justify-around{
+		justify-content: space-around;
+	}
+	&.justify-center{
+		justify-content: center;
+	}
+	&.justify-end{
+		justify-content: flex-end;
+	}
+}
+.bg-image{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nowrap{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

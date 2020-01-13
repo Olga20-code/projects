@@ -1,0 +1,166 @@
+@import url(./default.less);
+@import url(./mixin.less);
+
+@font-face {
+	font-family: 'Segoe WP Light';
+	src: url(../fonts/ofont.ru_Segoe WP Light.ttf);
+
+	font-family: 'Segoe WP Semibold';
+	src: url(../fonts/ofont.ru_Segoe WP Semibold.ttf);
+
+	font-family: 'Segoe WP Semilight';
+	src: url(../fonts/ofont.ru_Segoe WP SemiLight.ttf);
+
+	font-family: 'Segoe WP Bold';
+	src: url(../fonts/ofont.ru_Segoe WP.ttf);
+}
+
+h1 {
+	font-family: 'Segoe WP Semibold', sans-serif;
+	font-size: 52px;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Segoe WP Semilight', sans-serif;
+}
+
+p {
+	font-family: 'Segoe WP Light', sans-serif;
+}
+
+.btn{
+	padding: 0px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 274px;
+	height: 58px;
+	font-size: 34px;
+	font-family: 'Segoe WP Bold';
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	.grad;
+	.transition;
+
+	&:hover{
+		background: #84fe6a;
+		color: #fff;
+	}
+	a&{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.center{
+	position: relative;
+	max-width: 1024px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+.mobile-menu{
+	display: none;
+	background: transparent;
+
+	svg{
+		display: block;
+	}
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-end;
+	padding: 25px;
+}
+
+.start-section {
+	background: url(../img/bg.png);
+	text-align: center;
+	padding: 170px 5px;
+
+	h1 {
+		color: #fff;
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 48px;
+	}
+	button {
+		margin: 40px 0;
+	}
+}//start-section
+
+.text-section {
+	text-align: center;
+	background: #ececec;
+	padding: 1px;
+
+	.list {
+		max-width: 489px;
+		background: #fff;
+		border-bottom: 7px solid #51c03d;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		margin: -100px auto 30px;
+		padding: 25px 0;
+
+		h3 {
+			font-size: 22px;
+			color: #868686;
+		}
+
+		.item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.photo {
+				margin: 5px;
+				img {
+					width: 79px;
+					height: 48px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}//list
+
+	.text {
+		color: #7e7c7c;
+		padding: 40px 0;
+		h2 {
+			font-size: 26px;
+		}
+
+		h3 {
+			font-size: 22px;
+		}
+
+		.image {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			.pic {
+				margin: 50px 25px;
+				flex: 1 1 150px;
+			}
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	background: #414141;
+	color: #808080;
+}
