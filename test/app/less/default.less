@@ -1,0 +1,125 @@
+@import url(./mixin.less);
+
+html{
+	height: 100%;
+}
+html, body{
+	margin: 0;
+}
+body{
+	position: relative;
+	font-size: 14px;
+	min-height: 100%;
+}
+*{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+	padding: 0;
+	margin: 0;
+
+	&::selection {
+		background: #4238f8;
+		color: #fff;
+	}
+}
+img{
+	max-width: 100%;
+	display: inline-block;
+}
+a{
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	.transition;
+
+	&:hover{
+		color: #000;
+	}
+}
+a:after {
+	display: block;
+	position: relative;
+	left: -10px; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #3a30f8; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+	width: 20px; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	font-weight: normal;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 40px;
+}
+h3{
+	font-size: 30px;
+}
+h4{
+	font-size: 25px;
+}
+h5{
+	font-size: 20px;
+}
+h6{
+	font-size: 16px;
+}
+p{
+	& + p{
+		margin-top: 20px;
+	}
+}
+ul{
+	list-style: none;
+}
+button{
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 0;
+	appearance: none;
+}
+input{
+	appearance: none;
+}
+input:not([type="submit"]){
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	height: 43px;
+	padding: 0 15px;
+	font-size: 16px;
+}
+textarea{
+	max-width: 100%;
+	outline: none;
+	border: none;
+	display: block;
+	padding: 15px 0;
+	min-height: 178px;
+	font-size: 16px;
+	width: 100%;
+	resize: none;
+}
+address{
+	font-style: normal;
+}
+strong{
+	font-weight: 700;
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}
+:-moz-placeholder           {color:#fff;}
+:-ms-input-placeholder      {color:#fff;}
