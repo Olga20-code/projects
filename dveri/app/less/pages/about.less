@@ -1,0 +1,278 @@
+.about-page {
+	.main-text {
+		.breadcrumb {
+			display: flex;
+
+			li {
+				padding: 0 5px;
+				padding-left: 0;
+			}
+		}
+
+		.mtext {
+			color: #4B42E3;
+		}
+
+		.breadcrumb-item+.breadcrumb-item::before {
+			display: inline-block;
+		    padding-right: .5rem;
+		    padding-left: .5rem;
+		    color: #6c757d;
+		    content: "/";
+		}
+
+		.container {
+			padding: 50px 0;
+			text-align: center;
+
+			h2 {
+				max-width: 1030px;
+				font-weight: bold;
+				font-size: 70px;
+				text-align: center;
+				font-family: 'Avenir Next Cyr', sans-serif;
+				padding: 25px 0;
+
+				span {
+					display: inline-block;
+    				line-height: 52px;
+					border-bottom: 10px solid #ACDDFF;
+					border-radius: 5px;
+					text-transform: uppercase;
+				}
+			}
+
+			.block {
+				display: flex;
+				padding: 50px 0;
+
+				.text {
+					max-width: 500px;
+					text-align: left;
+
+					p {
+						font-size: 18px;
+						line-height: 25px;
+
+						span {
+							font-weight: bold;
+						}
+					}
+				}
+
+				.image {
+					padding: 0 50px;
+					position: relative;
+					z-index: 1;
+
+					&:before {
+						content: '';
+						width: 16px;
+						height: 100px;
+						background: #4B42E3;
+						position: absolute;
+						z-index: 5;
+						transform: rotate(45deg);
+						right: 155px;
+						bottom: 470px;
+					}
+
+					&:after {
+						content: '';
+						background: url(../../img/about-page/1-2.png);
+						position: absolute;
+						z-index: -1;
+						left: 25px;
+						bottom: 0;
+						width: 170px;
+						height: 170px;
+					}
+
+					img {
+						border-radius: 50px 50px 50px 0;
+						z-index: 2;
+					}
+				}
+			}
+		}
+	}
+
+	.stages {
+		.gradient;
+
+		.container {
+			padding: 100px 0;
+			text-align: center;
+
+			h2 {
+				font-size: 50px;
+				font-weight: bold;
+
+				span {
+					display: inline-block;
+    				line-height: 41px;
+					border-bottom: 10px solid #ACDDFF;
+					border-radius: 5px;
+					text-transform: uppercase;
+				}
+			}
+
+			.list {
+				display: flex;
+				padding: 15px 0;
+
+				.item, .first, .last {
+					background: #fff;
+					border-radius: 25px;
+					margin: 0 15px;
+					padding: 50px;
+
+					h3 {
+						font-size: 20px;
+						font-weight: bold;
+					}
+
+					p {
+						font-size: 15px;
+					}
+				}
+
+				.last {
+					position: relative;
+				}
+
+				.special {
+					position: relative;
+
+					&:after {
+						content: '=';
+						background: #4B42E3;
+						width: 60px;
+						height: 60px;
+						border-radius: 50%;
+
+						position: absolute;
+						z-index: 8;
+						left: 325px;
+						bottom: 80px;
+						color: #fff;
+
+						font-size: 40px;
+					}
+				}
+
+				.first {
+					position: relative;
+
+					&:after {
+						content: '+';
+						background: #4B42E3;
+						width: 60px;
+						height: 60px;
+						border-radius: 50%;
+
+						position: absolute;
+						z-index: 8;
+						left: 350px;
+						bottom: 80px;
+						color: #fff;
+
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+
+	.team {
+		.container {
+			padding: 50px 0;
+			padding-bottom: 100px;
+			
+			.list {
+				display: flex;
+				flex-flow: wrap;
+				justify-content: space-between;
+
+				.item {
+					width: 270px;
+					text-align: center;
+					padding-top: 100px;
+
+					.photo {
+						img {
+							border-radius: 50%;
+						}
+					}
+
+					h4 {
+						font-size: 20px;
+						font-weight: bold;
+					}
+
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.question {
+		background: #4B42E3;
+
+		.container {
+			padding: 100px 0;
+			text-align: center;
+			color: #fff;
+			padding-bottom: 0;
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 16px;
+				height: 100px;
+				background: #FDE8AE;
+				position: absolute;
+				z-index: 5;
+				transform: rotate(45deg);
+				right: 130px;
+				bottom: 370px;
+			}
+
+			h2 {
+				font-size: 50px;
+				font-weight: bold;
+
+				span {
+					display: inline-block;
+    				line-height: 41px;
+					border-bottom: 10px solid #ACDDFF;
+					border-radius: 5px;
+				}
+			}
+
+			p {
+				padding-top: 25px;
+				color: #fff;
+				padding: 25px 300px;
+				line-height: 25px;
+			}
+
+			form {
+				input {
+					width: 275px;
+					height: 60px;
+					background: #3029B3;
+					border-radius: 6px;
+					padding: 17px 30px;
+					border: none;
+				}
+			}
+
+			.point {
+				padding-top: 50px;
+			}
+		}
+	}
+}

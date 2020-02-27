@@ -1,0 +1,277 @@
+.garant-page {
+	.white-popup {
+		position: relative;
+		background: #fff;
+		padding: 100px;
+		width: 970px;
+		max-width: 970px;
+
+		height: 519px;
+		max-height: 519px;
+		text-align: left;
+		margin: 20px auto;
+		border-radius: 50px;
+
+		p {
+			padding-bottom: 25px;
+		}
+
+		.btn-close {
+			color: #4B42E3;
+			font-size: 15px;
+			touch-action: manipulation;
+			cursor: pointer;
+			position: relative;
+			background: transparent;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.mfp-close {
+			display: none;
+		}
+	}
+
+	.main-text {
+		.container {
+			padding: 50px 0;
+
+			.head {
+				display: flex;
+
+				.text {
+					padding-right: 100px;
+					h2 {
+						font-weight: bold;
+						font-size: 70px;
+
+						span {
+							display: inline-block;
+		    				line-height: 52px;
+							border-bottom: 10px solid #ACDDFF;
+							border-radius: 5px;
+						}
+					}
+
+					p {
+						font-size: 18px;
+
+						span {
+							font-size: 20px;
+							font-weight: bold;
+						}
+					}
+
+					.phar {
+						padding: 40px 0;
+					}
+
+					h3 {
+						color: #4B42E3;
+						font-size: 40px;
+						font-weight: bold;
+					}
+
+					.spec {
+						padding-top: 25px;
+					}
+				}
+
+				.forma {
+					height: 562px;
+					padding: 100px;
+					background: #4B42E3;
+					border-radius: 50px 50px 50px 0;
+
+					position: relative;
+					z-index: 2;
+
+					h4 {
+						font-size: 28px;
+						color: #fff;
+						margin-bottom: 10px;
+						z-index: 2;
+					}
+
+					form {
+						input {
+							width: 400px;
+							height: 60px;
+							background: #3029B3;
+							border-radius: 6px;
+							margin: 10px 0;
+							padding: 17px 30px;
+						}
+
+						.btn {
+							margin: 10px 0;
+							width: 400px;
+							height: 60px;
+						}
+					}
+				}
+
+				.forma:before {
+					content: '';
+					width: 16px;
+					height: 100px;
+					background: #FDE8AE;
+					position: absolute;
+					z-index: 3;
+					transform: rotate(45deg);
+					right: 155px;
+					bottom: 510px;
+				}
+
+				.forma:after {
+					content: '';
+					background: url(../../img/garant-page/point.png);
+					position: absolute;
+					z-index: -1;
+					right: 455px;
+					top: 380px;
+					width: 189px;
+					height: 206px;
+				}
+			}
+		}
+	}
+
+	.document {
+		overflow-x: hidden;
+		
+		.container {
+			padding: 100px 0;
+			display: flex;
+			justify-content: space-between;
+
+			.text {
+				position: relative;
+				padding: 100px 0;
+				width: 800px;
+
+				&:after {
+					content: '';
+					width: 3000px;
+					height: 547px;
+					border-radius: 50px 0 0 0;
+					position: absolute;
+					z-index: -1;
+					left: 315px;
+					top: 0;
+					.gradient;
+				}
+
+				h2 {
+					font-size: 50px;
+					font-weight: bold;
+
+					span {
+		    			line-height: 52px;
+						border-bottom: 10px solid #ACDDFF;
+						border-radius: 5px;
+					}
+				}
+
+				p {
+					padding: 50px 0;
+				}
+			}
+
+			.garant {
+				display: flex;
+				z-index: 1;
+				position: relative;
+				padding: 100px 0;
+
+				.item {
+					margin: 0 50px;
+
+					p {
+						font-size: 18px;
+						padding: 15px 0;
+					}
+
+					img {
+						width: 249px;
+					}
+				}
+			}
+		}
+	}
+
+	.attant {
+		.container {
+			border: 2px solid #F34F4F;
+			border-style: dotted;
+			border-radius: 50px;
+			display: flex;
+			padding: 50px;
+
+			align-items: center;
+			margin: 0 100px;
+
+			h3 {
+				font-size: 50px;
+				color: #F34F4F;
+				font-weight: bold;
+			}
+
+			p {
+				font-size: 18px;
+				padding: 0 50px;
+			}
+		}
+	}
+
+	.question {
+		.container {
+			padding: 100px 0;
+			text-align: center;
+
+			h2 {
+				font-size: 50px;
+				font-weight: bold;
+
+				span {
+		    		line-height: 52px;
+					border-bottom: 10px solid #ACDDFF;
+					border-radius: 5px;
+				}
+			}
+
+			p {
+				padding: 30px 300px;
+			}
+
+			.list {
+				display: flex;
+				flex-flow: wrap;
+				justify-content: center;
+
+				.item {
+					margin: 10px;
+
+					.mfp-hide {
+						display: none;
+					}
+
+					a {
+						padding: 23px 30px;
+						font-weight: bold;
+						width: 100%;
+						background: #E8F6FE;
+
+						&:hover {
+							color: #4B42E3;
+						}
+
+						span {
+							color: #4B42E3;
+						}
+					}
+				}
+			}
+		}
+	}
+}
