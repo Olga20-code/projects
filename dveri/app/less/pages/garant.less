@@ -123,15 +123,20 @@
 					bottom: 510px;
 				}
 
-				.forma:after {
-					content: '';
-					background: url(../../img/garant-page/point.png);
-					position: absolute;
-					z-index: -1;
-					right: 455px;
-					top: 380px;
-					width: 189px;
-					height: 206px;
+				.specf {
+					position: relative;
+					z-index: 2;
+
+					&:after {
+						content: '';
+						background: url(../../img/garant-page/point.png);
+						position: absolute;
+						z-index: -1;
+						right: 455px;
+						top: 380px;
+						width: 189px;
+						height: 206px;
+					}
 				}
 			}
 		}

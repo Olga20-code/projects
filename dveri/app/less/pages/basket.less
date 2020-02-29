@@ -1,0 +1,175 @@
+.card-page {
+	.main-text {
+		.container {
+			padding: 50px 0;
+		}
+	}
+
+	.basket-main {
+		.container {
+			h2 {
+				font-size: 40px;
+				font-weight: bold;
+			}
+
+			.list {
+				padding: 50px 0;
+
+				.item {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border: 1px solid rgb(237,242,245);
+					border-color: linear-gradient(0deg, rgba(237,242,245,1) 0%, rgba(255,255,255,1) 40%);
+					border-radius: 6px;
+					padding: 20px;
+
+					.start {
+						display: flex;
+
+						.text {
+							padding: 0 30px;
+
+							h4 {
+								font-size: 20px;
+								font-weight: bold;
+							}
+
+							p {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+
+			.total {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 50px 0;
+
+				.btn {
+					background: #4B42E3;
+					width: 198px;
+					height: 60px;
+					color: #fff;
+				}
+
+				.summa {
+					display: flex;
+					align-items: flex-end;
+					font-weight: bold;
+
+					h5 {
+						font-size: 40px;
+					}
+
+					p {
+						font-size: 20px;
+						padding: 0 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.watch {
+		.container {
+			padding: 100px 0;
+			.slider {
+				display: flex;
+				justify-content: space-between;
+
+				.text {
+					margin-right: 25px;
+
+					h2 {
+						font-size: 50px;
+						font-weight: bold;
+					}
+				}	
+
+				.text:before {
+					content: '';
+					width: 16px;
+					height: 100px;
+					background: #FDE8AE;
+					position: absolute;
+					z-index: 5;
+					transform: rotate(-45deg);
+					left: 0;
+					bottom: 160px;
+				}
+				
+
+				.multiple-items {
+					min-width: 0;
+
+					.item {
+						margin-right: 15px;
+
+						.photo {
+							background: #EDF2F5;
+							padding: 50px 70px;
+							height: 384px;
+							border-radius: 6px 6px 6px 0;
+							width: 270px;
+						}
+
+						h4 {
+							padding-top: 15px;
+							font-size: 20px;
+							font-weight: bold;
+						}
+
+						.top {
+							position: relative;
+							z-index: 1;
+
+							&:after {
+								content: 'Топ';
+								width: 50px;
+								height: 50px;
+								background: #F3B94F;
+								color: #fff;
+
+								border-radius: 50%;
+								position: absolute;
+								z-index: 2;
+								display: flex;
+								align-items: center;
+
+								justify-content: center;
+								top: 290px;
+								left: 175px;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+
+				.slick-arrow {
+					width: 60px;
+					height: 60px;
+					border-radius: 50px;
+					border: 2px solid #EEF3F5;
+					background: #fff;
+					background-position: center;
+					background-repeat: no-repeat;
+					font-size: 0;
+					margin: 50px 0;
+				}
+
+				.slick-prev {
+					background-image: url(../../img/card-page/prev.png);
+					margin-right: 25px;
+				}
+
+				.slick-next {
+					background-image: url(../../img/card-page/next.png);
+				}
+			}
+		}
+	}
+}

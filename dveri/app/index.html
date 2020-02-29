@@ -22,12 +22,14 @@
 </head>
 <body>
 
-  <header>
-     <div class="center">
+  <header class="main-head">
+    <div class="center">
       <div class="container">
         <div class="head">
           <div class="logo">
-            <img src="../img/logo.png" alt="logo">
+            <a href="#">
+              <img src="../img/logo.png" alt="logo">
+            </a>
           </div>
 
           <div class="text">
@@ -38,7 +40,7 @@
         </div>
 
         <nav>
-          <p>Меню</p>
+          <button class="btn-menu">Меню</button>
 
           <ul class="menu">
             <li><a href="about-page.html">О нас</a></li>
@@ -50,8 +52,14 @@
             <li><a href="catalog-page.html">Каталог</a></li>
 
             <li><a href="card-page.html">Карточка</a></li>  
+
+            <li><a href="basket-page.html">Корзина</a></li>
           </ul>
         </nav>
+
+        <div class="baskf">
+          <img src="img/bask.png" alt="bask">
+        </div>
       </div>
     </div>
   </header>
@@ -85,10 +93,12 @@
 
             <p><span>В наличии 2841 дверь</span></p>
           </div>
+        </div>
+      </div>
 
-          <div class="image">
-            <img src="img/home-page/doors.png" alt="doors">
-          </div>
+      <div class="image">
+        <div class="imgsp">
+          <img src="img/home-page/doors.png" alt="doors">          
         </div>
       </div>
     </section>
@@ -178,7 +188,7 @@
                   </div>
 
                   <div class="text">
-                    <h4>ЛГотика дуб</h4>
+                    <h4>Готика дуб</h4>
 
                     <h5>10 000 грн</h5>
 
@@ -261,6 +271,263 @@
           <div class="cnob">
             <button class="btn">Все двери</button>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interior">
+      <div class="center">
+        <div class="container">
+          <div class="list">
+            <div class="image">
+              <img src="img/home-page/combined.png" alt="combined">
+            </div>
+
+            <div class="text">
+              <h2>Как будет <span>выглядеть дверь</span> в интерьере?</h2>
+
+              <p>Укажите желаемые характеристики, чтобы увидеть вашу будущую дверь</p>
+            </div>
+
+            <button class="btn">Подобрать дизайн</button>
+          </div>
+
+          <div class="forma">
+            <div class="start">
+              <p>Вам нужна дверь для:</p>
+
+              <form>
+                <div>
+                  <input type="radio" name="use" id="srb1" checked><label for="srb1">Квартира</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="use" id="srb2"><label for="srb2">Частный дом</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="use" id="srb3"><label for="srb3">Дача</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="use" id="srb4"><label for="srb4">Офисное помещение</label>
+                </div>
+              </form>
+            </div>
+
+            <form class="status">
+              <p>Статус двери:</p>
+
+              <div class="stat">
+                <select>
+                  <option>ВИП +</option>
+                  <option>ВИП</option>
+                  <option>Эконом</option>
+                  <option>Элит</option>
+                </select>
+
+                <p>Безупречный дизайн и надежная основа</p>
+              </div>
+            </form>
+
+            <div class="choose">
+              <form>
+                <p>Надежность замка:</p>
+
+                <select>
+                  <option>Базовая</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </form>
+
+              <form>
+                <p>Термоизоляция:</p>
+
+                <select>
+                  <option>Базовая</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </form>
+
+              <form>
+                <p>Звукоизоляция:</p>
+
+                <select>
+                  <option>Базовая</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </form>
+
+              <form>
+                <p>Надежность двери:</p>
+
+                <select>
+                  <option>Базовая</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="indoors">
+      <div class="center">
+        <div class="container">
+          <h2>Что <span>спрятано внутри</span> двери?</h2>
+
+          <div class="list">
+            <div class="video">
+              <a href="#">
+                <img src="img/home-page/play.png" alt="play">
+              </a>
+            </div>
+
+            <div class="text">
+              <ul>
+                <li>Снаружи дверь облицована МДФ-накладкой</li>
+
+                <li>Сплошной лист металла толщиной 2 мм</li>
+
+                <li>В качестве утеплителя используется минеральная вата</li>
+
+                <li>Вертикальное ребро жесткости для сохранения геометрии двери</li>
+
+                <li>Защитный кожух для замка для избежания взлома</li>
+
+                <li>Современный поролоновый уплотнитель</li>
+
+                <li>В местах агрессии установлена дополнительная пластина</li>
+
+                <li>Для крепления насличника наварены специальные «уши»</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="center">
+        <div class="container">
+          <div class="text">
+            <h2>Готовы изготовить двери <span>индивидуально</span> по вашему проекту</h2>
+
+            <p>Заполните форму и наш специалист:</p>
+
+            <ol>
+              <li>Проведет точный замер параметров двери</li>
+
+              <li>Проконсультирует по выбору входной двери</li>
+
+              <li>Демонстрация новой двери через веб-приложение</li>
+
+              <li>Помощь в выборе двери через каталог</li>
+
+              <li>Помощь в выборе дверной фурнитуры</li>
+            </ol>
+          </div>
+
+          <div class="spec">
+            <div class="forma">
+              <h4>Заполните форму</h4>
+
+              <form>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+
+                <input type="phone" name="phone" placeholder="Телефон" required>
+
+                <button class="btn">Подобрать дизайн</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="center">
+        <div class="container">
+          <h2><span>Отзывы</span> наших клиентов</h2>
+
+          <div class="reviews-sl">
+            <div class="item">
+              <h5>Влад Кравченко</h5>
+
+              <p>г. Киев</p>
+
+              <p>Безусловно, начало повседневной работы по формированию позиции требует от нас анализа существующих финансовых и административных условий.</p>
+
+              <div class="avatar" style="background-image: url(img/home-page/comment/2.png);"></div>
+            </div>
+
+            <div class="item">
+              <h5>Алина Хомутовская</h5>
+
+              <p>г. Житомир</p>
+
+              <p>В целом, конечно, постоянный количественный рост и сфера нашей активности требует определения и уточнения инновационных методов управления процессами.</p>
+
+              <div class="avatar" style="background-image: url(img/home-page/comment/1.png);"></div>
+            </div>
+
+            <div class="item">
+              <h5>Влад Кравченко</h5>
+
+              <p>г. Киев</p>
+
+              <p>Безусловно, начало повседневной работы по формированию позиции требует от нас анализа существующих финансовых и административных условий.</p>
+
+              <div class="avatar" style="background-image: url(img/home-page/comment/2.png);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-text">
+      <div class="center">
+        <div class="container">
+           <h2>Входные двери: <span>особенности</span> и разновидности</h2>
+
+            <div class="list">
+              <div class="image">
+                <img src="img/home-page/2.png" alt="bitmap">
+              </div>
+
+              <div class="second-text">
+                <p>Входные двери чаще всего изготавливаются из стали и дерева. Поскольку второй материал недостаточно прочный, металлические двери более популярны. Безусловными плюсами их является долговечность, огнеупорность, устойчивость к влаге и коррозионным процессам. В то же время двери из натурального дерева более теплые и звуконепроницаемые. Для того, чтобы металлическая дверь удерживала в помещении тепло, она зачастую укомплектована уплотнителями и утеплители.</p>
+
+                <p><span>Какие критерии важно учитывать перед тем, как купить входные двери:</span></p>
+
+                <ul>
+                  <li>Качество;</li>
+
+                  <li>Стилистику;</li>
+
+                  <li>Устойчивость;</li>
+
+                  <li>Комфорт;</li>
+
+                  <li>Долговечность;</li>
+
+                  <li>Стоимость.</li>
+                </ul>
+
+                <p>Все детали двери должны оставаться прочными и долговечными, чтобы ее не заклинило и не перекосило во время эксплуатации. Входные двери, цена которых варьируется в соответствии с функциональностью и другими факторами, должны обладать также рядом факторов, о которых дальше.</p>
+
+                <a href="#" class="more">Читать больше</a>
+              </div>
+            </div>
         </div>
       </div>
     </section>

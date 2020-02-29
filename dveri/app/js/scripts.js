@@ -76,4 +76,11 @@ $(document).ready(function() {
     slidesToScroll: 3,
     appendArrows: $('.multiple-items-arrow')
   });
+
+  $('.reviews-sl').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true
+  });
 });

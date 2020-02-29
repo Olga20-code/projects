@@ -1,3 +1,119 @@
-.about-page {
-	
+.contact-page {
+	.main-text {
+		padding: 50px 0;
+		padding-bottom: 0;
+
+		h2 {
+			padding: 50px 0;
+			font-weight: bold;
+			font-size: 40px;
+		}
+	}
+
+	.main-contact {
+		.container {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 100px;
+
+			.list {
+				.item {
+					display: flex;
+					margin: 25px 0;
+
+					.image {
+						border-radius: 20px;
+						width: 56px;
+						height: 56px;
+						background: #EEF3F5;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+
+					.text {
+						max-width: 325px;
+						margin-left: 20px;
+
+						h5 {
+							font-size: 18px;
+							padding-bottom: 15px;
+						}
+
+						p {
+							font-size: 15px;
+						}
+
+						a {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+
+			.tn-atom {
+				width: 700px;
+				height: 656px;
+				border-radius: 50px 50px 50px 0px;			
+			}
+		}
+	}
+
+	.question {
+		background: #4B42E3;
+
+		.container {
+			padding: 100px 0;
+			text-align: center;
+			color: #fff;
+			padding-bottom: 0;
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 16px;
+				height: 100px;
+				background: #FDE8AE;
+				position: absolute;
+				z-index: 5;
+				transform: rotate(45deg);
+				right: 130px;
+				bottom: 370px;
+			}
+
+			h2 {
+				font-size: 50px;
+				font-weight: bold;
+
+				span {
+					display: inline-block;
+    				line-height: 41px;
+					border-bottom: 10px solid #ACDDFF;
+					border-radius: 5px;
+				}
+			}
+
+			p {
+				padding-top: 25px;
+				color: #fff;
+				padding: 25px 300px;
+				line-height: 25px;
+			}
+
+			form {
+				input {
+					width: 275px;
+					height: 60px;
+					background: #3029B3;
+					border-radius: 6px;
+					padding: 17px 30px;
+					border: none;
+				}
+			}
+
+			.point {
+				padding-top: 50px;
+			}
+		}
+	}
 }

@@ -20,14 +20,16 @@
   <meta property="og:site_name" content="title"/>
     
 </head>
-<body>
+<body class="contact-page">
 
   <header>
     <div class="center">
       <div class="container">
         <div class="head">
           <div class="logo">
-            <img src="../img/logo.png" alt="logo">
+            <a href="#">
+              <img src="../img/logo.png" alt="logo">
+            </a>
           </div>
 
           <div class="text">
@@ -38,10 +40,26 @@
         </div>
 
         <nav>
-          <p>Меню</p>
+          <button class="btn-menu">Меню</button>
 
-          <ul class="menu"></ul>
+          <ul class="menu">
+            <li><a href="about-page.html">О нас</a></li>
+
+            <li><a href="garant-page.html">Гарантии</a></li>
+
+            <li><a href="blog-page.html">Блог</a></li>
+
+            <li><a href="catalog-page.html">Каталог</a></li>
+
+            <li><a href="card-page.html">Карточка</a></li>  
+
+            <li><a href="basket-page.html">Корзина</a></li>
+          </ul>
         </nav>
+
+        <div class="baskf">
+          <img src="img/bask.png" alt="bask">
+        </div>
       </div>
     </div>
   </header>
@@ -53,9 +71,111 @@
           <nav aria-label="breadcrumb">
             <ul class="breadcrumb">
               <li class="breadcrumb-item"><a href="#" class="mtext">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="page">О нас</li>
+              <li class="breadcrumb-item active" aria-current="page">Контакты</li>
             </ul>
           </nav>
+
+          <h2>Контакты</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-contact">
+      <div class="center">
+        <div class="container">
+          <div class="list">
+            <div class="item">
+              <div class="image">
+                <img src="img/contact-page/1.png" alt="1">
+              </div>
+
+              <div class="text">
+                <p>Звоните нам</p>
+
+                <a href="tel:+380966266009">(096) 626 60 09</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img src="img/contact-page/2.png" alt="2">
+              </div>
+
+              <div class="text">
+                <p>График работы</p>
+
+                <h5>Пн-пт - с 9:00 до 18:00</h5>
+
+                <h5>Сб - с 9:00 до 13:00</h5>
+
+                <h5>Вс - выходной</h5>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img src="img/contact-page/3.png" alt="3">
+              </div>
+
+              <div class="text">
+                <p>E-mail:</p>
+
+                <a href="mailto:verydveri@gmail.com">verydveri@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img src="img/contact-page/4.png" alt="4">
+              </div>
+
+              <div class="text">
+                <p>Оптовый склад-магазин:</p>
+
+                <h5>г. Киев, ул. Маршала Тимошенко, 19</h5>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image">
+                <img src="img/contact-page/5.png" alt="5">
+              </div>
+
+              <div class="text">
+                <p>Авторизованная торговая точка:</p>
+
+                <h5>г. Киев, пр-т Правды, 66, магазин "Very Dveri" (50 метров с левой стороны от автобусной остановки)</h5>
+
+                <h5>Киевская обл., г. Борисполь, ул. Киевский шлях, 10в, рынок «Зоряный», магазин №64 «Very Dveri»</h5>
+
+                <h5>Телефон:</h5>
+
+                <h5>(096) 512 99 06</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-atom" id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="center">
+        <div class="container">
+          <h2>Возникли <span>вопросы</span>?</h2>
+
+          <p>Напишите ваш телефон, наш специалист свяжется с вами и проконсультирует по входным дверям.</p>
+
+          <form>
+            <input type="phone" name="phone" placeholder="Телефон" required>
+
+            <button class="btn">Получить консультацию</button>
+          </form>
+
+          <div class="point">
+            <img src="img/about-page/points.png" alt="points">
+          </div>
         </div>
       </div>
     </section>
@@ -159,6 +279,41 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var map;
+    function initMap() {
+      var location = {lat: 50.415320, lng: 30.665691};
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: location,
+        zoom: 10
+      });
+
+      var image = "img/contact-page/marker.png";
+      var beachMarker = new google.maps.Marker({
+        position: {lat: 50.514030, lng: 30.496123},
+        map: map,
+        icon: image,
+        title: 'г. Киев, ул. Маршала Тимошенко, 19'
+      });
+
+      var beachMarker = new google.maps.Marker({
+        position: {lat: 50.504660, lng: 30.428533},
+        map: map,
+        icon: image,
+        title: 'г. Киев, пр-т Правды, 66, магазин "Very Dveri"'
+      });
+
+      var beachMarker = new google.maps.Marker({
+        position: {lat: 50.358452, lng: 30.938997},
+        map: map,
+        icon: image,
+        title: 'Киевская обл., г. Борисполь, ул. Киевский шлях, 10в, рынок «Зоряный», магазин №64 «Very Dveri»'
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzTIqKTbTD-aDvdt6IUBOZ8nrsfu3OGM8&callback=initMap" type="text/javascript"></script>
 
   <script src="js/libs.min.js"></script>
   <script src="js/scripts.min.js"></script>
