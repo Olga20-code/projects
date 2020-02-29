@@ -1,0 +1,269 @@
+.popup {
+	input::-webkit-input-placeholder { color: #000; }
+	input::-moz-placeholder { color: #000; }
+
+	a {
+		color: #212431;
+		text-decoration: none;
+		font-size: 20px;
+	}
+
+	.white-popup-block {
+		width: 630px;
+		height: 753px;
+		background: #fff;
+		padding: 50px;
+		margin: 0 350px;
+		border-radius: 15px;
+
+		h2 {
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			font-size: 18px;
+			padding-bottom: 50px;
+		}
+
+		.all {
+			width: 430px;
+			padding-left: 50px;
+		}
+
+		.inp {
+			input {
+				width: 430px;
+				height: 60px;
+				background: #FFFFFF;
+				border: 1px solid #EEEEEE;
+				box-sizing: border-box;
+				border-radius: 6px;
+				padding: 17px 30px;
+				margin-bottom: 15px;
+			}
+		}
+
+		form {
+			display: flex;
+			justify-content: space-around;
+			background: #fff;
+			width: 430px;
+			height: 60px;
+
+			align-items: center;
+			border-radius: 6px;
+			margin: 15px 0;
+			background: #FFFFFF;
+			border: 1px solid #EEEEEE;
+			text-align: center;
+
+			input {
+				display: none;
+			}
+
+			input:checked + label {
+				color: #4B42E3;
+			}
+		}
+
+		.choose {
+			text-align: center;
+
+			select {
+				width: 430px;
+				height: 60px;
+				background: #FFFFFF;
+				border: 1px solid #EEEEEE;
+				box-sizing: border-box;
+				border-radius: 6px;
+				padding: 17px 30px;
+				margin-bottom: 15px;
+			}
+		}
+
+		.btn {
+			background: #4B42E3;
+			border-radius: 0px 6px 6px 6px;
+			width: 430px;
+			height: 60px;
+			color: #fff;
+		}
+
+		.chck {
+			text-align: center;
+		}
+
+		.mfp-close {
+			display: none;
+		}
+
+		.close {
+			position: relative;
+
+			.btn-close {
+				width: 30px;
+				height: 30px;
+				background: #EEF3F5;
+				border-radius: 15px;
+				position: absolute;
+				bottom: 0;
+				left: 520px;
+			}
+		}
+	}
+
+	.choose-popup-block {
+		width: 630px;
+		height: 659px;
+		background: #fff;
+		padding: 80px 100px;
+		margin: 0 350px;
+		border-radius: 15px;
+
+		h2 {
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		.start {
+			display: flex;
+			padding: 50px 0;
+
+			.image {
+				background: #EDF2F5;
+				width: 100px;
+				height: 140px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 6px 6px 6px 0;
+
+				img {
+					width: 50px;
+					height: 109px;
+				}
+			}
+
+			.text {
+				padding: 0 30px;
+
+				h4 {
+					font-size: 20px;
+					font-weight: bold;
+					line-height: 30px;
+				}
+
+				p {
+					font-size: 15px;
+					padding: 0;
+					margin: 8px 0;
+				}
+			}
+		}
+
+		.close {
+			position: relative;
+
+			.btn-close {
+				width: 30px;
+				height: 30px;
+				background: #EEF3F5;
+				border-radius: 15px;
+				position: absolute;
+				bottom: 20px;
+				left: 470px;
+			}
+		}
+
+		.all {
+			input {
+				width: 430px;
+				height: 60px;
+				background: #FFFFFF;
+				border: 1px solid #EEEEEE;
+				box-sizing: border-box;
+
+				border-radius: 6px;
+				padding: 17px 30px;
+				margin-bottom: 15px;
+				font-size: 18px;
+			}
+		}
+
+		.btn {
+			background: #4B42E3;
+			border-radius: 0px 6px 6px 6px;
+			width: 430px;
+			height: 60px;
+			color: #fff;
+		}
+	}
+
+	.close-popup-block {
+		width: 630px;
+		height: 659px;
+		background: #fff;
+		padding: 80px 100px;
+		margin: 0 350px;
+		border-radius: 15px;
+		text-align: center;
+		position: relative;
+
+		h2 {
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 18px;
+			padding: 30px 0;
+		}
+
+
+		.btn {
+			background: #4B42E3;
+			border-radius: 0px 6px 6px 6px;
+			width: 230px;
+			height: 60px;
+			color: #fff;
+		}
+
+		.initially {
+			position: relative;
+			z-index: 1;
+			padding: 150px 0;
+			padding-bottom: 0;
+		}
+
+		.initially:before {
+			content: '';
+			width: 16px;
+			height: 100px;
+			background: #FDE8AE;
+			position: absolute;
+			z-index: 3;
+			transform: rotate(45deg);
+			right: 20px;
+			top: 0;
+		}
+	}
+
+	.close-popup-block:after {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		background-image: url(../../img/points.png);
+		width: 86px;
+		height: 86px;
+		bottom: 0;
+		left: 0;
+	}
+
+	.mfp-hide {
+		display: none;
+	}
+
+}

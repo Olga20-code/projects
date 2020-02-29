@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Pop-up</title>
+  <meta name="description" content="Розробник сайтів на PHP,HTML,CSS,Jquery,CMS">
+  <meta name="author" content="main.email.seryoga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  
+  <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="Розробник"/> 
+  <meta property="og:description" content="Сайти високої якості."/> 
+  <meta property="og:image" content="img/logo.jpg" />
+  <meta property="og:url" content="site.com"/> 
+  <meta property="og:site_name" content="title"/>
+    
+</head>
+
+
+<body class="popup">
+	<main>
+			<!-- link that opens popup -->
+			<div class="one">
+				<a class="popup-with-form" href="#test-form">Заказать</a>
+
+				<!-- form itself -->
+				<form id="test-form" class="white-popup-block mfp-hide">
+					<div class="close">
+						<button class="btn-close">&#10006;</button>
+					</div>
+
+					<h2>Заполните форму ниже</h2>
+						<p>для подтверждение заказа</p>
+
+						<div class="all">
+							<div class="inp">
+								<input id="name" name="name" type="text" placeholder="Ваше имя" required>
+
+								<input id="phone" name="phone" type="tel" placeholder="Телефон" required="">
+							</div>
+
+							<div class="choose">
+		            <form>
+		              <select>
+		                <option>Выберите способ оплаты</option>
+		                <option>1</option>
+		                <option>2</option>
+		                <option>3</option>
+		              </select>
+		            </form>
+
+		              <select>
+		                <option>Укажите способ доставки</option>
+		                <option>1</option>
+		                <option>2</option>
+		                <option>3</option>
+		              </select>
+		          </div>
+
+		          <form  class="chck">
+		          	<div>
+			            <input type="radio" name="use" id="prb1"><label for="prb1">Не нужен монтаж</label>
+			          </div>
+
+			          <div>
+			            <input type="radio" name="use" id="prb2" checked><label for="prb2">Нужен монтаж</label>
+			          </div>
+			        </form>
+
+		          <div>
+		          	<button class="btn">Подтвердить</button>
+		          </div>
+		        </div>
+				</form>
+			</div>
+
+			<div class="two">
+				<a class="popup-with-form" href="#choose-form">Отправить заказ</a>
+
+				<!-- form itself -->
+				<form id="choose-form" class="choose-popup-block mfp-hide">
+					<div class="close">
+						<button class="btn-close">&#10006;</button>
+					</div>
+
+					<h2>Вы выбрали:</h2>
+
+					<div class="start">
+            <div class="image">
+              <img src="img/2.png" alt="2">
+            </div>
+
+            <div class="text">
+              <h4>Лесенка венге с патиной</h4>
+
+              <h4>5100 грн</h4>
+
+              <p>Серия: ВИП+ Премиум</p>
+
+              <p>Цвет: бронзовый/белый</p>
+
+              <p>Вес: 105 кг</p>
+            </div>
+          </div>
+
+					<div class="all">
+						<div class="inp">
+							<input id="name" name="name" type="text" placeholder="Ваше имя" required>
+
+							<input id="phone" name="phone" type="tel" placeholder="Телефон" required>
+						</div>
+
+		        <div>
+		          <button class="btn">Отправить заказ</button>
+		        </div>
+		      </div>
+				</form>
+			</div>
+
+			<div class="three">
+				<a class="popup-with-form" href="#close-form">Закрыть</a>
+
+				<!-- form itself -->
+				<form id="close-form" class="close-popup-block mfp-hide">
+					<div class="initially">
+						<h2>Ваш заказ принят!</h2>
+					
+						<p>Ожидайте звонок нашего специалиста, для согласования доставки</p>
+					</div>
+					
+		      <div>
+		        <button class="btn">Вернуться на сайт</button>
+		      </div>
+				</form>
+			</div>
+
+	</main>
+
+	<script src="js/libs.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>

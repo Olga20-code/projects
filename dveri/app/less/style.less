@@ -95,7 +95,7 @@ header {
 				border-radius: 0 0 50px 0;
 				position: absolute;
 				z-index: -1;
-				right: 0;
+				right: -76px;
 			}
 
 			.text {
@@ -111,8 +111,9 @@ header {
 		}
 
 		nav {
-			display: flex;
 			align-items: center;
+			position: relative;
+			z-index: 10;
 
 			p {
 				padding: 0 35px;
@@ -127,9 +128,17 @@ header {
 			}
 
 			.menu {
+				display: none;
+			}
+		}
+
+		.baskf {
+			.btn-bask {
+				font-size: 0;
+				background-image: url(../img/bask.png);
 				width: 34px;
 				height: 34px;
-				display: none;
+				border-radius: 17px;
 			}
 		}
 	}
@@ -146,7 +155,7 @@ header {
 		background: #E8F6FE;
 		position: absolute;
 		z-index: -1;
-		right: 313px;
+		right: 375px;
 		top: -10px;
 	}
 }
@@ -186,7 +195,7 @@ header {
 		border-radius: 0 0 50px 0;
 		position: absolute;
 		z-index: -1;
-		right: 313px;
+		right: 375px;
 	}
 
 	.container {
@@ -200,7 +209,7 @@ header {
 
 				span {
 					display: inline-block;
-	    			line-height: 52px;
+					line-height: 52px;
 					border-bottom: 10px solid #ACDDFF;
 					border-radius: 5px;
 				}
@@ -343,7 +352,7 @@ header {
 
 			span {
 				display: inline-block;
-	    		line-height: 52px;
+				line-height: 52px;
 				border-bottom: 10px solid #ACDDFF;
 				border-radius: 5px;
 			}
@@ -378,7 +387,7 @@ header {
 							-moz-transition-delay: 0.5s;
 							transition: .4s ease-out;
 							transition-delay: 0.9s;
-		     				z-index: 3;
+							z-index: 3;
 						}
 
 						img:hover {
@@ -502,7 +511,7 @@ header {
 
 					span {
 						display: inline-block;
-			    		line-height: 52px;
+						line-height: 52px;
 						border-bottom: 10px solid #ACDDFF;
 						border-radius: 5px;
 					}
@@ -617,11 +626,11 @@ header {
 		content: '';
 		width: 3000px;
 		height: 768px;
-	 	background: #E8F6FE;
-	 	border-radius: 0 50px 50px 0;
-	 	position: absolute;
-	 	z-index: -1;
-	 	right: 770px;
+		background: #E8F6FE;
+		border-radius: 0 50px 50px 0;
+		position: absolute;
+		z-index: -1;
+		right: 770px;
 	}
 
 	&:after {
@@ -648,7 +657,7 @@ header {
 
 			span {
 				display: inline-block;
-			   	line-height: 52px;
+				line-height: 52px;
 				border-bottom: 10px solid #ACDDFF;
 				border-radius: 5px;
 			}
@@ -667,11 +676,11 @@ header {
 					content: '';
 					width: 170px;
 					height: 170px;
-				 	position: absolute;
-				 	z-index: -1;
-				 	background: url(../img/home-page/bg.png);
-				 	right: 425px;
-				 	bottom: 225px;
+					position: absolute;
+					z-index: -1;
+					background: url(../img/home-page/bg.png);
+					right: 425px;
+					bottom: 225px;
 				}
 
 				img {
@@ -700,9 +709,9 @@ header {
 				}
 
 				li:before {
-				    color: #4B42E3;
-				    content: "•";
-				    padding-right: 20px;
+					color: #4B42E3;
+					content: "•";
+					padding-right: 20px;
 				}
 			}
 		}
@@ -724,7 +733,7 @@ header {
 
 				span {
 					display: inline-block;
-				   	line-height: 52px;
+					line-height: 52px;
 					border-bottom: 10px solid #ACDDFF;
 					border-radius: 5px;
 				}
@@ -746,15 +755,15 @@ header {
 			}
 
 			ol {
-			    list-style-type: none;
-			    counter-reset: num;
+				list-style-type: none;
+				counter-reset: num;
 			}
 
 			li::before {
-			    content: counter(num) '. ';
-			    counter-increment: num;
-			    color: #4B42E3;
-			    padding-right: 15px;
+				content: counter(num) '. ';
+				counter-increment: num;
+				color: #4B42E3;
+				padding-right: 15px;
 			}
 		}
 
@@ -854,7 +863,7 @@ header {
 
 			span {
 				display: inline-block;
-			   	line-height: 52px;
+				line-height: 52px;
 				border-bottom: 10px solid #ACDDFF;
 				border-radius: 5px;
 			}
@@ -966,7 +975,7 @@ header {
 
 		span {
 			display: inline-block;
-	   		line-height: 52px;
+			line-height: 52px;
 			border-bottom: 10px solid #ACDDFF;
 			border-radius: 5px;
 		}
@@ -1074,8 +1083,14 @@ footer {
 					margin: 0 5px;
 					padding: 9px;
 
-					p {
+					a {
+						color: #fff;
 						font-size: 14px;
+						padding-left: 10px;
+					}
+
+					p {
+						font-size: 13px;
 						color: #fff;
 						padding-left: 10px;
 					}
@@ -1144,3 +1159,4 @@ footer {
 @import url(pages/card.less);
 @import url(pages/basket.less);
 @import url(pages/contact.less);
+@import url(pages/popup.less);
