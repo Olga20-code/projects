@@ -70,12 +70,25 @@ $(document).ready(function() {
       .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   })
 
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    appendArrows: $('.multiple-items-arrow')
-  });
+  var $slider = $('.multiple-items');
+
+  if ($slider.length) {
+    var currentSlide = 0;
+    var slidesCounts = 0;
+
+    $slider.on('init afterChange', function(event, slick) {
+      currentSlide = slick.slickCurrentSlide() + 1;
+      slidesCounts = slick.slideCount;
+      $("#slider-counter").html(currentSlide + ' из ' +slidesCounts)
+    });
+
+    $slider.slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      appendArrows: $('.multiple-items-arrow')
+    });
+  }
 
   $('.reviews-sl').slick({
     infinite: true,
@@ -102,5 +115,15 @@ $(document).ready(function() {
 
   $('.btn-menu').click(function() {
     $('.menu').slideToggle();
+  });
+
+  $('.popup-youtube').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false
   });
 });

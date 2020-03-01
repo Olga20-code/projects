@@ -110,7 +110,7 @@ header {
 			}
 		}
 
-		nav {
+		.wrap-menu {
 			align-items: center;
 			position: relative;
 			z-index: 10;
@@ -129,6 +129,10 @@ header {
 
 			.menu {
 				display: none;
+				position: absolute;
+				top: 100%;
+				background: #fff;
+				left: 0;
 			}
 		}
 
@@ -368,6 +372,12 @@ header {
 				justify-content: space-between;
 
 				.item {
+					&:hover{
+						.photo {
+							margin-top: -100px;
+						}
+					}
+
 					.image {
 						background: #EDF2F5;
 						padding: 62px 70px;
@@ -377,22 +387,12 @@ header {
 						z-index: 2;
 						position: relative;
 						overflow: hidden;
+					}
 
-						img {
-							-webkit-transition: .4s ease-out;
-							-webkit-transition-delay: 0.5s;
-							-o-transition: .4s ease-out;
-							-o-transition-delay: 0.5s;
-							-moz-transition: .4s ease-out;
-							-moz-transition-delay: 0.5s;
-							transition: .4s ease-out;
-							transition-delay: 0.9s;
-							z-index: 3;
-						}
-
-						img:hover {
-							margin-top: -100px;
-						}
+					.photo {
+						width: 130px;
+						height: 100%;
+						.transition;
 					}
 
 					.knob {
@@ -433,8 +433,8 @@ header {
 							align-items: center;
 
 							justify-content: center;
-							bottom: 25px;
-							left: 175px;
+							top: 245px;
+							left: 110px;
 							font-weight: bold;
 						}
 					}
@@ -686,6 +686,32 @@ header {
 				img {
 					position: relative;
 					z-index: 3;
+				}
+
+				.mfp-fade.mfp-bg {
+					opacity: 0;
+					-webkit-transition: all 0.15s ease-out; 
+					-moz-transition: all 0.15s ease-out; 
+					transition: all 0.15s ease-out;
+				}
+				.mfp-fade.mfp-bg.mfp-ready {
+					opacity: 0.8;
+				}
+				.mfp-fade.mfp-bg.mfp-removing {
+					opacity: 0;
+				}
+
+				.mfp-fade.mfp-wrap .mfp-content {
+					opacity: 0;
+					-webkit-transition: all 0.15s ease-out; 
+					-moz-transition: all 0.15s ease-out; 
+					transition: all 0.15s ease-out;
+				}
+				.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+					opacity: 1;
+				}
+				.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+					opacity: 0;
 				}
 			}
 

@@ -10,15 +10,16 @@
 				padding-top: 50px;
 
 				.link {
-					ul {
+					form {
 						display: flex;
+						font-size: 18px;
 
-						a {
-							padding-left: 35px;
+						input {
+							padding-left: 50px;
+						}
 
-							&:focus {
-								color: #4B42E3;
-							}
+						input:checked+label {
+							color: #4b42e3;
 						}
 					}
 				}
@@ -173,6 +174,11 @@
 							margin: 0 15px;
 							margin-bottom: 35px;
 
+							&:hover{
+								.photo {
+									margin-top: -100px;
+								}
+							}
 							.image {
 								background: #EDF2F5;
 								padding: 62px 70px;
@@ -181,27 +187,17 @@
 								z-index: 2;
 								position: relative;
 								overflow: hidden;
+								transition: 1s linear;
+							}
 
-								img {
-									-webkit-transition: .4s ease-out;
-								    -webkit-transition-delay: 0.5s;
-								    -o-transition: .4s ease-out;
-								    -o-transition-delay: 0.5s;
-								    -moz-transition: .4s ease-out;
-								    -moz-transition-delay: 0.5s;
-								    transition: .4s ease-out;
-								    transition-delay: 0.9s;
-		     						z-index: 3;
-								}
-
-								img:hover {
-									margin-top: -100px;
-								}
+							.photo {
+								width: 130px;
+								height: 100%;
+								.transition;
 							}
 
 							.knob {
 								padding: 65px 0;
-								position: absolute;
 								z-index: 1;
 
 								.btn {
@@ -213,6 +209,7 @@
 									color: #fff;
 
 									&:hover {
+										display: block;
 										background: #fff;
 										color: #4B42E3;
 									}
@@ -231,8 +228,8 @@
 									position: absolute;
 
 									z-index: 2;
-									top: 20px;
-									right: 25px;
+									left: 150px;
+									bottom: 270px;
 								}
 							}
 
@@ -254,8 +251,8 @@
 									align-items: center;
 
 									justify-content: center;
-									bottom: 25px;
-									left: 175px;
+									top: 245px;
+									left: 110px;
 									font-weight: bold;
 								}
 							}
@@ -278,8 +275,8 @@
 									align-items: center;
 
 									justify-content: center;
-									bottom: 65px;
-									left: 175px;
+									bottom: 5px;
+									left: 110px;
 									font-weight: bold;
 								}
 							}
