@@ -8,17 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-rim-auto-match" content="none">
-  
+
   <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 
-  <meta property="og:title" content="Розробник"/> 
-  <meta property="og:description" content="Сайти високої якості."/> 
+  <meta property="og:title" content="Розробник"/>
+  <meta property="og:description" content="Сайти високої якості."/>
   <meta property="og:image" content="img/logo.jpg" />
-  <meta property="og:url" content="site.com"/> 
+  <meta property="og:url" content="site.com"/>
   <meta property="og:site_name" content="title"/>
-    
+
 </head>
 <body>
 
@@ -27,9 +27,7 @@
       <div class="container">
         <div class="head">
           <div class="logo">
-            <a href="#">
-              <img src="../img/logo.png" alt="logo">
-            </a>
+            <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
           </div>
 
           <div class="text">
@@ -39,26 +37,27 @@
           </div>
         </div>
 
-        <nav class="wrap-menu">
-          <button class="btn-menu">Меню</button>
+        <div class="menu-bask">
+          <nav class="wrap-menu">
+            <button class="btn-menu">Меню</button>
 
-          <ul class="menu">
-            <li><a href="about-page.html">О нас</a></li>
+            <ul class="menu">
+              <li><a href="catalog-page.html">Каталог</a></li>
 
-            <li><a href="garant-page.html">Гарантии</a></li>
+              <li><a href="garant-page.html">Гарантии</a></li>
 
-            <li><a href="blog-page.html">Блог</a></li>
+              <li><a href="blog-page.html">Блог</a></li>
 
-            <li><a href="catalog-page.html">Каталог</a></li>
+              <li><a href="about-page.html">О нас</a></li>
 
-            <li><a href="card-page.html">Карточка</a></li>  
+              <li><a href="card-page.html">Карточка</a></li>
 
-            <li><a href="basket-page.html">Корзина</a></li>
-          </ul>
-        </nav>
+            </ul>
+          </nav>
 
-        <div class="baskf">
-          <button class="btn-bask" onclick="location.href='basket-page.html'"></button>
+          <div class="baskf">
+            <button class="btn-bask" onclick="location.href='basket-page.html'"></button>
+          </div>
         </div>
       </div>
     </div>
@@ -98,7 +97,7 @@
 
       <div class="image">
         <div class="imgsp">
-          <img src="img/home-page/doors.png" alt="doors">          
+          <img src="img/home-page/doors.png" alt="doors">
         </div>
       </div>
     </section>
@@ -111,7 +110,7 @@
               <div class="image">
                 <img src="img/card-page/home/1.png" alt="1">
               </div>
-              
+
               <div class="text">
                 <h5>Дизайн</h5>
 
@@ -123,7 +122,7 @@
               <div class="image">
                 <img src="img/card-page/home/2.png" alt="2">
               </div>
-              
+
               <div class="text">
                 <h5>Индивидуально</h5>
 
@@ -135,7 +134,7 @@
               <div class="image">
                 <img src="img/card-page/home/3.png" alt="3">
               </div>
-              
+
               <div class="text">
                 <h5>Гарантия</h5>
 
@@ -147,7 +146,7 @@
               <div class="image">
                 <img src="img/card-page/home/4.png" alt="4">
               </div>
-              
+
               <div class="text">
                 <h5>Проверка</h5>
 
@@ -159,7 +158,7 @@
               <div class="image">
                 <img src="img/card-page/home/5.png" alt="5">
               </div>
-              
+
               <div class="text">
                 <h5>Производство</h5>
 
@@ -297,14 +296,14 @@
               <p>Укажите желаемые характеристики, чтобы увидеть вашу будущую дверь</p>
             </div>
 
-            <button class="btn">Подобрать дизайн</button>
+            <button class="btn hide-tab">Подобрать дизайн</button>
           </div>
 
           <div class="forma">
             <div class="start">
               <p>Вам нужна дверь для:</p>
 
-              <form>
+              <div class="form">
                 <div>
                   <input type="radio" name="use" id="srb1" checked><label for="srb1">Квартира</label>
                 </div>
@@ -320,10 +319,10 @@
                 <div>
                   <input type="radio" name="use" id="srb4"><label for="srb4">Офисное помещение</label>
                 </div>
-              </form>
+              </div>
             </div>
 
-            <form class="status">
+            <div class="status">
               <p>Статус двери:</p>
 
               <div class="stat">
@@ -336,10 +335,10 @@
 
                 <p>Безупречный дизайн и надежная основа</p>
               </div>
-            </form>
+            </div>
 
             <div class="choose">
-              <form>
+              <div class="form">
                 <p>Надежность замка:</p>
 
                 <select>
@@ -348,9 +347,9 @@
                   <option>2</option>
                   <option>3</option>
                 </select>
-              </form>
+              </div>
 
-              <form>
+              <div class="form">
                 <p>Термоизоляция:</p>
 
                 <select>
@@ -359,9 +358,9 @@
                   <option>2</option>
                   <option>3</option>
                 </select>
-              </form>
+              </div>
 
-              <form>
+              <div class="form">
                 <p>Звукоизоляция:</p>
 
                 <select>
@@ -370,9 +369,9 @@
                   <option>2</option>
                   <option>3</option>
                 </select>
-              </form>
+              </div>
 
-              <form>
+              <div class="form">
                 <p>Надежность двери:</p>
 
                 <select>
@@ -381,9 +380,11 @@
                   <option>2</option>
                   <option>3</option>
                 </select>
-              </form>
+              </div>
             </div>
           </div>
+
+          <button class="btn show-tab">Подобрать дизайн</button>
         </div>
       </div>
     </section>
@@ -540,7 +541,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer>
     <div class="center">
       <div class="container">
@@ -577,7 +578,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 33C25.6127 33 33 25.6127 33 16.5C33 7.3873 25.6127 0 16.5 0C7.3873 0 0 7.3873 0 16.5C0 25.6127 7.3873 33 16.5 33Z" fill="#171921"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4902 10H22.5098C23.8828 10 25 11.1216 25 12.5V20.5C25 21.8784 23.8828 23 22.5098 23H10.4902C9.11723 23 8 21.8784 8 20.5V12.5C8 11.1216 9.11723 10 10.4902 10ZM14.6111 14V19L19.3333 16.4587L14.6111 14Z" fill="white"/>
               </svg>
-            </a><!--yt-->          
+            </a><!--yt-->
           </div>
 
           <div class="contact">

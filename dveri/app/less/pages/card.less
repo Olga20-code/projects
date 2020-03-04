@@ -10,7 +10,7 @@
 
 				.list {
 					.main-product {
-						width: 617px;
+						max-width: 617px;
 						height: 600px;
 						border: 1px solid #EDF2F5;
 						display: flex;
@@ -117,8 +117,8 @@
 						form {
 
 							select {
-								width: 240px;
-								height: 50px;
+								max-width: 240px;
+								max-height: 50px;
 								padding: 12px 20px;
 								border: 1px solid #EEEEEE;
 								border-radius: 5px;
@@ -129,11 +129,12 @@
 
 							.but-form {
 								display: flex;
+								justify-content: space-between;
 
 								.bas, .cred {
 									margin-right: 15px;
-									width: 242px;
-									height: 50px;
+									max-width: 242px;
+									max-height: 50px;
 									border-radius: 0 5px 5px 5px;
 									border: 2px solid #4B42E3;
 									font-weight: bold;
@@ -152,6 +153,7 @@
 
 							.phone {
 								display: flex;
+								justify-content: space-between;
 								border: 1px solid #EEEEEE;
 								border-radius: 5px;
 								margin-top: 15px;
@@ -159,7 +161,7 @@
 								input {
 									background: #fff;
 									border: none;
-									width: 400px;
+									max-width: 400px;
 									padding: 12px 20px;
 								}
 
@@ -168,7 +170,7 @@
 								
 
 								.btt {
-									width: 100px;
+									max-width: 100px;
 									color: #4B42E3;
 									font-weight: bold;
 
@@ -219,6 +221,7 @@
 			align-items: center;
 			justify-content: space-between;
 			padding-bottom: 100px;
+			padding-top: 50px;
 
 			.tabs {
 				width: 727px;
@@ -491,6 +494,389 @@
 					.text {
 						h5 {
 							padding: 15px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.center {
+			max-width: 1000px;
+		}
+
+		.main-text {
+			.center {
+				.start {
+					display: block;
+					justify-content: center;
+
+					.list {
+						.main-product {
+							margin: 0 auto;
+						}
+					}
+
+					.charact {
+						display: flex;
+						padding: 50px 0;
+
+						.term {
+							.circs {
+								.img-one{
+									width: 100px;
+									height: 100px;
+									background: #eef3f5;
+								}
+							}
+						}
+
+						.phone {
+							display: flex;
+							justify-content: space-between;
+						}
+
+						select {
+							padding: 30px;
+						}
+					}
+				}
+			}
+		}
+
+		.question {
+			.container{
+				display: block;
+				text-align: center;
+
+				&:before {
+					content: '';
+					bottom: 470px;
+				}
+
+				.form {
+					padding-top: 30px;
+
+					form {
+						justify-content: center;
+
+						input {
+							margin: 0 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		.center {
+			max-width: 850px;
+		}
+
+		.main-text {
+			.container {
+				.start {
+					display: block;
+					justify-content: center;
+
+					.list {
+						.main-product {
+							margin: 0 auto;
+						}
+					}
+
+					.charact {
+						display: block;
+						justify-content: center;
+
+						.chr {
+							text-align: center;
+
+							.icon {
+								justify-content: center;
+							}
+
+							.forma {
+								display: flex;
+								justify-content: center;
+
+								.but-form {
+									display: flex;
+									justify-content: center;
+								}
+							}
+						}
+
+						.term {
+							display: flex;
+							flex-flow: wrap;
+						}
+					}
+				}
+			}
+		}
+
+		.characteristics {
+			.container {
+				display: block;
+
+				.photo {
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+
+		.question {
+			.container{
+				display: block;
+				text-align: center;
+
+				&:before {
+					content: '';
+					bottom: 550px;
+				}
+
+				h2, p {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.center {
+			max-width: 550px;
+		}
+
+		.main-text {
+			.container {
+				.start {
+					.list {
+						.goods {
+							ul.slick-dots {
+								display: flex!important;
+								justify-content: center;
+
+								li {
+									margin: 15px 10px;
+									width: 25px;
+									height: 25px;
+									border-radius: 15px;
+									border: 1px solid #EDF2F5;
+									background: #EDF2F5;
+									text-align: center;
+									display: flex;
+									justify-content: center;
+
+									button {
+										background: transparent;
+									}
+								}
+
+								li.slick-active {
+									background: #4B42E3;
+
+									button {
+										color: #fff;
+									}
+								}
+								
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.characteristics {
+			.container {
+				.tabs {
+					width: 90%;
+				}
+			}
+		}
+
+		.question {
+			.container{
+				display: block;
+				text-align: center;
+
+				&:before {
+					content: '';
+					bottom: 630px;
+				}
+
+				.form {
+					form {
+						input {
+							margin: 10px 0;
+						}
+
+						.btn {
+							width: 53%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.center {
+			max-width: 280px;
+		}
+
+		.main-text {
+			.container {
+				padding: 0!important;
+
+				.breadcrumb {
+					display: block;
+
+					li {
+						padding: 0;
+					}
+				}
+
+				.breadcrumb-item+.breadcrumb-item::before {
+					display: none;
+				}
+
+				.start {
+					display: block;
+					justify-content: center;
+
+					.charact {
+						display: block;
+						justify-content: center;
+						padding: 0;
+
+						.chr {
+							text-align: center;
+
+							.icon {
+								display: block;
+								width: 100%;
+								text-align: center;
+
+								.sale {
+									width: 30%;
+								}
+							}
+
+							.forma {
+								display: flex;
+								justify-content: center;
+
+								form {
+									width: 100%;
+								}
+
+								.but-form {
+									display: block;
+									justify-content: center;
+
+									.btn {
+										width: 100%;
+										margin: 10px 0;
+									}
+								}
+
+								.phone {
+									display: block;
+								}
+							}
+						}
+
+						.term {
+							display: flex;
+							flex-flow: wrap;
+
+							.circs {
+								display: block;
+								margin-bottom: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.characteristics {
+			.container {
+				padding-bottom: 10px;
+
+				.tabs {
+					.tabs__caption {
+						display: block;
+
+						li {
+							padding: 10px 0;
+						}
+					}
+
+					.tabs__content {
+						table {
+							td {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.question {
+			.container{
+				padding: 10px 0;
+				display: block;
+				text-align: center;
+
+				&:before {
+					content: '';
+					display: none;
+				}
+
+				.form {
+					form {
+						.btn {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.watch {
+			.container {
+				padding: 10px 0!important;
+
+				.slider {
+					display: block!important;
+
+					.text {
+						margin: 0;
+						text-align: center;
+
+						&:before {
+							content: '';
+							display: none;
+						}
+
+						#slider-counter {
+							top: 280px;
+							right: 30px;
+						}
+					}
+
+					.multiple-items {
+						margin: 50px 0;
+
+						.item {
+							text-align: center;
 						}
 					}
 				}

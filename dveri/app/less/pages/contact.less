@@ -116,4 +116,175 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 900px) {
+		.center {
+			max-width: 850px;
+		}
+
+		.main-contact {
+			.container {
+				display: block;
+
+				.list {
+					display: flex;
+					flex-flow: wrap;
+
+					.item {
+						margin: 15px;
+
+						.text {
+							h5 {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+
+				.tn-atom {
+					width: 100%;
+				}
+			}
+		}
+
+		.question {
+			background: #4B42E3;
+
+			.container {
+				&:before {
+					content: '';
+					width: 16px;
+					height: 100px;
+					background: #FDE8AE;
+					position: absolute;
+					z-index: 5;
+					transform: rotate(45deg);
+					right: 130px;
+					bottom: 300px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.center {
+			max-width: 700px;
+		}
+
+		.question {
+			background: #4B42E3;
+
+			.container {
+				&:before {
+					content: '';
+					width: 16px;
+					height: 100px;
+					background: #FDE8AE;
+					position: absolute;
+					z-index: 5;
+					transform: rotate(45deg);
+					right: 130px;
+					bottom: 400px;
+				}
+
+				p {
+					padding: 0;
+				}
+
+				form {
+					display: block;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.question {
+			background: #4B42E3;
+
+			.container {
+				&:before {
+					content: '';
+					display: none;
+				}
+
+				form {
+					display: block;
+
+					input {
+						width: 275px;
+						height: 60px;
+						background: #3029B3;
+						border-radius: 6px;
+						padding: 17px 30px;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.center {
+			max-width: 280px;
+		}
+
+		.question {
+			background: #4B42E3;
+
+			.container {
+				padding: 100px 0;
+				text-align: center;
+				color: #fff;
+				padding-bottom: 0;
+				position: relative;
+
+				&:before {
+					content: '';
+					display: none;
+				}
+
+				h2 {
+					font-size: 25px;
+					font-weight: bold;
+
+					span {
+						display: inline-block;
+	    				line-height: 25px;
+						border-bottom: 10px solid #ACDDFF;
+						border-radius: 5px;
+					}
+				}
+
+				p {
+					padding-top: 25px;
+					color: #fff;
+					padding: 25px 0;
+					line-height: 25px;
+				}
+
+				form {
+					display: block;
+
+					input {
+						width: 250px;
+						height: 60px;
+						background: #3029B3;
+						border-radius: 6px;
+						padding: 17px 30px;
+						border: none;
+						margin-bottom: 15px;
+					}
+
+					.btn {
+						width: 250px;
+					}
+				}
+
+				.point {
+					padding-top: 0;
+				}
+			}
+		}
+	}
 }

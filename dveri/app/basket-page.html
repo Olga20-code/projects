@@ -8,26 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-rim-auto-match" content="none">
-  
+
   <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 
-  <meta property="og:title" content="Розробник"/> 
-  <meta property="og:description" content="Сайти високої якості."/> 
+  <meta property="og:title" content="Розробник"/>
+  <meta property="og:description" content="Сайти високої якості."/>
   <meta property="og:image" content="img/logo.jpg" />
-  <meta property="og:url" content="site.com"/> 
+  <meta property="og:url" content="site.com"/>
   <meta property="og:site_name" content="title"/>
-    
+
 </head>
-<body class="card-page">
+<body class="basket-page">
 
   <header>
     <div class="center">
       <div class="container">
         <div class="head">
           <div class="logo">
-            <img src="../img/logo.png" alt="logo">
+            <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
           </div>
 
           <div class="text">
@@ -37,26 +37,27 @@
           </div>
         </div>
 
-        <nav class="wrap-menu">
-          <button class="btn-menu">Меню</button>
+        <div class="menu-bask">
+          <nav class="wrap-menu">
+            <button class="btn-menu">Меню</button>
 
-          <ul class="menu">
-            <li><a href="about-page.html">О нас</a></li>
+            <ul class="menu">
+              <li><a href="catalog-page.html">Каталог</a></li>
 
-            <li><a href="garant-page.html">Гарантии</a></li>
+              <li><a href="garant-page.html">Гарантии</a></li>
 
-            <li><a href="blog-page.html">Блог</a></li>
+              <li><a href="blog-page.html">Блог</a></li>
 
-            <li><a href="catalog-page.html">Каталог</a></li>
+              <li><a href="about-page.html">О нас</a></li>
 
-            <li><a href="card-page.html">Карточка</a></li>  
+              <li><a href="card-page.html">Карточка</a></li>
 
-            <li><a href="basket-page.html">Корзина</a></li>
-          </ul>
-        </nav>
+            </ul>
+          </nav>
 
-        <div class="baskf">
-          <button class="btn-bask" onclick="location.href='basket-page.html'"></button>
+          <div class="baskf">
+            <button class="btn-bask" onclick="location.href='basket-page.html'"></button>
+          </div>
         </div>
       </div>
     </div>
@@ -84,58 +85,98 @@
           <div class="list">
             <div class="item">
               <div class="start">
-                <div class="image">
-                  <a href="#">
-                    <img src="img/basket/1.png" alt="1">
-                  </a>
-                </div>
+                <a href="#" class="image">
+                  <img src="img/basket/1.png" alt="1">
+                </a>
 
                 <div class="text">
                   <h4>Лесенка венге с патиной</h4>
 
-                  <p>Серия: ВИП+ Премиум</p>
+                  <ul>
+                    <li>Серия: ВИП+ Премиум</li>
 
-                  <p>Цвет: бронзовый/белый</p>
+                    <li>Цвет: бронзовый/белый</li>
 
-                  <p>Вес: 105 кг</p>
+                    <li>Вес: 105 кг</li>
+                  </ul>
                 </div>
               </div>
 
               <div class="calc">
-                <p>1 шт</p>
+                <button class="btn-calc plus"></button>
+                <div class="wrap-count"><span class="count" data-price="10800">1</span> шт</div>
+                <button class="btn-calc minus"></button>
               </div>
 
               <div class="sum">
-                <p>10 800 грн</p>
+                <p><span class="count-total-sum">10800</span> грн</p>
               </div>
+
+              <button class="remove-item"></button>
             </div>
 
             <div class="item">
               <div class="start">
-                <div class="image">
-                  <a href="#">
-                    <img src="img/basket/2.png" alt="2">
-                  </a>
-                </div>
+                <a href="#" class="image">
+                  <img src="img/basket/2.png" alt="2">
+                </a>
 
                 <div class="text">
                   <h4>Алиса с зеркалом</h4>
 
-                  <p>Серия: ВИП+ Премиум</p>
+                  <ul>
+                    <li>Серия: ВИП+ Премиум</li>
 
-                  <p>Цвет: бронзовый/белый</p>
+                    <li>Цвет: бронзовый/белый</li>
 
-                  <p>Вес: 105 кг</p>
+                    <li>Вес: 105 кг</li>
+                  </ul>
                 </div>
               </div>
 
               <div class="calc">
-                <p>1 шт</p>
+                <button class="btn-calc plus"></button>
+                <div class="wrap-count"><span class="count" data-price="9400">1</span> шт</div>
+                <button class="btn-calc minus"></button>
               </div>
 
               <div class="sum">
-                <p>9 400 грн</p>
+                <p><span class="count-total-sum">9400</span> грн</p>
               </div>
+
+              <button class="remove-item"></button>
+            </div>
+
+            <div class="item">
+              <div class="start">
+                <a href="#" class="image">
+                  <img src="img/basket/2.png" alt="2">
+                </a>
+
+                <div class="text">
+                  <h4>Алиса с зеркалом</h4>
+
+                  <ul>
+                    <li>Серия: ВИП+ Премиум</li>
+
+                    <li>Цвет: бронзовый/белый</li>
+
+                    <li>Вес: 105 кг</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="calc">
+                <button class="btn-calc plus"></button>
+                <div class="wrap-count"><span class="count" data-price="9400">1</span> шт</div>
+                <button class="btn-calc minus"></button>
+              </div>
+
+              <div class="sum">
+                <p><span class="count-total-sum">9400</span> грн</p>
+              </div>
+
+              <button class="remove-item"></button>
             </div>
           </div>
 
@@ -152,7 +193,7 @@
             <div class="summa">
               <p>Итого:</p>
 
-              <h5>20 200 грн</h5>
+              <h5><span id="total-sum">0</span> грн</h5>
             </div>
           </div>
         </div>
@@ -249,7 +290,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer>
     <div class="center">
       <div class="container">
@@ -286,7 +327,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 33C25.6127 33 33 25.6127 33 16.5C33 7.3873 25.6127 0 16.5 0C7.3873 0 0 7.3873 0 16.5C0 25.6127 7.3873 33 16.5 33Z" fill="#171921"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4902 10H22.5098C23.8828 10 25 11.1216 25 12.5V20.5C25 21.8784 23.8828 23 22.5098 23H10.4902C9.11723 23 8 21.8784 8 20.5V12.5C8 11.1216 9.11723 10 10.4902 10ZM14.6111 14V19L19.3333 16.4587L14.6111 14Z" fill="white"/>
               </svg>
-            </a><!--yt-->          
+            </a><!--yt-->
           </div>
 
           <div class="contact">

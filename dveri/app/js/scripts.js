@@ -53,6 +53,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    adaptiveHeight: true,
     asNavFor: '.goods'
   });
 
@@ -62,7 +63,34 @@ $(document).ready(function() {
     asNavFor: '.main-product',
     dots: true,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 320,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 1
+      }
+    }
+  ]
   });
 
   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
@@ -86,7 +114,21 @@ $(document).ready(function() {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      appendArrows: $('.multiple-items-arrow')
+      appendArrows: $('.multiple-items-arrow'),
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
     });
   }
 
@@ -94,7 +136,22 @@ $(document).ready(function() {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.popup-with-form').magnificPopup({
@@ -126,4 +183,50 @@ $(document).ready(function() {
 
     fixedContentPos: false
   });
+
+   let totalSum = $('#total-sum');
+    let countEl = 0;
+
+    function countAllSum() {
+      if(totalSum){
+
+        countEl = 0;
+
+        $(".count-total-sum").each(function(){
+          let sumT = $(this).html();
+          countEl += Number(sumT);
+        });
+
+        totalSum.text(countEl);
+      }
+    }
+
+    countAllSum();
+
+    $('.calc').on('click', '.btn-calc', function () {
+      let btn = $(this);
+      let count = $(this).parents('.calc').find('.count');
+      let countSum = count.attr('data-price');
+      let countNumber = count.html();
+      let sum = $(this).parents('.item').find('.sum .count-total-sum');
+
+      if(btn.hasClass('plus')){
+        countNumber++;
+      } else {
+        if(countNumber > 1){
+          countNumber--;
+        }
+      }
+
+      sum.text(+countSum * countNumber);
+      count.text(countNumber);
+
+      countAllSum();
+    });
+
+    $('.basket-main .remove-item').on("click", function () {
+      $(this).parents('.item').remove();
+      countAllSum();
+      console.log("ааа");
+    });
 });

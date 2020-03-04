@@ -8,8 +8,8 @@
 
 				h2 {
 					background: url(../../img/open-blog/3.png);
-					height: 400px;
-					width: 1170px;
+					max-height: 400px;
+					max-width: 100%;
 					background-repeat: no-repeat;
 					background-size: cover;
 
@@ -120,11 +120,657 @@
 					background: #3029B3;
 					border-radius: 6px;
 					padding: 17px 30px;
+					border: none;
 				}
 			}
 
 			.point {
 				padding-top: 50px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px)  {
+		.center {
+			max-width: 1000px;
+		}
+
+		.main-text {
+			.container {
+				padding: 50px 0;
+
+				.list {
+					padding: 50px 0;
+
+					h2 {
+						background: url(../../img/open-blog/3.png);
+						max-height: 400px;
+						width: 100%;
+						background-repeat: no-repeat;
+						background-size: cover;
+
+						background-position: 50%;
+						color: #fff;
+						font-size: 50px;
+						font-weight: bold;
+						padding: 150px 300px;
+
+						border-radius: 0 50px 50px 50px;
+						text-align: center;
+						background-blend-mode: multiply;
+						background-color: #DCDCDC;
+					}
+
+					.item {
+						padding: 50px;
+						width: 100%;
+
+						.image {
+							.photo {
+								display: flex;
+								width: 50%;
+
+								img {
+									border-radius: 10px;
+									margin: 10px;
+								}
+
+								.blog {
+									margin-left: 0;
+								}
+							}
+
+							span {
+								font-style: italic;
+								font-size: 15px;
+							}
+						}
+
+						p {
+							font-size: 18px;
+
+							span {
+								font-weight: bold;
+							}
+						}
+
+						.text {
+							padding: 30px 0;
+						}
+
+						a {
+							color: #4B42E3;
+
+							&:hover {
+								color: #212431
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 900px) {
+		.center {
+			max-width: 850px;
+		}
+
+		.main-text {
+			.container {
+				padding: 50px 0;
+
+				.list {
+					padding: 50px 0;
+
+					h2 {
+						background: url(../../img/open-blog/3.png);
+						background-repeat: no-repeat;
+						background-size: cover;
+
+						background-position: 50%;
+						color: #fff;
+						font-size: 50px;
+						font-weight: bold;
+						padding: 50px;
+
+						border-radius: 0 50px 50px 50px;
+						text-align: center;
+						background-blend-mode: multiply;
+						background-color: #DCDCDC;
+					}
+
+					.item {
+						padding: 30px;
+
+						.image {
+							.photo {
+								display: flex;
+
+								img {
+									border-radius: 10px;
+									margin: 20px;
+								}
+
+								.blog {
+									margin-left: 0;
+								}
+							}
+
+							span {
+								font-style: italic;
+								font-size: 15px;
+							}
+						}
+
+						p {
+							font-size: 18px;
+
+							span {
+								font-weight: bold;
+							}
+						}
+
+						.text {
+							padding: 30px 0;
+						}
+
+						a {
+							color: #4B42E3;
+
+							&:hover {
+								color: #212431
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.question {
+			background: #4B42E3;
+
+			.container {
+				padding: 100px 0;
+				text-align: center;
+				color: #fff;
+				padding-bottom: 0;
+				position: relative;
+
+				&:before {
+					content: '';
+					width: 16px;
+					height: 100px;
+					background: #FDE8AE;
+					position: absolute;
+					z-index: 5;
+					transform: rotate(45deg);
+					right: 130px;
+					bottom: 300px;
+				}
+
+				h2 {
+					font-size: 50px;
+					font-weight: bold;
+
+					span {
+						display: inline-block;
+	    				line-height: 41px;
+						border-bottom: 10px solid #ACDDFF;
+						border-radius: 5px;
+					}
+				}
+
+				p {
+					padding-top: 25px;
+					color: #fff;
+					padding: 25px 50px;
+					line-height: 25px;
+				}
+
+				form {
+					input {
+						width: 275px;
+						height: 60px;
+						background: #3029B3;
+						border-radius: 6px;
+						padding: 17px 30px;
+						border: none;
+					}
+				}
+
+				.point {
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.center {
+			max-width: 700px;
+		}
+
+		.main-text {
+			.container {
+				padding: 50px 0;
+
+				.list {
+					padding: 50px 0;
+
+					h2 {
+						background: url(../../img/open-blog/3.png);
+						background-repeat: no-repeat;
+						background-size: cover;
+
+						background-position: 50%;
+						color: #fff;
+						font-size: 50px;
+						font-weight: bold;
+						padding: 50px;
+
+						border-radius: 0 50px 50px 50px;
+						text-align: center;
+						background-blend-mode: multiply;
+						background-color: #DCDCDC;
+					}
+
+					.item {
+						padding: 30px;
+
+						.image {
+							.photo {
+								display: flex;
+
+								img {
+									border-radius: 10px;
+									margin: 20px;
+								}
+
+								.blog {
+									margin-left: 0;
+								}
+							}
+
+							span {
+								font-style: italic;
+								font-size: 15px;
+							}
+						}
+
+						p {
+							font-size: 15px;
+
+							span {
+								font-weight: bold;
+							}
+						}
+
+						.text {
+							padding: 30px 0;
+						}
+
+						a {
+							color: #4B42E3;
+
+							&:hover {
+								color: #212431
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.question {
+			background: #4B42E3;
+
+			.container {
+				padding: 100px 0;
+				text-align: center;
+				color: #fff;
+				padding-bottom: 0;
+				position: relative;
+
+				&:before {
+					content: '';
+					width: 16px;
+					height: 100px;
+					background: #FDE8AE;
+					position: absolute;
+					z-index: 5;
+					transform: rotate(45deg);
+					right: 130px;
+					bottom: 300px;
+				}
+
+				h2 {
+					font-size: 50px;
+					font-weight: bold;
+
+					span {
+						display: inline-block;
+	    				line-height: 41px;
+						border-bottom: 10px solid #ACDDFF;
+						border-radius: 5px;
+					}
+				}
+
+				p {
+					padding-top: 25px;
+					color: #fff;
+					padding: 25px 50px;
+					line-height: 25px;
+				}
+
+				form {
+					display: block;
+
+					input {
+						width: 275px;
+						height: 60px;
+						background: #3029B3;
+						border-radius: 6px;
+						padding: 17px 30px;
+						border: none;
+					}
+				}
+
+				.point {
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.question {
+			background: #4B42E3;
+
+			.container {
+				padding: 100px 0;
+				text-align: center;
+				color: #fff;
+				padding-bottom: 0;
+				position: relative;
+
+				&:before {
+					content: '';
+					display: none;
+				}
+
+				h2 {
+					font-size: 50px;
+					font-weight: bold;
+
+					span {
+						display: inline-block;
+	    				line-height: 41px;
+						border-bottom: 10px solid #ACDDFF;
+						border-radius: 5px;
+					}
+				}
+
+				p {
+					padding-top: 25px;
+					color: #fff;
+					padding: 25px 50px;
+					line-height: 25px;
+				}
+
+				form {
+					display: block;
+
+					input {
+						width: 275px;
+						height: 60px;
+						background: #3029B3;
+						border-radius: 6px;
+						padding: 17px 30px;
+						border: none;
+					}
+				}
+
+				.point {
+					padding-top: 50px;
+				}
+			}
+		}
+
+		.main-text {
+			.container {
+				padding: 50px 0;
+
+				.list {
+					padding: 50px 0;
+
+					h2 {
+						background: url(../../img/open-blog/3.png);
+						background-repeat: no-repeat;
+						background-size: cover;
+
+						background-position: 50%;
+						color: #fff;
+						font-size: 50px;
+						font-weight: bold;
+						padding: 50px;
+
+						border-radius: 0 50px 50px 50px;
+						text-align: center;
+						background-blend-mode: multiply;
+						background-color: #DCDCDC;
+					}
+
+					.item {
+						padding: 30px;
+
+						.image {
+							.photo {
+								display: block;
+								width: 100%;
+
+								img {
+									border-radius: 10px;
+									margin: 20px;
+								}
+
+								.blog {
+									margin-left: 0;
+								}
+							}
+
+							span {
+								font-style: italic;
+								font-size: 15px;
+							}
+						}
+
+						p {
+							font-size: 16px;
+
+							span {
+								font-weight: bold;
+							}
+						}
+
+						.text {
+							padding: 30px 0;
+						}
+
+						a {
+							color: #4B42E3;
+
+							&:hover {
+								color: #212431
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 380px) {
+		.main-text {
+			.container {
+				.breadcrumb {
+					display: block;
+
+					li {
+						padding: 0;
+					}
+				}
+
+				.breadcrumb-item+.breadcrumb-item::before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.center {
+			max-width: 280px;
+		}
+
+		.main-text {
+			.container {
+				padding: 50px 0;
+
+				.breadcrumb {
+					display: block;
+
+					li {
+						padding: 0;
+					}
+				}
+
+				.breadcrumb-item+.breadcrumb-item::before {
+					display: none;
+				}
+
+				.list {
+					padding: 50px 0;
+
+					h2 {
+						background: url(../../img/open-blog/3.png);
+						background-repeat: no-repeat;
+						background-size: cover;
+
+						background-position: 50%;
+						color: #fff;
+						font-size: 25px;
+						font-weight: bold;
+
+						border-radius: 0 50px 50px 50px;
+						text-align: center;
+						background-blend-mode: multiply;
+						background-color: #DCDCDC;
+					}
+
+					.item {
+						padding: 30px 0;
+
+						.image {
+							.photo {
+								display: block;
+								width: 100%;
+
+								img {
+									border-radius: 10px;
+									margin: 10px;
+								}
+
+								.blog {
+									margin-left: 0;
+								}
+							}
+
+							span {
+								font-style: italic;
+								font-size: 15px;
+							}
+						}
+
+						p {
+							font-size: 15px;
+
+							span {
+								font-weight: bold;
+							}
+						}
+
+						.text {
+							padding: 30px 0;
+						}
+
+						a {
+							color: #4B42E3;
+
+							&:hover {
+								color: #212431
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.question {
+			background: #4B42E3;
+
+			.container {
+				padding: 100px 0;
+				text-align: center;
+				color: #fff;
+				padding-bottom: 0;
+				position: relative;
+
+				&:before {
+					content: '';
+					display: none;
+				}
+
+				h2 {
+					font-size: 25px;
+					font-weight: bold;
+
+					span {
+						display: inline-block;
+	    				line-height: 25px;
+						border-bottom: 10px solid #ACDDFF;
+						border-radius: 5px;
+					}
+				}
+
+				p {
+					padding-top: 25px;
+					color: #fff;
+					padding: 25px 0;
+					line-height: 25px;
+				}
+
+				form {
+					display: block;
+
+					input {
+						width: 250px;
+						height: 60px;
+						background: #3029B3;
+						border-radius: 6px;
+						padding: 17px 30px;
+						border: none;
+						margin-bottom: 15px;
+					}
+
+					.btn {
+						width: 250px;
+					}
+				}
+
+				.point {
+					padding-top: 0;
+				}
 			}
 		}
 	}
