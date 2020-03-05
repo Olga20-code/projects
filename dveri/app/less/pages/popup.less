@@ -9,11 +9,10 @@
 	}
 
 	.white-popup-block {
-		width: 630px;
-		height: 753px;
+		max-width: 630px;
 		background: #fff;
 		padding: 50px;
-		margin: 0 350px;
+		margin: 0 auto;
 		border-radius: 15px;
 
 		h2 {
@@ -29,14 +28,12 @@
 		}
 
 		.all {
-			width: 430px;
-			padding-left: 50px;
+			width: 100%;
 		}
 
 		.inp {
 			input {
-				width: 430px;
-				height: 60px;
+				width: 100%;
 				background: #FFFFFF;
 				border: 1px solid #EEEEEE;
 				box-sizing: border-box;
@@ -50,8 +47,7 @@
 			display: flex;
 			justify-content: space-around;
 			background: #fff;
-			width: 430px;
-			height: 60px;
+			width: 100%;
 
 			align-items: center;
 			border-radius: 6px;
@@ -73,8 +69,7 @@
 			text-align: center;
 
 			select {
-				width: 430px;
-				height: 60px;
+				width: 100%;
 				background: #FFFFFF;
 				border: 1px solid #EEEEEE;
 				box-sizing: border-box;
@@ -87,13 +82,13 @@
 		.btn {
 			background: #4B42E3;
 			border-radius: 0px 6px 6px 6px;
-			width: 430px;
-			height: 60px;
+			width: 100%;
 			color: #fff;
 		}
 
 		.chck {
 			text-align: center;
+			padding: 30px 17px;
 		}
 
 		.mfp-close {
@@ -116,11 +111,10 @@
 	}
 
 	.choose-popup-block {
-		width: 630px;
-		height: 659px;
+		max-width: 630px;
 		background: #fff;
 		padding: 80px 100px;
-		margin: 0 350px;
+		margin: 0 auto;
 		border-radius: 15px;
 
 		h2 {
@@ -180,8 +174,7 @@
 
 		.all {
 			input {
-				width: 430px;
-				height: 60px;
+				width: 100%;
 				background: #FFFFFF;
 				border: 1px solid #EEEEEE;
 				box-sizing: border-box;
@@ -196,18 +189,16 @@
 		.btn {
 			background: #4B42E3;
 			border-radius: 0px 6px 6px 6px;
-			width: 430px;
-			height: 60px;
+			width: 100%;
 			color: #fff;
 		}
 	}
 
 	.close-popup-block {
-		width: 630px;
-		height: 659px;
+		max-width: 630px;
 		background: #fff;
 		padding: 80px 100px;
-		margin: 0 350px;
+		margin: 0 auto;
 		border-radius: 15px;
 		text-align: center;
 		position: relative;
@@ -226,7 +217,7 @@
 		.btn {
 			background: #4B42E3;
 			border-radius: 0px 6px 6px 6px;
-			width: 230px;
+			width: 100%;
 			height: 60px;
 			color: #fff;
 		}
@@ -266,4 +257,25 @@
 		display: none;
 	}
 
+	@media screen and (max-width: 360px) {
+		.white-popup-block {
+			.close {
+				.btn-close {
+					left: 250px;
+				}
+			}
+		}
+
+		.choose-popup-block {
+			padding: 80px 30px;
+		}
+
+		.close-popup-block {
+			padding: 80px 30px;
+
+			.btn {
+				margin-bottom: 30px;
+			}
+		}
+	}
 }

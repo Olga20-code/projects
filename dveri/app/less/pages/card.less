@@ -653,6 +653,8 @@
 
 		.main-text {
 			.container {
+				padding-bottom: 0;
+
 				.start {
 					.list {
 						.goods {
@@ -687,6 +689,33 @@
 							}
 						}
 					}
+
+					.charact {
+						padding: 0;
+
+						.chr {
+							.forma {
+								form {
+									width: 100%;
+
+									.phone {
+										width: 100%;
+									}
+								}
+							}
+						}
+
+						.term {
+							.circs {
+								display: block;
+
+								.img-one {
+									width: 70px;
+									height: 70px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -695,6 +724,10 @@
 			.container {
 				.tabs {
 					width: 90%;
+
+					.tabs__caption {
+						display: block;
+					}
 				}
 			}
 		}
@@ -717,6 +750,40 @@
 
 						.btn {
 							width: 53%;
+						}
+					}
+				}
+			}
+		}
+
+		.watch {
+			.container {
+				padding: 10px 0!important;
+
+				.slider {
+					display: block!important;
+
+					.text {
+						margin: 0;
+						text-align: center;
+
+						&:before {
+							content: '';
+							display: none;
+						}
+
+						#slider-counter {
+							top: 200px;
+							right: 0;
+						}
+					}
+
+					.multiple-items {
+						margin: 50px 0;
+
+						.item {
+							text-align: center;
+							margin: 0 30px;
 						}
 					}
 				}
@@ -844,39 +911,6 @@
 					form {
 						.btn {
 							width: 100%;
-						}
-					}
-				}
-			}
-		}
-
-		.watch {
-			.container {
-				padding: 10px 0!important;
-
-				.slider {
-					display: block!important;
-
-					.text {
-						margin: 0;
-						text-align: center;
-
-						&:before {
-							content: '';
-							display: none;
-						}
-
-						#slider-counter {
-							top: 280px;
-							right: 30px;
-						}
-					}
-
-					.multiple-items {
-						margin: 50px 0;
-
-						.item {
-							text-align: center;
 						}
 					}
 				}
