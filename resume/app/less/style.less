@@ -28,6 +28,22 @@ h3 {
 	font-size: 25px;
 }
 
+h4 {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+h5 {
+	font-size: 25px;
+	padding: 10px 0;
+}
+
+h6 {
+	font-size: 20px;
+	padding: 10px 0;
+}
+
 p {
 	font-size: 20px;
 }
@@ -72,7 +88,45 @@ header {
 
 	.container {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			list-style: none;
+		}
+
+		.dropdown {
+			background: transparent;
+			position: relative;
+
+			.toggle {
+				background-color: transparent;
+				display: flex;
+				align-items: center;
+
+				svg {
+					width: 35px;
+					height: 35px;
+				}
+
+				span {
+					font-size: 22px;
+					font-family: 'Cormorant Infant', serif;
+				}
+			}
+
+			.dropdown-container {
+				position: absolute;
+			    top: 100%;
+			    left: 0;
+			    width: 100%;
+			    background: #ffffff;
+			    display: none;
+			    z-index: 2;
+			    border-radius: 0 0 5px 5px;
+			    text-align: right;
+			}
+		}
 
 		.resume {
 			width: 200px;
@@ -90,6 +144,10 @@ header {
 				background: #666;
 				color: #fff;
 			}
+		}
+
+		.all {
+			display: flex;
 		}
 	}
 }
@@ -124,7 +182,7 @@ header {
 					}
 
 					a:hover {
-						color: #fff;
+						color: #9700FF;
 					}
 				}
 			}
@@ -182,24 +240,192 @@ header {
 	padding: 50px 0;
 
 	.container {
+		text-align: center;
+
+
+		.list {
+			position: relative;
+			text-align: left;
+
+			&:before {
+				content: '';
+				height: 100%;
+				width: 2px;
+				background: #000;
+				position: absolute;
+				margin: 0 50px;
+			}
+
+			.item {
+				margin: 50px 0;
+				padding: 0 100px;
+				position: relative;
+			}
+		}
+
+		.item:after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 15px;
+			background: #bbb;
+			border: 1px solid #000;
+			top: 22px;
+			left: 45px;
+		}
+	}
+}
+
+.edu-section {
+	padding: 50px 0;
+
+	.container {
+		h2 {
+			text-align: center;
+		}
+
+		.list {
+			text-align: center;
+			padding-top: 50px;
+			position: relative;
+
+			&:before {
+				content: '';
+				height: 100%;
+				width: 2px;
+				background: #000;
+				position: absolute;
+				right: 100px;
+			}
+
+			.item {
+				text-align: center;
+				padding: 0 150px;
+				padding-bottom: 50px;
+				position: relative;
+			}
+
+			.item:after {
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border-radius: 15px;
+				background: #bbb;
+				border: 1px solid #000;
+				top: 22px;
+				right: 95px;
+			}
+
+			.spec {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+.portfolio-section {
+	padding: 50px 0;
+
+	.container {
+		text-align: center;
+
+		.list-slider {
+			padding: 50px 0;
+			position: relative;
+
+			.item {
+				a {
+					max-width: 300px;
+					max-height: 300px;
+				}
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #000;
+			border-radius: 15px;
+
+			margin: 0 auto;
+			z-index: 2;
+			font-size: 0;
+			top: 190px;
+		}
+
+		.slick-prev {
+			background-image: url(../img/portfolio/next.png);
+			background-repeat: no-repeat;
+			transform: rotate(180deg);
+			left: 0;
+			background-position: center;
+		}
+
+		.slick-next {
+			background-image: url(../img/portfolio/next.png);
+			background-repeat: no-repeat;
+			right: 0;
+			background-position: center;
+		}
+	}
+}
+
+.skills-section {
+	padding: 50px 0;
+
+	.container {
 		.list {
 			.item {
+				align-items: center;
 				margin: 50px 0;
 
 				h4 {
-					font-size: 30px;
-					font-weight: bold;
-					padding: 10px 0;
+					padding-bottom: 40px;
 				}
 
-				h5 {
-					font-size: 25px;
-					padding: 10px 0;
+				.spec {
+					font-size: 28px;
 				}
 
-				h6 {
-					font-size: 20px;
-					padding: 10px 0;
+				.icon {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					.svg-icon {
+						display: flex;
+
+						svg {
+							width: 100px;
+							height: 100px;
+							margin-left: 100px;
+						}
+					}
+				}
+			}
+			
+			.one {
+				text-align: center;
+			}
+
+			.two {
+				text-align: right;
+				display: flex;
+				align-items: center;
+
+				.photo {
+					display: flex;
+
+					.image {
+						width: 70%;
+					}
+
+					.text {
+						width: 30%;
+					}
 				}
 			}
 		}

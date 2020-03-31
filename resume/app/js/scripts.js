@@ -37,4 +37,19 @@ $(document).ready(function() {
   };
 
   $('input[type=tel]').forceNumbericOnly();
+
+  $('.list-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+
+  $('.dropdown').on("click", '.toggle', function (e) {
+    // $dropdownContainer.stop().slideToggle();
+    // $dropdownContainer.slideToggle();
+    let $this = $(this);
+    let $dropdownContainer = $this.parents('.dropdown').find('.dropdown-container');
+    $dropdownContainer.slideToggle();
+  });
 });
