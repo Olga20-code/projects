@@ -54,7 +54,11 @@ $(document).ready(function() {
   });
 
   $('#nav-icon2').click(function(){
-    $(this).toggleClass('open');
+    $(this).addClass('open');
+  });
+
+  $('.mfp-wrap').click(function(){
+    $('#nav-icon2').removeClass('open');
   });
 
   $('.popup-with-zoom-anim').magnificPopup({
@@ -68,13 +72,10 @@ $(document).ready(function() {
     closeBtnInside: false,
     preloader: false,
     
-    midClick: true,
+    midClick: false,
     removalDelay: 300,
     mainClass: 'my-mfp-zoom-in'
   });
-
-
-
 
   let $volumeSlider1 = $("#slider-value-count-1");
   let $volumeSlider2 = $("#slider-value-count-2");
