@@ -46,6 +46,7 @@ h6 {
 
 p {
 	font-size: 20px;
+	line-height: 40px;
 }
 
 .btn{
@@ -178,6 +179,8 @@ header {
 	.container {
 		display: flex;
 		align-items: center;
+		flex-flow: wrap;
+
 		.bg-col;
 
 		.text {
@@ -419,6 +422,7 @@ header {
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					flex-flow: wrap;
 
 					.svg-icon {
 						display: flex;
@@ -456,6 +460,190 @@ header {
 
 					.text {
 						width: 30%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.social-section {
+		.container {
+			&:before {
+				width: 40%;
+				left: 250px;
+			}
+		}
+	}
+
+	.skills-section {
+		.container {
+			.list {
+				.item {
+					.icon {
+						.svg-icon {
+							img {
+								width: 70px;
+								height: 70px;
+								margin: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.social-section {
+		.container {
+			&:before {
+				width: 30%;
+				left: 27%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.center {
+		max-width: 850px;
+	}
+
+	.main-resume {
+		.container {
+			justify-content: center;
+			text-align: center;
+
+			.text {
+				div {
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+	}
+
+	.social-section {
+		.container {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.experience-section {
+		.container {
+			.list:before{
+				display: none;
+			}
+
+			.item:after {
+				display: none;
+			}
+
+			.list {
+				.item {
+					padding: 0;
+					margin: 25px 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.edu-section {
+		.container {
+			.list:before {
+				display: none;
+			}
+
+			.item:after {
+				display: none;
+			}
+
+			.list {
+				.item {
+					padding: 0;
+					padding-bottom: 25px;
+				}
+			}
+		}
+	}
+
+	.skills-section {
+		.container {
+			text-align: center;
+
+			.list {
+				.two {
+					.photo {
+						flex-flow: wrap;
+						justify-content: center;
+
+						.image {
+							order: 2;
+						}
+
+						.text {
+							width: 100%;
+							order: 1;
+							text-align: center;
+						}
+					}
+				}
+
+				.item {
+					.icon {
+						justify-content: center;
+
+						.text {
+							display: flex;
+						    justify-content: center;
+						    text-align: center;
+						    width: 100%;
+
+						    h6 {
+						    	padding: 0 15px;
+						    }
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.center {
+		max-width: 450px;
+	}
+	
+	header {
+		.container {			
+			.all {
+				flex-flow: wrap;
+
+				div {
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+
+	.skills-section  {
+		.container {
+			.list {
+				.item {
+					.icon {
+						.svg-icon {
+							flex-flow: wrap;
+							justify-content: center;
+						}
 					}
 				}
 			}
