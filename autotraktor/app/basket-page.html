@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина</title>
+  <meta name="description" content="Розробник сайтів на PHP,HTML,CSS,Jquery,CMS">
+  <meta name="author" content="main.email.seryoga@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+
+  <link rel="icon" href="img/logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="Розробник"/>
+  <meta property="og:description" content="Сайти високої якості."/>
+  <meta property="og:image" content="img/logo.jpg" />
+  <meta property="og:url" content="site.com"/>
+  <meta property="og:site_name" content="title"/>
+
+</head>
+<body class="basket-page">
+
+  <header>
+    <div class="center">
+      <div class="container">
+        <nav class="main-menu">
+          <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+
+            <li><a href="contact-page.html">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact">
+            <h2>
+              <a href="tel:+380639748021" class="right">+38063 974 80 21</a>
+            </h2>
+
+            <p>пн-пт 8:30 - 18:00</p>
+
+            <p>сб 8:30 - 14:00</p>
+
+            <p>Житомир, ул. Михаила Грушевского, 105а</p>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="basket-main">
+      <div class="center">
+        <div class="container">
+          <h2>Корзина</h2>
+
+          <div class="list">
+            <div class="item">
+              <div class="start">
+                <div class="image">
+                  <div class="photo">
+                    <img src="img/goods/1.jpg" alt="1">
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4>Кольца резиновые</h4>
+
+                  <p>от 1 грн</p>
+
+                  <p>в асортименте</p>
+                </div>
+              </div>
+
+              <div class="calc">
+                <button class="btn-calc plus"></button>
+                <div class="wrap-count"><span class="count" data-price="1">1</span> шт</div>
+                <button class="btn-calc minus"></button>
+              </div>
+
+              <div class="sum">
+                <p><span class="count-total-sum">1</span> грн</p>
+              </div>
+
+              <button class="remove-item"></button>
+            </div>
+
+            <div class="item">
+              <div class="start">
+                <div class="image">
+                  <div class="photo">
+                    <img src="img/goods/2.jpg" alt="2">
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4>Манжеты полиуритановые</h4>
+
+                  <p>от 1 грн</p>
+
+                  <p>в асортименте</p>
+                </div>
+              </div>
+
+              <div class="calc">
+                <button class="btn-calc plus"></button>
+                <div class="wrap-count"><span class="count" data-price="1">1</span> шт</div>
+                <button class="btn-calc minus"></button>
+              </div>
+
+              <div class="sum">
+                <p><span class="count-total-sum">1</span> грн</p>
+              </div>
+
+              <button class="remove-item"></button>
+            </div>
+
+            <div class="item">
+              <div class="start">
+                <div class="image">
+                  <div class="photo">
+                    <img src="img/goods/3.png" alt="3">
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4>Рукава высокого давления</h4>
+
+                  <p>от 1 грн</p>
+
+                  <p>в асортименте</p>
+                </div>
+              </div>
+
+              <div class="calc">
+                <button class="btn-calc plus"></button>
+                <div class="wrap-count"><span class="count" data-price="1">1</span> шт</div>
+                <button class="btn-calc minus"></button>
+              </div>
+
+              <div class="sum">
+                <p><span class="count-total-sum">1</span> грн</p>
+              </div>
+
+              <button class="remove-item"></button>
+            </div>
+          </div>
+
+          <div class="total">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div>
+              <button class="btn">Оформить заказ</button>
+            </div>
+
+            <div class="summa">
+              <p>Итого:</p>
+
+              <h5><span id="total-sum">0</span> грн</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider-section">
+      <div class="center">
+        <div class="container">
+          <div class="cargo-slide">
+            <div class="item">
+                  <div class="image">
+                    <div class="photo">
+                      <img src="img/goods/1.jpg" alt="1">
+                    </div>
+
+                    <div class="knob">
+                      <a href="card-page.html" class="btn">Заказать</a>
+                    </div>
+                  </div>
+
+                  <div class="text">
+                    <h4>Кольца резиновые</h4>
+
+                    <p>от 1 грн</p>
+
+                    <p>в асортименте</p>
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="image">
+                    <div class="photo">
+                      <img src="img/goods/2.jpg" alt="2">
+                    </div>
+
+                    <div class="knob">
+                      <a href="card-page.html" class="btn">Заказать</a>
+                    </div>
+                  </div>
+
+                  <div class="text">
+                    <h4>Манжеты полиуритановые</h4>
+
+                    <p>от 1 грн</p>
+
+                    <p>в асортименте</p>
+
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="image">
+                    <div class="photo">
+                      <img src="img/goods/3.png" alt="3">
+                    </div>
+
+                    <div class="knob">
+                      <a href="card-page.html" class="btn">Заказать</a>
+                    </div>
+                  </div>
+
+                  <div class="text">
+                    <h4>Рукава высокого давления</h4>
+
+                    <p>от 1 грн</p>
+
+                    <p>в асортименте</p>
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="image">
+                    <div class="photo">
+                      <img src="img/goods/4.jpg" alt="1">
+                    </div>
+
+                    <div class="knob">
+                      <a href="card-page.html" class="btn">Заказать</a>
+                    </div>
+                  </div>
+
+                  <div class="text">
+                    <h4>Плунжерные пары</h4>
+
+                    <p>от 100 грн</p>
+
+                    <p>в асортименте</p>
+                  </div>
+               </div>
+
+               <div class="item">
+                  <div class="image">
+                    <div class="photo">
+                      <img src="img/goods/5.jpg" alt="1">
+                    </div>
+
+                    <div class="knob">
+                      <a href="card-page.html" class="btn">Заказать</a>
+                    </div>
+                  </div>
+
+                  <div class="text">
+                    <h4>Рукава масло-бензиностойкие</h4>
+
+                    <p>от 44 грн</p>
+
+                    <p>в асортименте</p>
+                  </div>
+               </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="center">
+      <div class="container">
+        <div class="image">
+          <img src="img/logo.png" alt="logo">
+        </div>
+
+        <div class="contact">
+            <h2>
+              <a href="tel:+380639748021" class="right">+38063 974 80 21</a>
+            </h2>
+
+            <a href="mailto:surikova.work@gmail.com">surikova.work@gmail.com</a>
+
+            <p>Житомир, ул. Михаила Грушевского, 105а</p>
+         </div>
+
+         <div class="pay">
+          <img src="img/svg/visa.svg" alt="visa">
+
+          <img src="img/svg/mastercard.svg" alt="mastercard">
+         </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+</html>
