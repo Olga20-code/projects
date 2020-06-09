@@ -80,7 +80,7 @@ p {
 }
 
 .combination {
-	background-color: #05832C;
+	background-color: #bbb;
 	background-image: url(../img/1.png);
 	background-blend-mode: overlay;
 	background-size: 20%;
@@ -162,6 +162,7 @@ header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-flow: wrap;
 		padding: 50px 0;
 
 		.menu {
@@ -217,6 +218,7 @@ header {
 	.forma {
 		display: flex;
 		align-items: center;
+		margin-bottom: 50px;
 
 		.basket {
 			display: flex;
@@ -259,6 +261,8 @@ header {
 // }
 
 .goods-section {
+	background-color: #F8F8F8;
+
 	.container {
 		padding: 50px 0;
 		padding-bottom: 0;
@@ -277,6 +281,7 @@ header {
 				position: relative;
 				width: 250px;
 				border: 1px solid #bbb;
+				background-color: #fff;
 
 				&:hover {
 					box-shadow: 0px 0px 15px 0px #c0c0c0;
@@ -368,7 +373,11 @@ header {
 }
 
 .slider-section {
+	background-color: #F8F8F8;
+
 	.container {
+		padding: 50px 0;
+		
 		.cargo-slide {
 			margin: 0 -15px;
 			position: relative;
@@ -381,6 +390,7 @@ header {
 				width: 250px;
 				border: 1px solid #bbb;
 				margin-top: 30px;
+				background-color: #fff;
 
 				&:hover {
 					box-shadow: 0px 0px 15px 0px #c0c0c0;
@@ -516,6 +526,7 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-flow: wrap;
 		padding: 50px 0;
 
 		.image {
@@ -529,6 +540,67 @@ footer {
 				width: 100px;
 				height: 50px;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 890px) {
+	header {
+		.container {
+			flex-flow: wrap;
+
+			.contact {
+				margin: 15px 0;
+				flex-flow: wrap;
+			}
+		}
+	}
+
+	.main-section {
+		.container {
+			justify-content: center;
+		}
+	}
+
+	.goods-section {
+		.container {
+			.list {
+				justify-content: center;
+
+				.item {
+					.image {
+						&:after {
+							display: none;
+						}
+
+						&:hover {}
+					}
+
+					.knob {
+						display: flex;
+
+						a {
+							position: absolute;
+						    z-index: 10;
+						    bottom: 0;
+						    left: 20%;
+						}					
+					}
+
+
+					&:hover {
+						.knob {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.container {
+			justify-content: center;
 		}
 	}
 }
