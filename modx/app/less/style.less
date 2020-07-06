@@ -1,0 +1,1071 @@
+@import url(./default.less);
+@import url(./mixin.less);
+
+@font-face {
+	font-family: 'MouseSansCyrl500';
+	src: url(../fonts/museosans-500.otf);
+}
+
+@font-face {
+	font-family: 'ArnoPro LightDisplay';
+	src: url(../fonts/arnopro-lightdisplay.otf);
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url(../fonts/MuseoSansCyrl-700.ttf);
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl300';
+	src: url(../fonts/MuseoSansCyrl_0.otf);
+}
+
+@font-face {
+	font-family: 'ArnoPro Smbd';
+	src: url(../fonts/ArnoPro-Smbd.otf);
+}
+
+@font-face {
+	font-family: 'Optima Normal';
+	src: url(../fonts/optima.ttf);
+}
+
+@font-face {
+	font-family: 'ArnoPro Bold';
+	src: url(../fonts/ArnoPro-Bold.otf);
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl 100';
+	src: url(../fonts/MuseoSansCyrl.otf);
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl 700';
+	src: url(../fonts/MuseoSansCyrl-700.ttf);
+}
+
+@font-face {
+	font-family: 'Optima';
+	src: url(../fonts/ofont.ru_Optima.ttf);
+}
+
+@font-face {
+	font-family: 'Museo SansCyrl 700';
+	src: url(../fonts/MuseoSansCyrl-700.ttf);
+}
+
+@font-face {
+	font-family: 'ArnoPro Italic';
+	src: url(../fonts/ArnoPro-Italic.otf);
+}
+
+@font-face {
+	font-family: 'ArnoPro Regular';
+	src: url(../fonts/ArnoPro-Regular.otf);
+}
+
+.btn{
+	padding: 23px 66px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #efe8d9;
+	background: #9f223d;
+	border: 1px solid #9f223d;
+
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	.transition;
+
+	&:hover{
+		background: #9bb482;
+		border: 1px solid #9bb482;
+	}
+	a&{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.btn_one {
+	padding: 20px 55px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #3f4e0a;
+	background: transparent;
+	border: 1px solid #9bb482;
+
+	border-radius: 25px;
+	cursor: pointer;
+	text-align: center;
+	font-family: 'Museo Sans Cyrl', sans-serif;
+	.transition;
+
+	&:hover{
+		background: #9f223d;
+		color: #fff;
+		font-family: 'Museo Sans Cyrl', sans-serif;
+		border: 1px solid #9f223d;
+	}
+}
+
+.center{
+	position: relative;
+	max-width: 1315px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu_popup {
+	max-width: 485px;
+	background: #1d221c;
+	padding: 30px 85px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+
+	.mobile-menu {
+		.photo {
+			display: flex;
+			justify-content: space-between;
+
+			img {
+				max-width: 170px;
+				max-height: 50px;
+			}
+
+			.svg {
+				svg {
+					width: 35px;
+					height: 35px;
+				}
+			}
+		}
+
+		.menu {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			li {
+				a {
+					display: flex;
+					align-items: center;
+					font-size: 13px;
+					color: #c9cba3;
+					padding: 20px 0;
+					font-weight: 600;
+
+					&:hover {
+						color: #9f223d;
+					}
+
+					svg {
+						margin: 0 10px;
+					}
+				}
+
+				a.cabinet {
+					border-radius: 25.5px;
+					border: 1px solid #484435;
+					padding: 15px 35px;
+				}
+
+				.click {
+					margin: 35px 0;
+				}
+			}
+		}
+	}
+
+	.mfp-close {
+		font-size: 0;
+		background: url(../img/close-two.png);
+		width: 29px;
+		height: 29px;
+		margin-top: 33px;
+		margin-right: 40px;
+	}
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	background: url(../img/bg-line.png) repeat-y;
+	background-position: center;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -3;
+		background:url(../img/bg.png) no-repeat;
+		min-height:100%;
+		width:100%;
+		background-position:top center;
+		top:0;
+		left:0
+	}
+
+	.parallax--yaga {
+	    position: absolute;
+	    top: 13.5vw;
+	    left: 27%;
+	    z-index: -1;
+	    max-width: 100%;
+	}
+}
+
+.white-popup-block {
+	max-width: 85vw;
+	height: 48vw;
+	background-color: #f6f6f6;
+	margin: 0 auto;
+    position: relative;
+    margin-top: 35px;
+
+	display: flex;
+
+	.photo {
+		position: relative;
+		z-index: 1;
+		width: 545px;
+
+		.image {
+			background: url(../img/modal_logo.png) no-repeat;
+			background-size: cover;
+			width: 45vw;
+			height: 57vw;
+			position: absolute;
+			z-index: 2;
+			top: -76px;
+			left: -19px;
+			max-width: 150vw;
+		}
+	}
+
+	.forma {
+		max-width: 626px;
+		padding: 45px 50px 45px 100px;
+		position: relative;
+
+		h1 {
+			font-size: 66px;
+			color: #2f3e2a;
+		}
+
+		fieldset {
+			p {
+				color: #727367;
+				padding: 25px 0;
+				
+				a {
+					text-transform: lowercase;
+					font-family: 'Museo Sans Cyrl300', sans-serif;
+					color: #727367;
+
+					&:hover {
+						color: #9f223d;
+					}
+				}
+			}
+
+			input {
+				background: transparent;
+				border-bottom: 1px solid #d7d6ca;
+				padding: 25px;
+				margin: 10px 0;
+				font-size: 20px;
+			}
+
+			
+
+			.input {
+				border-bottom: 1px solid #d7d6ca;
+				display: flex;
+				align-items: center;
+
+				.forgot {
+					width: 100%;
+					text-align: right;
+					font-size: 13px;
+					text-transform: none;
+					color: #6a7c6c;
+					font-family: 'Optima Normal', sans-serif;
+					font-weight: bold;
+
+					&:hover {
+						color: #9f223d;
+					}
+				}
+			}
+		}
+
+		.btn {
+			width: 100%;
+			margin: 20px 0;
+		}
+
+		.text {
+			position: absolute;
+			bottom: 25px;
+			display: flex;
+			justify-content: center;
+			width: 75%;
+
+			p {
+				color: #aeaeab;
+				font-size: 12px;
+				max-width: 350px;
+				font-family: 'Museo Sans Cyrl300', sans-serif;
+
+				a {
+					color: #2f3e2a;
+					text-decoration: underline;
+					text-transform: lowercase;
+					font-weight: bold;
+					font-family: 'Museo Sans Cyrl300', sans-serif;
+
+					&:hover {
+						color: #9f223d;
+					}
+				}
+			}
+		}
+	}
+
+	.mfp-close {
+		font-size: 0;
+		background: url(../img/close.png);
+		width: 29px;
+		height: 29px;
+		margin-top: 33px;
+		margin-right: 40px;
+	}
+
+	input::-moz-placeholder { color: #727367; }
+
+	input::-webkit-input-placeholder { color: #727367; }
+}
+
+.registration {
+	max-width: 85vw;
+	height: 55.5vw;
+	background-color: #f6f6f6;
+	margin: 0 auto;
+    position: relative;
+    margin-top: 35px;
+
+	display: flex;
+
+	.photo {
+		position: relative;
+		z-index: 1;
+		width: 545px;
+
+		.image {
+			background: url(../img/reg_logo.png) no-repeat;
+			background-size: cover;
+			width: 41vw;
+			height: 59vw;
+			position: absolute;
+			z-index: 2;
+			top: -3.58vw;
+			left: -1vw;
+		}
+	}
+
+	.forma {
+		max-width: 626px;
+		padding: 45px 50px 45px 75px;
+		position: relative;
+
+		h1 {
+			font-size: 6vw;
+			color: #2f3e2a;
+			line-height: 55px;
+		}
+
+		fieldset {
+			p {
+				color: #727367;
+				padding: 10px 0;
+				
+				a {
+					text-transform: lowercase;
+					font-family: 'Museo Sans Cyrl300', sans-serif;
+					color: #727367;
+
+					&:hover {
+						color: #9f223d;
+					}
+				}
+			}
+
+			li {
+				p {
+					font-size: 12px;
+					color: #aeaeab;
+					padding: 0;
+				}
+			}
+
+			input {
+				background: transparent;
+				border-bottom: 1px solid #d7d6ca;
+				padding: 25px;
+				margin: 10px 0;
+				font-size: 20px;
+			}
+
+			
+
+			.input {
+				border-bottom: 1px solid #d7d6ca;
+				display: flex;
+				align-items: center;
+
+				.forgot {
+					width: 100%;
+					text-align: right;
+					font-size: 13px;
+					text-transform: none;
+					color: #6a7c6c;
+					font-family: 'Optima Normal', sans-serif;
+					font-weight: bold;
+
+					&:hover {
+						color: #9f223d;
+					}
+				}
+			}
+		}
+
+		.btn {
+			width: 100%;
+			margin: 20px 0;
+		}
+
+		.text {
+			position: absolute;
+			bottom: 25px;
+			display: flex;
+			justify-content: center;
+			width: 75%;
+
+			p {
+				color: #aeaeab;
+				font-size: 12px;
+				max-width: 350px;
+				font-family: 'Museo Sans Cyrl300', sans-serif;
+
+				a {
+					color: #2f3e2a;
+					text-decoration: underline;
+					text-transform: lowercase;
+					font-weight: bold;
+					font-family: 'Museo Sans Cyrl300', sans-serif;
+
+					&:hover {
+						color: #9f223d;
+					}
+				}
+			}
+		}
+	}
+
+	.mfp-close {
+		font-size: 0;
+		background: url(../img/close.png);
+		width: 29px;
+		height: 29px;
+		margin-top: 33px;
+		margin-right: 40px;
+	}
+
+	input::-moz-placeholder { color: #727367; }
+
+	input::-webkit-input-placeholder { color: #727367; }
+}
+
+.cabinet {
+	.forma {
+		max-width: 626px;
+		padding: 45px 50px 45px 75px;
+		position: relative;
+
+		fieldset {
+			p {
+				font-size: 16px;
+			}
+
+			ul {
+				p {
+					span {
+						color: #2f3e2a;
+						font-size: 20px;
+						font-weight: 600;
+					}
+				}
+			}
+
+			li {
+				position: relative;
+				z-index: 1;
+
+				&:before {
+					content: '';
+					width: 17px;
+					height: 17px;
+					background: url(../img/check.png);
+					background-size: cover;
+					top: 25px;
+					left: 18px;
+					position: absolute;
+					z-index: 1043;
+				}
+
+				p {
+					font-size: 18px;
+					color: #727367;
+					padding: 22px 0;
+					font-family: 'Optima', sans-serif;
+					border-bottom: 1px solid #eeeeee;
+					padding-left: 50px;
+				}
+			}
+		}
+
+		.btn {
+			width: 100%;
+			margin: 20px 0;
+		}
+
+		.click {
+			margin: 20px 0;
+
+			.popup_cabinet {
+				background: transparent;
+				border: 1px solid #d0d9d2;
+				color: #2f3e2a;
+				font-family: 'Museo SansCyrl 700', sans-serif;
+
+				&:hover {
+					background: #9bb482;
+					color: #fff;
+				}
+			}
+
+			.btn {
+				margin: 7.5px 0;
+			}
+		}
+	}
+}
+
+header {
+	.container {
+		padding: 25px 0;
+
+		.mobile-menu {
+			display: none;
+		}
+
+		.adaptive_logo {
+			display: none;
+		}
+
+		.menu {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			li {
+				a {
+					font-size: 13px;
+					color: #51532f;
+					font-weight: bold;
+					padding: 0 15px;
+
+					display: flex;
+					align-items: center;
+
+					svg {
+						margin: 0 10px;
+					}
+				}
+			}
+		}
+
+		.head {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+
+			.photo {
+				display: flex;
+				align-items: center;
+
+				img {
+					max-width: 50vw;
+				}
+
+				.text {
+					padding: 0 30px;
+					width: 35vw;
+
+					h1 {
+						max-width: 400px;
+					}
+
+					h3 {
+						color: #794d2c;
+						font-family: 'ArnoPro LightDisplay', sans-serif;
+					}
+				}
+			}
+
+			.click {
+				display: flex;
+    			padding: 50px 0;
+    			margin-left: 15vw;
+			}
+		}
+	}
+}
+
+.about-section {
+	.container {
+		max-width: 650px;
+		position: relative;
+		padding: 0 50px;
+
+		&:before {
+			content: '';
+			width: 3px;
+			height: 245px;
+			background: #729526;
+			border-radius: 1.5px;
+			top: 0;
+			left: 0;
+			position: absolute;
+			z-index: 2;
+		}
+
+		h6 {
+			font-family: 'Museo Sans Cyrl300', sans-serif;
+			color: #7b8d7c;
+		}
+
+		h2 {
+			color: #586c11;
+			padding: 10px 0;
+		}
+
+		h4 {
+			padding-bottom: 45px;
+		}
+
+		.btn_one {
+			margin: 70px 0;
+		}
+	}
+}
+
+.work-section {
+	.container {
+		padding-top: 175px;
+		padding: 0 70px;
+
+		h2 {
+			color:#def0d8;
+			font-size: 55px;
+			font-family: 'ArnoPro LightDisplay', sans-serif;
+		}
+
+		.list {
+			display: flex;
+			justify-content: space-between;
+			flex-flow: wrap;
+			padding: 50px 0;
+
+			.item {
+				max-width: 350px;
+				
+				.number {
+					display: flex;
+					align-items: center;
+					margin: 20px 0;
+
+					.one {
+						width: 35px;
+						height: 35px;
+						background: #8f6c27;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin: 0 15px;
+
+						h3 {
+							font-family: 'ArnoPro Bold', sans-serif;
+							color: #efe8d9;
+							padding-top: 5px;
+						}
+					}
+
+					.two {
+						max-width: 150px;
+					}
+				}
+
+				.text {
+					p {
+						color: #babfa8;
+					}
+				}
+			}
+		}
+	}
+}
+
+.moon-section {
+	.container {
+		margin: 80px 0;
+		display: flex;
+		align-items: center;
+		background: url(../img/moon_bg.png);
+		background-size: cover;
+
+		background-color: #1d221c;
+		border-radius: 20px;
+		padding: 52px 115px;
+
+		.photo {
+			img {
+				max-width: 25vw;
+				max-height: 19vw;
+			}
+		}
+
+		.list {
+			padding: 52px 0;
+			width: 100%;
+			height: 100%;
+			padding-left: 100px;
+
+			.item {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-flow: wrap;
+
+				.text {
+					display: flex;
+					flex-flow: wrap;
+
+					h4 {
+						font-size: 27px;
+						font-family: 'Optima Normal', sans-serif;
+						color: #efe8d9;
+						text-transform: uppercase;
+					}
+
+					h6 {
+						font-family: 'Museo Sans Cyrl300', sans-serif;
+						font-size: 16px;
+						color: #efe8d9;
+
+						span {
+							color: #a3a493;
+						}
+					}
+
+					.image {
+						svg {
+							width: 19px;
+							height: 17px;
+							margin: 0 10px;
+						}
+					}
+
+					.zodiac {
+						h5 {
+							font-size: 16px;
+							font-family: 'Museo Sans Cyrl300', sans-serif;
+							color: #b39a60;
+						}
+					}
+				}
+			}
+
+			.sumbol {
+				padding: 10px 0;
+				padding-top: 20px;
+
+				h5 {
+					font-family: 'Museo Sans Cyrl300', sans-serif;
+					font-size: 15px;
+					color: #bfae85;
+					line-height: 25px;
+				}
+			}
+
+			.about_sumbol {
+				padding: 10px 0;
+
+				p {
+					color: #a3a493;
+					font-size: 16px;
+					font-family: 'Museo Sans Cyrl 100', sans-serif;
+				}
+			}
+
+			.detail {
+				padding: 10px 0;
+
+				a {
+					font-size: 13px;
+					font-family: 'Museo Sans Cyrl 700', sans-serif;
+					color: #efe8d9;
+
+					&:hover {
+						color: #bfae85;
+					}
+				}
+			}
+		}
+	}
+}
+
+.article-section {
+	.container {
+		margin-bottom: 100px;
+		padding: 0 70px;
+
+		h2 {
+			font-size: 55px;
+			font-family: 'ArnoPro LightDisplay', sans-serif;
+			color: #bbbd93;
+			text-align: left;
+		}
+
+		.list {
+			display: flex;
+			justify-content: space-between;
+			flex-flow: wrap;
+			margin: -15px;
+			padding: 35px 0;
+
+			.item {
+				max-width: 369px;
+				max-height: 435px;
+				margin: 15px 10px;
+
+				.text {
+					h5 {
+						font-size: 12px;
+						font-family: 'Museo Sans Cyrl300', sans-serif;
+						color: #d8ba72;
+						padding: 10px 0;
+					}
+
+					h4 {
+						a {
+							font-size: 24px;
+							font-family: 'Optima', sans-serif;
+							color: #efe8d9;
+							text-transform: none;
+							max-width: 300px;
+
+							&:hover {
+								color: #9f223d;
+							}
+						}
+					}
+
+					h6 {
+						padding: 15px 0;
+						font-size: 11px;
+						font-family: 'Museo Sans Cyrl300', sans-serif;
+						color: #727367;
+					}
+
+					p {
+						overflow: hidden;
+						height: 60px;
+						color: #a3a493;
+						font-size: 15px;
+						font-family: 'Museo Sans Cyrl300', sans-serif;
+						line-height: 20px;
+					}
+				}
+			}
+
+			.wrap-more {
+				display: none;
+			}
+
+			.fadeIn {
+			    display: block;
+			    animation: fadeIn 1s linear;
+			}
+			@keyframes fadeIn {
+			  from {
+			    opacity: 0;
+			  }
+			  to {
+			    opacity: 1;
+			  }
+			}
+
+			.show-more {
+				display: inline-block;
+			}
+			.btn_special {
+				display: flex;
+	    		justify-content: center;
+	    		flex: 1 1 100%;
+	    		margin-top: 35px;
+				
+				.btn_one {
+					color: #d8ba72;
+					border: 1px solid #89775d;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 830px;
+		background:url(../img/footer-smoke.png) bottom center no-repeat;
+		z-index: -2;
+		bottom: 0;
+	}
+
+	.container {
+		padding: 0 70px;
+		border-top: 1px solid #30392b;
+
+		.start {
+			display: flex;
+			justify-content: space-between;
+			flex-flow: wrap;
+			padding: 40px 0;
+
+			.logo {
+				display: flex;
+				align-items: center;
+				flex-flow: wrap;
+
+				.logo_text {
+					max-width: 205px;
+					margin: 0 30px;
+
+					h3 {
+						font-size: 19px;
+						font-family: 'ArnoPro LightDisplay', sans-serif;
+						color: #c9cba3;
+					}
+				}
+			}
+
+			.menu {
+				display: flex;
+				align-items: center;
+
+				li {
+					a {
+						display: flex;
+						align-items: center;
+						font-size: 13px;
+						color: #c9cba3;
+						padding: 0 15px;
+						font-weight: 600;
+
+						&:hover {
+							color: #9f223d;
+						}
+
+						svg {
+							margin: 0 10px;
+						}
+					}
+
+					a.cabinet {
+						border-radius: 25.5px;
+						border: 1px solid #484435;
+						padding: 15px 35px;
+					}
+				}
+			}
+		}
+
+		.one {
+			p {
+				color: #777867;
+				font-size: 13px;
+			}
+		}
+
+		.end {
+			display: flex;
+			align-items: center;
+			flex-flow: wrap;
+
+			margin: 0 -15px;
+			padding: 35px 0;
+
+			.map_menu {
+				.menu {
+					display: flex;
+					align-items: center;
+
+					li {
+						a {
+							display: flex;
+							align-items: center;
+							font-size: 13px;
+							color: #c9cba3;
+							padding: 0 15px;
+							text-transform: none;
+
+							&:hover {
+								color: #9f223d;
+							}
+						}
+					}
+				}
+			}
+
+			.social {
+				display: flex;
+				margin: 0 35px;
+
+				a {
+					svg {
+						margin: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "media";
+@import 'pages/text.less';

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная - MODX Revolution</title>
+  <meta name="description" content="Розробник сайтів на HTML,CSS,Jquery">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+  
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <meta property="og:title" content="Розробник"/> 
+  <meta property="og:description" content="Сайти високої якості."/> 
+  <meta property="og:site_name" content="title"/>
+	
+</head>
+<body>
+	<img class="parallax--yaga" src="img/yaga.png" alt="">
+
+	<form id="form_login" class="mfp-hide white-popup-block">
+		<div class="photo">
+			<div class="image"></div>
+		</div>
+
+		<div class="forma">
+			<h1>Войти в личный кабинет</h1>
+
+			<fieldset style="border:0;">
+				<p>Это бесплатно, и очень просто. Заполните форму</p>
+
+				<ul>
+					<li>
+						<input name="email" type="email" placeholder="Ваш email" required="">
+					</li>
+					<li>
+						<div class="input">
+							<input name="password" type="password" placeholder="Пароль" required="" style="border-bottom: none;">
+							<a href="#" class="forgot">Забыли пароль?</a>
+						</div>
+						<p style="padding: 10px 0;">Укажите пароль при 
+
+							<a href="#form_registration" class="popup">регистрации</a></p>
+					</li>
+				</ul>
+			</fieldset>
+
+			<button class="btn">Войти в кабинет</button>
+
+			<a href="#form_registration" class="btn popup">Зарегистрироваться</a>
+
+			<div class="text">
+				<p>Осуществляя вход в личный кабинет Вы принимаете условия <a href="[[~5]]" target="_blank">пользовательского соглашения</a> размещеного на нашем сайте</p>
+			</div>
+		</div>
+	</form>
+
+	<form id="form_registration" class="mfp-hide registration">
+	  <div class="photo">
+	    <div class="image"></div>
+	  </div>
+
+	  <div class="forma">
+	    <h1>Регистрация</h1>
+
+	    <fieldset style="border:0;">
+	      <p>Это бесплатно, и очень просто. Заполните форму</p>
+
+	      <ul>
+	        <li>
+	          <input name="name" type="name" placeholder="Ваше имя" required="">
+	        </li>
+	        <li>
+	          <input name="name" type="name" placeholder="Дата рождения" required="">
+	        </li>
+	        <li>
+	          <input name="email" type="email" placeholder="Ваш email" required="">
+	          <p>На этот адрес придет ссылка для активации Вашего аккаунта</p>
+	        </li>
+	        <li>
+	          <input id="phone" name="phone" type="tel" placeholder="Номер телефона" required="">
+	          <p>Мы не отправляем спам на телефоны, управлять рассылками Вы сможете из Профиля</p>
+	        </li>
+	        <li>
+	          <input name="password" type="text" placeholder="Придумайте пароль" required="">
+	        </li>
+	      </ul>
+	    </fieldset>
+
+	    <button class="btn" id="reg_submit">Зарегистрироваться</button>
+
+	    <a href="#form_login" class="btn popup">Войти в кабинет</a>
+
+	    <div class="text">
+	      <p>Отправляя запрос на регистрацию Вы принимаете условия <a href="[[~5]]" target="_blank">пользовательского соглашения</a> размещеного на нашем сайте</p>
+	    </div>
+	  </div>
+	</form>
+
+	<form id="form_cabinet" class="mfp-hide registration cabinet">
+	  <div class="photo">
+		<div class="image"></div>
+	  </div>
+
+	  <div class="forma">
+		<h1>Личный кабинет</h1>
+
+		<fieldset style="border:0;">
+		  <p>Пожалуйста войдите или зарегистрируйтесь, чтобы получить доступ в личный кабинет</p>
+
+		  <ul>
+			<p><span>Преимущества</span></p>
+
+			<li>
+			  <p>Возможность задать свой вопрос професиональным тарологам</p>
+			</li>
+			<li>
+			  <p>Личные вопросы, или вопросы о будущем</p>
+			</li>
+			<li>
+			  <p>За лицом нашего героя стоят настоящие люди с большим опытом</p>
+			</li>
+		  </ul>
+		</fieldset>
+
+		<div class="click">
+		  <a href="#form_login" class="btn popup">Войти в кабинет</a>
+
+		  <a href="#form_registration" class="btn popup">Пройти регистрацию</a>
+		</div>
+
+		<div class="text">
+		  <p>Продолжая использовать нас сайт Вы принимаете условия <a href="[[~5]]" target="_blank">пользовательского соглашения</a> размещеного на нашем сайте</p>
+		</div>
+	  </div>
+	</form>
+
+	<div id="form_mobile_menu" class="mfp-hide mobile-menu_popup">
+		<div class="mobile-menu">
+		  <div class="photo">
+			<img src="img/logo_two.png" alt="logo">
+		  </div>
+
+		  <nav>
+			<ul class="menu">
+			  <li><a href="#">Полезные статьи</a></li>
+
+			  <li><a href="#">Лунный календарь</a></li>
+
+			  <li>
+				<a href="#form_cabinet" class="popup">
+				  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+					<image id="личный_кабинет" data-name="личный кабинет" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABT0lEQVQ4jXWTvUpDQRCFP9cgWAhBEMQilaAEQl7AwkBAUEgnvsAlEkFTqO8gSDpBkfRGsFLUJoWF+AgB2zyDYKXI4FkddpOBgbvnZ7h37tmZ/dN1kqoCBdAEKqLGwBDoAyMvL7nneaAHtIHZZGhNfQRcA8fApx9g5keg4UwvwJOet4FNDe4A9to7NiRI0EvMHZ3P1Q1hsRryEPTNbUcOgKt0McIG7myeatDC/DffZtbJnHmKoG37+shs/5VyzeB+VayNzDadq4RMAl1gNUN/sW4KBoXEVxl4025W1IWwcqIdl5SwWkIsAofArs7LwtIaBsXzS30HtIAFoA5sqevCWtJEfd8GWLYtnt/AJfAQY5qUYcaZxrTmGcUlWrZfgWfgBJibMMAw40xjWvP83QWbbtm2eJ6JvAfexa/p9ZemXaY45AC4cNd5L24buMmuM/ADvbpGE89tyyIAAAAASUVORK5CYII="/>
+				  </svg>
+
+				Личный кабинет</a>
+			  </li>
+
+			  <li>
+				<div class="click">
+				  <button class="btn">Задать вопрос сейчас</button>
+				</div>
+			  </li>
+			</ul>
+		  </nav>
+		</div>
+	</div>
+
+	<header>
+		<div class="center">
+		  <div class="container">
+			<nav>
+			  <ul class="menu">
+				<li><a href="#article" class="go-to">Полезные статьи</a></li>
+
+				<li><a href="#moon" class="go-to">Лунный календарь</a></li>
+
+				<li>
+				  <a href="#form_cabinet" class="popup">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+					  <image id="личный_кабинет" data-name="личный кабинет" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABT0lEQVQ4jXWTvUpDQRCFP9cgWAhBEMQilaAEQl7AwkBAUEgnvsAlEkFTqO8gSDpBkfRGsFLUJoWF+AgB2zyDYKXI4FkddpOBgbvnZ7h37tmZ/dN1kqoCBdAEKqLGwBDoAyMvL7nneaAHtIHZZGhNfQRcA8fApx9g5keg4UwvwJOet4FNDe4A9to7NiRI0EvMHZ3P1Q1hsRryEPTNbUcOgKt0McIG7myeatDC/DffZtbJnHmKoG37+shs/5VyzeB+VayNzDadq4RMAl1gNUN/sW4KBoXEVxl4025W1IWwcqIdl5SwWkIsAofArs7LwtIaBsXzS30HtIAFoA5sqevCWtJEfd8GWLYtnt/AJfAQY5qUYcaZxrTmGcUlWrZfgWfgBJibMMAw40xjWvP83QWbbtm2eJ6JvAfexa/p9ZemXaY45AC4cNd5L24buMmuM/ADvbpGE89tyyIAAAAASUVORK5CYII="/>
+					</svg>
+
+				  Личный кабинет</a>
+				</li>
+			  </ul>
+			</nav>
+
+			<div class="adaptive_logo">
+			  <div><img src="img/logo_two.png" alt="logo"></div>
+
+			  <div class="text">
+				<h1>Онлайн сервис гаданий</h1>
+
+				<h3>от лучших тарологов мира</h3>
+			  </div>
+			</div>
+
+			<a href="#form_mobile_menu" class="mobile_container popup">
+			  <div class="menu_container">
+				<div class="hambergerIcon">
+				</div>
+			  </div>
+			</a>
+
+			<div class="head">
+			  <div class="photo">
+				<div>
+				  <img src="img/logo.png" alt="logo">
+				</div>
+
+				<div class="text">
+				  <h1>Онлайн сервис гаданий</h1>
+
+				  <h3>от лучших тарологов мира</h3>
+				</div>
+			  </div>
+
+			  <div class="click">
+				<button class="btn">Задать вопрос сейчас</button>
+			  </div>
+		  </div>
+		</div>
+	</header>
+
+	<main>
+		<section class="about-section">
+		  <div class="center">
+			<div class="container">
+			  <h6>Приветствую Вас у себя в гостях!</h6>
+
+			  <h2>Кто я? Я - Баба-Яга</h2>
+
+			  <h4>Вы удивлены? На самом деле Баба-Яга - это красивая и мудрая женщина в силе. Она добрая и могущественная волшебница, знает язык птиц и животных, умеет собирать травы и готовить из них снадобья. Ей подвластны тайные знания о том, как устроен мир</h4>
+
+			  <p>Образ страшной старухи в ступе и со спутанными волосами появился после крещения Руси, чтобы внушить народу страх к языческим богам. А ведь у древних славян Баба-Яга была прекрасной и могущественной богиней...</p>
+
+			  <h4>Баба-Яга может в любой момент узнать все, что ее интересует, о каждом человеке. Она помогает людям и любит их всем сердцем.</h4>
+			  
+			  <p>Я владею мудростью веков, вижу суть вещей и могу дать по-настоящему ценный совет. Вместе мы найдем решение в любой трудной жизненной ситуации.<br /><br /></p>
+			  
+			  <h4>“В русских сказках, что дошли до нас из глубины веков показана истинная суть Бабы-Яги. Если добрый молодец нуждается в помощи, она примет его, накормит и спать уложит, а затем подскажет, как достичь заветной цели.”</h4>
+
+			  <div class="click">
+				<button class="btn_one">Задать вопрос</button>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+		<section class="work-section">
+		  <div class="center">
+			<div class="container">
+			  <h2>Как это работает? Все очень просто!</h2>
+
+			  <div class="list">
+				<div class="item">
+				  <div class="number">
+					<div class="one">
+					  <h3>1</h3>
+					</div>
+
+					<div class="two">
+					  <h5>Пройти регистрацию</h5>
+					</div>
+				  </div>
+
+				  <div class="text">
+					<p>Пройдите простую процедуру регистрации это бесплатно</p>
+				  </div>
+				</div>
+
+				<div class="item">
+				  <div class="number">
+					<div class="one">
+					  <h3>2</h3>
+					</div>
+
+					<div class="two">
+					  <h5>Вопрос профессионалу</h5>
+					</div>
+				  </div>
+
+				  <div class="text">
+					<p>Задайте вопрос Бабе Яге и один из свободных тарологов Вам ответит</p>
+				  </div>
+				</div>
+
+				<div class="item">
+				  <div class="number">
+					<div class="one">
+					  <h3>3</h3>
+					</div>
+
+					<div class="two">
+					  <h5>Получите ответ Бабы Яги</h5>
+					</div>
+				  </div>
+
+				  <div class="text">
+					<p>После того как Вы задали вопрос Вы получаете доступ к чату</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+		<section class="moon-section" id="moon">
+		  <div class="center">
+			<div class="container">
+			  <div class="photo">
+				<img src="img/moon.png" alt="moon">
+			  </div>
+
+			  <div class="list">
+				<div class="item">
+				  <div class="text">
+					<h4>28 марта 2020</h4>
+				  </div>
+
+				  <div class="text">
+					<h6>Фаза Луны:<span> Первая четверть, Луна растущая.</span></h6>
+				  </div>
+
+				  <div class="text">
+					<div class="image">
+					  <a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="17" viewBox="0 0 19 17">
+						  <image id="zodiac_1_" data-name="zodiac (1)" width="19" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAARCAYAAAA/mJfHAAABdUlEQVQ4jY3Uv0tVcRzG8VchkZPYEE0V2R9Qg4MNTUY/oKXFwEklmiOohghaQlwabNUcXFpaAhGcsgiagnCKhhwEraQLQWQ1xIfz0e49X2/nPsuX87yf78P5/jjnwNLcxCOcwy+8w2NsatYx3MJZHMKbPgzhJA7jAq7jDL79p+4I3uI4tvATn6NsrC00iTncxb2i4p/uZNHU5cn5+V3zYC0UYA030F9UVOpPvpb5PdXLQrO5jPGCVBpPPlsHfUWURTzENH5jvY2dSH8zc41lP/IQlrFQ0GqzL2WusSw0mqcbb/AUH3EaE3klgr/spew87uM1rqLVxmbwIvkKVtsn7ncAt7GTS23VWCv9ncx1aL+yEbzCRkEqbSQf6aVsANuF26ntzDWWxWYPd2G7c4YzV4C6nuEUbhakUvjBI9dYFn+ND3iCBxhMP8Z4Dj945BrLvuMi3ueX8AVfc4zn8INHrkPdLu2n3JdruIKj8YvBEp7jTzEDfwEjDE6jJtQvDwAAAABJRU5ErkJggg=="/>
+						</svg>
+					  </a>
+					</div>
+
+					<div class="zodiac">
+					  <h5>Знак тельца</h5>
+					</div>
+				  </div>
+				</div>
+
+				<div class="sumbol">
+				  <h5>Символ - лотос</h5>
+
+				  <h5>Камни - арагонит, хризопраз, беломорит, аметист, плазма, молочный опал, жадеит, аквамарин.</h5>
+				</div>
+
+				<div class="about_sumbol">
+				  <p>День очень гармоничный и светлый. Сегодня всё будет удаваться. Любые дела и начинания, если они направлены на благие цели, приводят к успеху.</p>
+				</div>
+
+				<div class="detail">
+				  <a href="text-page.html">Подробнее</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+
+		<section class="article-section" id="article">
+		  <div class="center">
+			<div class="container">
+			  <h2>Полезные статьи</h2>
+
+			  <div class="list content-more" data-show="6">
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/1.png" alt="1">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Напрашиваются параллели между колодой</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Все эти параллели многократно отмечались различными исследователями истории таро.</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/2.png" alt="2">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Для Европы того времени не было секретом</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Что касается происхождения самого названия таро, то известно, что первоначально карты назывались «карты триумфов (козырей)» (итал. carte da trionfi), однако около 1530 г. итальянское слово «tarocchi» (в ед. ч. «tarocco») начинает использоваться, для того чтобы отличить игру с таро от игры с обычными козырями (triumphs — trumps). Сразу же отметим, как и обычные игральные карты, таро использовалось именно в азартных целях, а именно в игре, напоминающей бридж. Эта игра была очень популярна в Европе, в неё продолжают играть и сейчас, особенно во Франции. Некоторые считают, что слово происходит от арабского طرق турук, что значит 'пути'[1]. Также, это может происходить от арабского ترك тарака, 'оставлять, бросать'[2]. Согласно другой этимологии, итальянское tarocco происходит от арабского طرح тарх[3], 'отклонение, вычитание'[4].</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/3.png" alt="3">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Каждая из этих карт имеет свой оригинальный рисунок</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Отмечались различными исследователями истории таро.</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/4.png" alt="4">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Марсельское Таро - в стиле Франции XVII века</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Все эти параллели многократно отмечались различными исследователями истории таро.</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/5.png" alt="5">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Таро Висконти-Софца - самая старая из известных</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Что касается происхождения самого названия таро, то известно, что первоначально карты назывались «карты триумфов (козырей)» (итал. carte da trionfi), однако около 1530 г. итальянское слово «tarocchi» (в ед. ч. «tarocco») начинает использоваться, для того чтобы отличить игру с таро от игры с обычными козырями (triumphs — trumps). Сразу же отметим, как и обычные игральные карты, таро использовалось именно в азартных целях, а именно в игре, напоминающей бридж. Эта игра была очень популярна в Европе, в неё продолжают играть и сейчас, особенно во Франции. Некоторые считают, что слово происходит от арабского طرق турук, что значит 'пути'[1]. Также, это может происходить от арабского ترك тарака, 'оставлять, бросать'[2]. Согласно другой этимологии, итальянское tarocco происходит от арабского طرح тарх[3], 'отклонение, вычитание'[4].</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/6.png" alt="6">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Таро Райдера Уэйта нарисованы</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Отмечались различными исследователями истории таро. </p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/1.png" alt="1">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Напрашиваются параллели между колодой</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Все эти параллели многократно отмечались различными исследователями истории таро.</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/2.png" alt="2">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Для Европы того времени не было секретом</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Что касается происхождения самого названия таро, то известно, что первоначально карты назывались «карты триумфов (козырей)» (итал. carte da trionfi), однако около 1530 г. итальянское слово «tarocchi» (в ед. ч. «tarocco») начинает использоваться, для того чтобы отличить игру с таро от игры с обычными козырями (triumphs — trumps). Сразу же отметим, как и обычные игральные карты, таро использовалось именно в азартных целях, а именно в игре, напоминающей бридж. Эта игра была очень популярна в Европе, в неё продолжают играть и сейчас, особенно во Франции. Некоторые считают, что слово происходит от арабского طرق турук, что значит 'пути'[1]. Также, это может происходить от арабского ترك тарака, 'оставлять, бросать'[2]. Согласно другой этимологии, итальянское tarocco происходит от арабского طرح тарх[3], 'отклонение, вычитание'[4].</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/3.png" alt="3">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Каждая из этих карт имеет свой оригинальный рисунок</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Отмечались различными исследователями истории таро.</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/4.png" alt="4">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Марсельское Таро - в стиле Франции XVII века</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Все эти параллели многократно отмечались различными исследователями истории таро.</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/5.png" alt="5">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Таро Висконти-Софца - самая старая из известных</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Что касается происхождения самого названия таро, то известно, что первоначально карты назывались «карты триумфов (козырей)» (итал. carte da trionfi), однако около 1530 г. итальянское слово «tarocchi» (в ед. ч. «tarocco») начинает использоваться, для того чтобы отличить игру с таро от игры с обычными козырями (triumphs — trumps). Сразу же отметим, как и обычные игральные карты, таро использовалось именно в азартных целях, а именно в игре, напоминающей бридж. Эта игра была очень популярна в Европе, в неё продолжают играть и сейчас, особенно во Франции. Некоторые считают, что слово происходит от арабского طرق турук, что значит 'пути'[1]. Также, это может происходить от арабского ترك тарака, 'оставлять, бросать'[2]. Согласно другой этимологии, итальянское tarocco происходит от арабского طرح тарх[3], 'отклонение, вычитание'[4].</p>
+				  </div>
+				</div>
+
+				<div class="item wrap-more">
+				  <div class="photo">
+					<img src="img/article/6.png" alt="6">
+				  </div>
+
+				  <div class="text">
+					<h5>Тарология</h5>
+
+					<h4><a href="#">Таро Райдера Уэйта нарисованы</a></h4>
+
+					<h6>Опубликовано 02.02.2020</h6>
+
+					<p>Отмечались различными исследователями истории таро. </p>
+				  </div>
+				</div>
+
+				<div class="btn_special">
+				  <button class="show-more btn_one">Показать больше</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+	</main>
+  
+	<footer>
+		<div class="center">
+		  <div class="container">
+			<div class="start">
+			  <div class="logo">
+				<div class="photo">
+				  <img src="img/logo_two.png" alt="logo">
+				</div>
+
+				<div class="logo_text">
+				  <h3>Онлайн сервис предсказаний от лучших тарологов мира</h3>
+				</div>
+			  </div>
+
+			  <nav>
+				<ul class="menu">
+				  <li><a href="#">Полезные статьи</a></li>
+
+				  <li><a href="#">Лунный календарь</a></li>
+
+				  <li><a href="#"  class="cabinet">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+					  <image id="личный_кабинет" data-name="личный кабинет" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABT0lEQVQ4jXWTvUpDQRCFP9cgWAhBEMQilaAEQl7AwkBAUEgnvsAlEkFTqO8gSDpBkfRGsFLUJoWF+AgB2zyDYKXI4FkddpOBgbvnZ7h37tmZ/dN1kqoCBdAEKqLGwBDoAyMvL7nneaAHtIHZZGhNfQRcA8fApx9g5keg4UwvwJOet4FNDe4A9to7NiRI0EvMHZ3P1Q1hsRryEPTNbUcOgKt0McIG7myeatDC/DffZtbJnHmKoG37+shs/5VyzeB+VayNzDadq4RMAl1gNUN/sW4KBoXEVxl4025W1IWwcqIdl5SwWkIsAofArs7LwtIaBsXzS30HtIAFoA5sqevCWtJEfd8GWLYtnt/AJfAQY5qUYcaZxrTmGcUlWrZfgWfgBJibMMAw40xjWvP83QWbbtm2eJ6JvAfexa/p9ZemXaY45AC4cNd5L24buMmuM/ADvbpGE89tyyIAAAAASUVORK5CYII="/>
+					</svg>
+
+					Личный кабинет</a></li>
+				</ul>
+			  </nav>
+			</div>
+
+			<div class="one">
+			  <p>Сохранившиеся фрагменты колод, изобретенных семействами Висконти и Сфорца, послужили прототипом современной колоды из 78 листов. Дошедшие до нас колоды тех времён представляют собой роскошные карты ручной работы, выполненные для аристократии. В 1465 году появляется колода Тарокки Мантеньи, структура которой основана на каббалистическом подразделении Вселенной, известном как 50 Ворот Бины. Колода состоит из 50 карт, 5 серий или мастей</p>
+			</div>
+
+			<div class="end">
+			  <div class="map_menu">
+				<ul class="menu">
+				  <li><a href="#">Пользовательское соглашение</a></li>
+
+				  <li><a href="#">Правила пользования</a></li>
+
+				  <li><a href="#">Политика обработки ПДн</a></li>
+				</ul>
+			  </div>
+
+			  <div class="social">
+				<div class="insta">
+				  <a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
+					  <image id="instagram" width="29" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAC4klEQVRIia2XPUiVURjHf71ezIIwUCKUdPBjkIawxEkRdMiGFqEhsCDHBmkRykEcAnGRhkYbDBpCl6CaBMkpLFvEwSwQURJqEMGP4Eo83f97OZ5z9F67/eHl5X2+/vc55znPc+6Zx8P3KQKNQB/QBbQAtUAZkAU2gGVgDpgBVguFywSSo+gARoDuQJODEdfpuQmMAbPAKDAfWAtJIMnhAjAFfDiB8Dh0y29KcQLESBuAT0B/oDkd+hWnoRBpg35lc4mEKZoV7wixS2pL8Q6oCVxLQ43i5pfaLaTnx2T4A3gBLAK/JPsN7ALngXLJqoBW4AFwOZKxxb/nZtpxzB6+B5qAp8AWcFHPFeCa3qlsS3ZN8vPRL558piOBSS7DO0An8AqoDCxCbAN35fc1krHx9CQ6+LFjYUt6eArC28CQ7A/l78N4GjPqNDEsao98wgVgElgD6oEBoA1Yl75SfouRmIa+RK0tBiuaak/+DGjXniV6t0v+BXgju2qn6Hx0JeqlxcAyfKTnO/BW71S2UGSclkTNOwY7FhWOfFLVOq6ei97jkk86tmeBg0hMQ23iBPCx65HaHl6N2JdJvubIzgF7QUTZJxpPMdjB33fkVjRLEfus5PWObE/+MWQTzcMYyj3SAVXokEOc1fe69CkOnE7lYyOjAVwXqELYsZhQ0UxrSZdEOCF9MVhONPFjqIqU/SDwEehVA+jV96Bn91P+McxldMUYiyhb1Uu3vQbRViCrbTWG4UCTw0yiO81soMpNi0S9dDvQxpH23kT+PoxnNW34o5H+a836tZq3zcTrzpJV6Nl3is224rMIpyPNPuXJTxm7RL2MjLdeTYti5uklLWlsnqL483hD/KH6qD/ILcCTIMTpsKL4f+FeV3aAW8BmiQQ+NhV3J0Zq+KahvRK4/nuGnYqbR+wKagY3tAelwPwtzhHCWKYpbCnsEmW/MnacToLZm5/555fURaG/FVZtPf/1vwzwB5JEox3echhqAAAAAElFTkSuQmCC"/>
+					</svg>
+				  </a>
+				</div>
+
+				<div class="vk">
+				  <a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29">
+					  <image id="vk" width="29" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAACwElEQVRIibWXO2hUQRSGP68xPrKYiCARBV+glbETjWAjKiL4xheCFiIGTEAEUWwE7TWgEbUwgi9Q0SQggnU0xEaDhQ+QVCkU1MREjcUqR/5rTubeu9m46w+z7MyZOf/cmTn/mZlw8tR+isQUYDlQB9QCOeAr0Af0AM+Bn8W4qki0JFEPNAJbRJyFIeABcBHoyujzB1GiZQQLgcdAJ7B7DEJDFbAPeAa0AfMTPcYg3Q68BNYnLMVhk8ZvTeudRtoA3NOelYLp8tMwFql9YUuJZKH/C/KbSmp72JoYVh7iVvlPkLaUYUmzkNMXjyKtH8ehGQD6VYYT1mxsAFZ60kbX9TWwTSfPymVnawaqgRqVWcA3Z38H7HBjLdTeOnuT/ZgiWfx9dnFoQT4X+KL6VOC9VMiwDnjiHPUC8/T/AHDd2SpEukD1H8CMSNLmA9+C/JCrfwfOu/qijAW0id0O2o46QmIpjaSlIY4Hh6pZTimgTKcD7V0KnEn0grrILZvHTM0yhi3LYSAPfAr62mFqB264NpvwXWBywjPURgXC5AQwx9VtH1dL1D12AXuAX67tHLAk4VETipSe0jBNGcOjM6X/i+AEGxan+IsxGCkfZmEzsDfDVggWNq8y7H2REnAhXNOyZmFtysQ+Amvc4fPoiZTxhxKmEVQCj5Su0nAWuAkcDGwfgI0KuRjG0x3pmLelOPOoUp/7krMa2XJu/64Ax4BJbtybYJkfGl98R1qhjD8eDGoVKoMxwwoxw8QgOkx7u2LttTtNxzhJcymEKDarVTxhR3x38qmtSRnkf2AgFvuQtFeCnS8zaV5+e9NIkdocKSNxXvI5SsXSLmaXgJ06KKVgQCJxNfSRRopCY5nuvf+Cdo0PdbogqcHUxGJyFXDHhUEWLPBvKSxMPv/uYYhinhVPVfxbZrYEw7Ygfst0F/WWAX4D/miMHA3+YQAAAAAASUVORK5CYII="/>
+					</svg>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</footer>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/simpleParallax.min.js"></script>
+</body>
+</html>
