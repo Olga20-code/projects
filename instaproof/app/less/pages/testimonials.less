@@ -1,0 +1,320 @@
+.testimonials {
+  .main-testimonials {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .item {
+      padding-top: 80px;
+    }
+
+    .slider-photographer {
+      .item {
+        cursor: pointer;
+      }
+      img {
+        width: 79px;
+        height: 79px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      p {
+        opacity: 0;
+      }
+    }
+
+    .slider-text {
+      .item {
+        img {
+          max-height: 320px;
+          width: 100%;
+          object-fit: cover;
+        }
+        .flex {
+          background: @seashell;
+          padding: 61px 105px;
+          h4 {
+            font-family: 'cormorantlight', sans-serif;
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+
+    .slick-center {
+      img {
+        width: 108px;
+        height: 108px;
+        margin: 0 auto;
+      }
+
+      p {
+        opacity: 1;
+      }
+    }
+
+    .slick-arrow {
+      display: none!important;
+    }
+  }
+
+  .reviews {
+    .flex-half {
+      &>*{
+        flex: 1 1 30%;
+      }
+    }
+    .item {
+      text-align: center;
+      padding: 40px 71px;
+      padding-top: 61px;
+      margin: 35px;
+      position: relative;
+
+      img {
+        width: 79px;
+        height: 79px;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 3;
+        top: -40px;
+        left: 180px;
+      }
+
+      h4 {
+        font-size: 20px;
+        padding-top: 30px;
+      }
+    }
+    .exclusive {
+      max-height: 300px;
+    }
+    p {
+      font-family: 'cormorantlight', sans-serif;
+      font-size: 18px;
+      position: relative;
+      padding: 0 10px;
+      padding-bottom: 50px;
+      line-height: 22px;
+      span {
+        font-size: 40px;
+        font-family: 'cormorantitalic', sans-serif;
+        font-weight: 600;
+        padding: 0 10px;
+      }
+    }
+    .item:first-child,
+    .item:nth-child(2),
+    .item:nth-child(3) {
+      background: #FAF8F2;
+    }
+    .item__last {
+      flex: 1 1 100%;
+      img {
+        left: auto;
+      }
+      p {
+        padding: 0 55px;
+        padding-bottom: 50px;
+      }
+      h4 {
+        left: auto;
+        width: 95%;
+        font-family: 'bw_vivantregular', sans-serif;
+        font-size: 10px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  .form {
+    display: grid;
+    .flex {
+      align-items: center;
+      &>* {
+        margin: 0;
+      }
+    }
+    .photo {
+      max-width: 326px;
+      min-height: 438px;
+      margin-right: 50px;
+      img {
+        max-width: 326px;
+        min-height: 420px;
+      }
+    }
+  }
+
+  .trial {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .flex-half {
+      margin: 0;
+    }
+
+    .reviews {
+      .item {
+        margin: 25px;
+        padding: 20px;
+        padding-top: 50px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .reviews {
+      .item {
+        img {
+          left: 17vw;
+        }
+      }
+      .exclusive {
+        max-height: 350px;
+      }
+      .item__last {
+        img {
+          left: auto!important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .main-header {
+      .main-menu{
+        margin-left: -15px;
+      }
+    }
+    .main-testimonials {
+      .slider-text {
+        .item {
+          .flex {
+            padding: 30px 50px;
+          }
+        }
+      }
+    }
+    .reviews {
+      .item {
+        margin: 25px 15px;
+      }
+    }
+
+    .form {
+      padding: 0;
+      margin-top: 50px;
+      h2 {
+        font-size: 37px;
+      }
+      .photo {
+        margin-right: 0;
+        img {
+          display: block;
+        }
+      }
+      .text {
+        padding: 0 20px;
+        margin-right: 20px;
+      }
+    }
+
+    .trial {
+      display: grid;
+      padding: 50px 15px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .main-testimonials {
+      .slider-photographer,
+      .slider-text {
+        display: none;
+      }
+      h1 {
+        font-size: 38px;
+      }
+    }
+
+    .reviews {
+      padding: 0;
+      .flex-half {
+        &>* {
+          flex: 1 1 50%;
+        }
+      }
+      .item {
+        position: relative;
+        margin: 15px;
+        padding: 10px;
+        padding-top: 50px;
+        &:nth-child(odd){
+          background-color: @seashell;
+        }
+        &:nth-child(even) {
+          background: @cornsilk;
+        }
+        img {
+          display: none;
+        }
+      }
+      .exclusive {
+        max-height: 100%;
+      }
+      p {
+        span {
+          position: absolute;
+          top: -53px;
+          left: 0;
+          right: 0;
+          &:nth-child(2) {
+            right: -50px;
+          }
+        }
+      }
+      .item__last {
+        p {
+          padding: 0;
+        }
+      }
+    }
+
+    .form {
+      .center {
+        padding: 0;
+      }
+      .flex {
+        flex-direction: column;
+        margin: 0;
+      }
+      .photo {
+        min-width: 100%;
+        img {
+          object-fit: cover;
+          min-width: 100%;
+        }
+      }
+      .text {
+        text-align: center;
+        padding: 30px;
+        margin-right: 0;
+      }
+      input {
+        text-align: center;
+      }
+      .aside {
+        justify-content: center;
+      }
+      h2:nth-child(2) {
+        font-size: 31px;
+        font-family: 'cormorantitalic', sans-serif;
+        line-height: 38px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
