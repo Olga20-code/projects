@@ -5,8 +5,9 @@
 
   .quote__down {
     display: flex;
-    align-items: center;
-    margin-top: 50px!important;
+    margin-top: 25px!important;
+    margin-left: -30px!important;
+    align-items: end!important;
 
     .pic {
       margin-right: 25px;
@@ -41,12 +42,17 @@
   .powerful {
     background: @linen;
     border-top: none;
-    padding-top: 58px;
+    padding-top: 45px;
 
     h2 {
       max-width: 354px;
       text-align: center;
       margin: 0 auto;
+    }
+
+    .items {
+      margin: 20px auto 0;
+      padding: 16px 28px;
     }
 
     .block-picture {
@@ -65,7 +71,8 @@
     .list {
       z-index: 2;
       img {
-        max-width: 358px;
+        max-width: 333px;
+        margin-right: 29px;
       }
     }
 
@@ -74,16 +81,16 @@
       z-index: 1;
       width: 239px;
       height: 165px;
-      top: 82px;
+      top: 93px;
       opacity: .5;
     }
 
     .left {
-      left: 170px;
+      left: 270px;
     }
 
     .right {
-      right: 280px;
+      right: 380px;
     }
     .aside {
       position: absolute;
@@ -96,14 +103,29 @@
       .btn-link {
         background: @seashell;
         border: none;
+        padding: 12px 15px;
+        margin-top: 20px;
+        margin-left: -30px;
       }
     }
   }
 
   .custom {
-    padding-top: 77px;
-    padding-bottom: 55px;
+    padding-top: 45px;
+    padding-bottom: 49px;
+
+    .center {
+      max-width: 965px;
+    }
+
+    .text {
+      margin-left: 45px!important;
+    }
+
     .storefonts {
+      padding: 15px 10px;
+      margin-top: 15px;
+
       li {
         position: relative;
         padding-left: 30px;
@@ -111,13 +133,13 @@
         margin: 5px 0;
         font-family: 'cormorantitalic', sans-serif;
         font-size: 13px;
-        line-height: 27px;
+        line-height: 20px;
 
         &:before {
           content: '';
           position: absolute;
-          width: 15px;
-          height: 15px;
+          width: 9px;
+          height: 9px;
           border-radius: 50%;
           background: @cornsilk url(../img/svg/tick.svg) no-repeat center;
           background-size: 15px;
@@ -128,16 +150,21 @@
       }
     }
 
+    h2 {
+      margin-top: -38px;
+    }
+
     p {
       font-family: 'cormorantregular', sans-serif;
       font-size: 17px;
-      padding-top: 27px;
+      padding-top: 0px;
       max-width: 353px;
     }
 
     .picture {
       img {
-        min-width: 482px;
+        min-width: 478px;
+        padding-top: 38px;
       }
     }
 
@@ -152,14 +179,22 @@
 
   .marketing {
     background: @linen;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 81px;
+    padding-bottom: 115px;
+
+    .center {
+      max-width: 943px;
+    }
+
+    h2 {
+      margin-top: -15px;
+    }
 
     .instblock {
       position: absolute;
       z-index: 5;
-      bottom: 15px;
-      left: -45px;
+      bottom: -23px;
+      left: -55px;
 
       h6 {
         font-family: 'cormorant_unicaselight', sans-serif;
@@ -168,7 +203,7 @@
     }
 
     .photo {
-      min-width: 420px;
+      min-width: 475px;
       margin: 0 auto;
       position: relative;
 
@@ -186,16 +221,101 @@
     }
 
     .text {
-      margin-left: 100px;
+      margin-left: 113px!important;
+    }
+
+    .storefonts {
+      margin-top: 0;
+    }
+  }
+
+  .custom-sec {
+    padding: 143px 0 128px;
+
+    .center {
+      max-width: 977px;
+    }
+
+    h2 {
+      margin-top: -44px;
+    }
+
+    .storefonts {
+      margin-top: 0;
+    }
+
+    .photo {
+      max-width: 408px;
+      margin-left: 0;
+      margin-right: 18px;
+      margin-top: -6px;
+    }
+
+    .quote__down {
+      margin-top: 35px!important;
+
+      .quote__text {
+        margin-left: 27px;
+      }
+    }
+  }
+
+  .marketing-sec {
+    padding-bottom: 159px;
+    .instblock {
+      bottom: -18px;
+    }
+
+    h2 {
+      margin-top: -28px;
+    }
+
+    .quote__down {
+      margin-left: -16px!important;
+      margin-top: 20px!important;
+
+      .quote__text {
+        margin-left: 20px;
+      }
     }
   }
 
   .additional {
-    padding-bottom: 150px;
+    padding-top: 86px;
+    padding-bottom: 161px;
+
+    .center {
+      max-width: 978px;
+    }
+
+    .photo {
+      max-width: 408px;
+      margin-left: 0;
+      margin-right: 18px;
+      margin-top: 7px;
+    }
+
+    h2 {
+      margin-top: -28px;
+    }
+
+    .quote__down {
+      margin-top: 20px!important;
+
+      .quote__text {
+        margin-left: 27px;
+      }
+    }
   }
 
   .trial {
     border-top: .5px solid @black;
+    padding-top: 96px;
+    padding-bottom: 103px;
+
+    p {
+      padding: 16px 0 37px;
+    }
   }
 
   .all-trial {
@@ -218,10 +338,11 @@
       text-align: center;
       border-top: 1px solid #000;
       border-bottom: 1px solid #000;
+      max-height: 237px;
     }
 
     .item:nth-child(2n) {
-      padding: 70px 50px;
+      padding: 70px 60px;
     }
 
     .exclusive {

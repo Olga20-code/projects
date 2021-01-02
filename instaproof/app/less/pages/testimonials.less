@@ -1,10 +1,24 @@
 .testimonials {
   .main-testimonials {
     text-align: center;
+    padding: 79px 0 70px 10px;
     padding-bottom: 30px;
 
+    h1 {
+      padding-bottom: 17px;
+    }
+
+    p {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
     .item {
-      padding-top: 80px;
+      padding-top: 38px;
+
+      p {
+        padding-top: 17px;
+      }
     }
 
     .slider-photographer {
@@ -25,14 +39,19 @@
 
     .slider-text {
       .item {
+        padding-top: 28px;
         img {
           max-height: 320px;
           width: 100%;
           object-fit: cover;
+          max-width: 922px;
+          margin: 0 auto;
         }
         .flex {
           background: @seashell;
-          padding: 61px 105px;
+          padding: 66px;
+          max-width: 924px;
+          margin: 0 auto;
           h4 {
             font-family: 'cormorantlight', sans-serif;
             font-size: 18px;
@@ -60,6 +79,12 @@
   }
 
   .reviews {
+    padding: 42px 0 3px 10px;
+    .center {
+      max-width: 972px;
+      padding-left: 0px;
+      padding-right: 80px;
+    }
     .flex-half {
       &>*{
         flex: 1 1 30%;
@@ -67,9 +92,9 @@
     }
     .item {
       text-align: center;
-      padding: 40px 71px;
+      padding: 40px 31px;
       padding-top: 61px;
-      margin: 35px;
+      margin: 35px 40px;
       position: relative;
 
       img {
@@ -85,7 +110,7 @@
 
       h4 {
         font-size: 20px;
-        padding-top: 30px;
+        padding-top: 5px;
       }
     }
     .exclusive {
@@ -112,12 +137,16 @@
     }
     .item__last {
       flex: 1 1 100%;
+      margin-top: 20px;
+      padding: 40px 11px;
+      padding-top: 61px;
       img {
         left: auto;
       }
       p {
         padding: 0 55px;
-        padding-bottom: 50px;
+        padding-bottom: 22px;
+        line-height: 20px;
       }
       h4 {
         left: auto;
@@ -127,10 +156,18 @@
         line-height: 14px;
       }
     }
+
+    .item:nth-child(3) {
+      margin-top: -112px;
+    }
   }
 
   .form {
     display: grid;
+    padding: 100px 50px 74px;
+    .center {
+      max-width: 905px;
+    }
     .flex {
       align-items: center;
       &>* {
@@ -140,7 +177,7 @@
     .photo {
       max-width: 326px;
       min-height: 438px;
-      margin-right: 50px;
+      margin-right: 79px;
       img {
         max-width: 326px;
         min-height: 420px;
@@ -150,6 +187,10 @@
 
   .trial {
     display: none;
+  }
+
+  .follow {
+    padding: 38px 0 31px;
   }
 
   @media screen and (max-width: 1024px) {

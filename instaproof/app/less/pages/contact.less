@@ -5,17 +5,24 @@
   .contact-text {
     text-align: center;
     background: #FAF8F2;
+    padding: 95px 0 84px 10px;
+
     h1 {
-      font-size: 42px;
+      font-size: 55px;
       line-height: 48px;
     }
     h5 {
-      padding-top: 42px;
-      max-width: 562px;
+      padding-top: 37px;
+      max-width: 570px;
       margin: 0 auto;
     }
   }
   .post {
+    padding: 85px 0 93px 10px;
+    .center {
+      max-width: 905px;
+    }
+
     .item {
       text-align: center;
       .photo {
@@ -39,14 +46,13 @@
         }
   
         img {
-          width: 34px;
-          height: 28px;
+          width: 40px;
+          height: 40px;
         }
       }
       h6 {
         font-size: 11px;
-        letter-spacing: 1.65px;
-        padding: 25px 0;
+        padding: 25px 0 19px;
       }
       .link {
         font-family: 'cormorantitalic', sans-serif;
@@ -54,9 +60,18 @@
         line-height: 24px;
         border-bottom: 2px solid @cornsilk;
         padding: 14px 0;
-        margin-top: 22px;
-        margin-bottom: 60px;
+        margin-top: 17px;
+        margin-bottom: 47px;
       }
+    }
+
+    .aside {
+      font-size: 9px;
+      padding: 13px 26px;
+    }
+
+    h5 {
+      font-size: 21px;
     }
   }
 
@@ -66,8 +81,10 @@
       align-items: stretch;
     }
     .text {
+      margin-left: 137px;
+      margin-top: 20px;
       &>* {
-        padding: 0 110px;
+        padding: 0 80px;
       }
       position: relative;
       padding: 30px 0;
@@ -76,7 +93,8 @@
       -ms-flex-align: center;
       align-items: center;
       h2 {
-        font-size: 40px;
+        font-size: 42px;
+        margin-left: -11px;
       }
       p {
         font-family: 'bw_vivantregular', sans-serif;
@@ -85,9 +103,14 @@
         letter-spacing: 1.5px;
         text-transform: uppercase;
         padding: 24px 0;
+        max-width: 305px;
       }
       textarea {
         margin: 30px 0;
+        max-width: 305px;
+      }
+      form {
+        max-width: 288px;
       }
       .photo-quest {
         display: none;
@@ -99,6 +122,7 @@
         width: 100%;
         height: 100%;
         display: block;
+        max-height: 642px;
       }
     }
 
@@ -114,6 +138,12 @@
 
   .questions {
     border-bottom: .5px solid #000;
+    padding: 83px 0 92px 10px;
+
+    .center {
+      max-width: 862px;
+    }
+
     h2 {
       font-size: 42px;
       text-align: center;
@@ -142,6 +172,11 @@
       letter-spacing: 1.65px;
       padding: 10px 40px;
     }
+  }
+
+  .trial {
+    padding-top: 95px;
+    padding-bottom: 87px;
   }
 
   @media screen and (max-width: 1024px) {

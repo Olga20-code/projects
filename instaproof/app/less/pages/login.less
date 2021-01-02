@@ -5,18 +5,30 @@
   }
 
   .form-login {
+    padding: 116px 0 131px 10px;
     .popup {
       background: @linen;
       max-width: 436px;
       max-height: 418px;
       margin: 0 auto;
       text-align: center;
-      padding: 40px 63px;
+      padding: 44px 58px 97px;
+      margin-bottom: 13px;
+
+      input:not([type=submit]) {
+        padding: 22px 17px;
+      }
+
+      input:nth-child(2) {
+        margin-bottom: 12px;
+      }
 
       .btn-link {
         background: #FAFAF8;
         border: 1px solid transparent;
-        margin-top: 41px;
+        margin-top: 35px;
+        padding: 12px 57px;
+
         &:hover {
           border: 1px solid @black;
         }
@@ -27,6 +39,12 @@
   .form__exclusive,
   .trial {
     display: none;
+  }
+
+  .follow {
+    .flex {
+      padding: 23px 0;
+    }
   }
 
   @media screen and (max-width: 768px) {
