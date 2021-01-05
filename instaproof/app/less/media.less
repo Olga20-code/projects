@@ -1,6 +1,31 @@
+@import "mixin";
 @media screen and (max-width: 1100px) {
+  .accordion  {
+    .submenu {
+      padding-left: 0;
+      padding-bottom: 0;
+      li {
+        display: flex;
+        align-items: center;
+        div:first-child {
+          padding: 7px;
+        }
+      }
+
+      li:nth-child(2n) {
+        div:first-child {
+          padding: 10px;
+        }
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+
   .main-header {
-    background: #f5ece6;
+    background: #FAFAF8;
     position: relative;
 
     .content{
@@ -8,7 +33,7 @@
     }
     .mobile-menu {
       display: flex;
-      background: #f5ece6;
+      background: #FAFAF8;
       font-size: 9px;
       line-height: 14px;
       font-weight: 600;
@@ -85,7 +110,8 @@
       z-index: 5;
       padding: 45px 0;
       top: calc(100% + 1px);
-      margin-left: -15px;
+      margin-left: 0;
+      left: 0;
 
       .menu {
         display: flex;
@@ -97,13 +123,28 @@
         li {
           padding: 12px 0;
         }
+
+        li.open {
+          .link {
+            .link__menu {
+              align-items: center;
+
+              .click__plus {
+                background: url("../img/minus.png") no-repeat;
+                width: 15px;
+              }
+            }
+          }
+        }
       }
 
       .aside {
         display: grid;
         margin-top: 12px;
+
         .btn {
           background:  #f5ece6;
+          width: 248px;
         }
       }
     }
@@ -114,7 +155,21 @@
     }
 
     .link {
-      text-align: center;
+      text-align: left;
+      .transition;
+
+      .link__menu {
+        text-decoration: underline;
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+      }
+      .click__plus {
+        display: flex;
+        background: url("../img/plus.png") no-repeat;
+        width: 10px;
+        height: 10px;
+      }
     }
 
     .submenu {
@@ -615,6 +670,7 @@
   }
   .main .instblock{
     bottom: -16px;
+    left: 0px;
   }
   .support {
     .items {

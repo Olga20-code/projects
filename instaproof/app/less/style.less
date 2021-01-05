@@ -284,6 +284,10 @@ body {
 
 	.link {
 		color: #000;
+
+		.click__plus {
+			display: none;
+		}
 	}
 
 	li {
@@ -317,30 +321,27 @@ body {
 		z-index: 10;
 		background: @white;
 		width: 274px;
-		padding: 31px;
+		padding: 27px;
 		padding-right: 50px;
-		padding-left: 26px;
+		padding-left: 24px;
 		top: 24px;
 		left: 18px;
 		box-shadow: 0px 3px 6px #00000029;
 
 		li {
 			position: relative;
-			padding-left: 60px!important;
+			padding: 0!important;
 			padding-right: 0!important;
-			padding-bottom: 22px!important;
+			padding-bottom: 23px!important;
+			display: flex;
 
-			&:before {
-				content: '';
-				position: absolute;
-				z-index: 3;
-				width: 34px;
-				height: 34px;
-				top: 0;
-				left: 0;
-				background: #f5ece6 url(../img/svg/test.svg) no-repeat center;
-    		background-size: 15px;
+			div:first-child {
+				background: @seashell;
 				border-radius: 50%;
+				width: 35px;
+				height: 35px;
+				padding: 7px;
+				margin-right: 27px;
 			}
 		}
 
@@ -384,6 +385,23 @@ body {
 		.aside,
 		.close {
 			display: none;
+		}
+
+		.link__menu {
+			font-size: 11px;
+			letter-spacing: 1px;
+			background: transparent;
+			color: #000;
+			text-decoration: none;
+			font-family: bw_vivantregular,sans-serif;
+			line-height: 14px;
+			font-weight: 300;
+			font-style: normal;
+			transition: all .2s linear;
+			text-transform: uppercase;
+			&:hover {
+				opacity: .7;
+			}
 		}
 	}
 
