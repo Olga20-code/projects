@@ -112,8 +112,8 @@ $(document).ready(function() {
 
     Accordion.prototype.dropdown = function(e) {
       var $el = e.data.el,
-        $this = $(this),
-        $next = $this.next();
+          $this = $(this),
+          $next = $this.next();
 
       $next.stop().slideToggle();
       $this.parent().toggleClass('open');
@@ -134,6 +134,16 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 0,
+                autoplay: false,
+            }
+        }
+    ]
   });
   $('.slider-photographer').slick({
     slidesToShow: 5,
@@ -149,9 +159,17 @@ $(document).ready(function() {
       {
         breakpoint: 770,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
+         slidesToShow: 3,
+         slidesToScroll: 1
         }
+      },
+      {
+          breakpoint: 900,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 0,
+              autoplay: false,
+          }
       }
     ]
   });

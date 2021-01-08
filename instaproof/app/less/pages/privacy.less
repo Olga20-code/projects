@@ -37,6 +37,7 @@
         transform: rotate(180deg);
       }
       .submenu{
+        display: none;
         li {
           font-family: 'cormorantlight', sans-serif;
           font-size: 18px;
@@ -96,14 +97,19 @@
     }
   }
 
+  @media screen and (max-width: 770px) {
+    .form__exclusive {
+      display: none;
+    }
+
+    .policy {
+      padding-bottom: 0;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     h1, h2, p {
       padding: 0 15px;
-    }
-    .main-header {
-      .main-menu{
-        margin-left: -15px;
-      }
     }
 
     .title__policy {
@@ -116,7 +122,6 @@
       }
     }
 
-    .form__exclusive,
     .trial {
       display: grid;
     }
@@ -173,10 +178,10 @@
       }
     }
 
-    .title {
-      font-size: 17px;
-      line-height: 20px;
-      padding: 0;
+    .cookie__link {
+      &:before {
+        top: 53px!important;
+      }
     }
 
   }

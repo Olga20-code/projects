@@ -107,6 +107,10 @@
 	}
 }
 
+.active__link {
+	font-weight: 600;
+}
+
 .aside {
 	display: flex;
 	justify-content: center;
@@ -377,6 +381,7 @@ body {
 	a {
 		font-size: 11px;
 		letter-spacing: 1px;
+		white-space: nowrap;
 	}
 
 	.main-menu {
@@ -513,7 +518,7 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			padding: 19px;
+			padding: 22px;
 
 			&:before {
 				content: '';
@@ -660,9 +665,14 @@ body {
 		min-width: 1px;
 		position: relative;
 	}
+
+	.slick-arrow {
+		background-size: 30%;
+	}
+
 	.slider-galery-arrow{
 		position: absolute;
-		bottom: 50px;
+		bottom: 57px;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -670,14 +680,14 @@ body {
 		z-index: 10;
 		height: 10px;
 		&>* {
-			width: 70px;
+			width: 50px;
 		}
 
 		.slick-prev{
-			left: 0;
+			left: 35px;
 		}
 		.slick-next{
-			right: 0;
+			right: 33px;
 		}
 	}
 	.text {
@@ -879,6 +889,7 @@ body {
 	}
 
 	h5 {
+		margin-top: 23px;
 		margin-bottom: 24px;
 	}
 
@@ -897,7 +908,7 @@ body {
 		width: 166px;
 		height: 206px;
 		object-fit: cover;
-		bottom: -18px;
+		bottom: -24px;
     right: -60px;
 	}
 
@@ -949,19 +960,26 @@ body {
 			}
 		}
 	}
+
 	.slider-photograph-arrow{
 		display: flex;
-		width: 100px;
+		width: 75px;
 		justify-content: space-between;
-		margin: 24px auto 0;
+		margin: 15px 178px;
 
 		.slick-arrow{
 			position: relative;
 		}
+
+		.slider-btn-next,
+		.slider-btn-prev {
+			background-size: 15px;
+			width: 40px;
+		}
 	}
 }
 .blog {
-	padding: 107px 0 33px;
+	padding: 107px 0 71px;
 
 	.center {
 		max-width: 984px;
@@ -976,10 +994,14 @@ body {
 		line-height: 68px;
 	}
 
-	p {
+	p, a {
 		font-size: 20px;
 		line-height: 19px;
 		font-family: 'cormorantlight', sans-serif;
+	}
+
+	a {
+		letter-spacing: 0;
 	}
 
 	.text{
@@ -1025,7 +1047,8 @@ body {
 			margin: 0 -58px;
 		}
 		.slick-arrow{
-			bottom: 111px;
+			bottom: 73px;
+			background-size: 15px;
 		}
 		.slick-next{
 			right: 60px;
@@ -1050,7 +1073,7 @@ body {
 
 	.slick-current {
 		&.item{
-			padding-top: 20vh;
+			padding-top: 24vh;
 			padding-bottom: 0;
 		}
 		.pic {
@@ -1148,7 +1171,7 @@ body {
 
 	h2, a {
 		font-family: 'bw_vivantregular', sans-serif;
-		font-size: 11px;
+		font-size: 14px;
 		letter-spacing: 1.65px;
 		text-transform: uppercase;
 		line-height: 15px;
@@ -1182,7 +1205,7 @@ body {
 	}
 
 	a {
-		font-size: 15px;
+		font-size: 20px;
 		line-height: 18px;
 		font-family: 'cormorantlight', sans-serif;
 		padding-right: 30px;

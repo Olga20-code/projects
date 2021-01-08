@@ -1,5 +1,12 @@
 @import "mixin";
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
+  .main-header {
+    .main-menu {
+      margin-left: 25px;
+    }
+  }
+}
+@media screen and (max-width: 1079px) {
   .accordion  {
     .submenu {
       padding-left: 0;
@@ -27,6 +34,10 @@
   .main-header {
     background: #FAFAF8;
     position: relative;
+
+    a {
+      font-size: 16px;
+    }
 
     .content{
       padding: 35px 0;
@@ -112,6 +123,9 @@
       top: calc(100% + 1px);
       margin-left: 0;
       left: 0;
+      -webkit-box-shadow: 0px 15px 15px -9px @dark-grey;
+      -moz-box-shadow:    0px 15px 15px -9px @dark-grey;
+      box-shadow:         0px 15px 15px -9px @dark-grey;
 
       .menu {
         display: flex;
@@ -163,6 +177,7 @@
         display: flex;
         justify-content: space-between;
         width: 250px;
+        font-size: 16px;
       }
       .click__plus {
         display: flex;
@@ -265,6 +280,12 @@
   .galery .text>*{
     padding: 0 20px;
   }
+
+  .blog {
+    .read-more {
+      right: -20px;
+    }
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -303,6 +324,13 @@
       max-width: 100%!important;
     }
 
+    .item:nth-child(2),
+    .item:nth-child(4) {
+      .photo {
+        margin-right: 37px;
+      }
+    }
+
     h2 {
       text-align: center;
     }
@@ -319,8 +347,7 @@
 
     .instblock-container {
       padding: 9vw 0;
-      margin: 30px 0px;
-      margin-bottom: 30px;
+      margin: 30px auto;
     }
 
     .aside {
@@ -336,10 +363,40 @@
     }
   }
 
-  .offering,
-  .partner,
   .blog {
     display: none;
+  }
+
+  .offering {
+    h2 {
+      padding: 0 15px;
+      font-size: 37px;
+    }
+
+    p {
+      padding: 23px 15px;
+    }
+
+    .flex {
+      margin: 0 auto;
+    }
+  }
+
+  .partner {
+    .flex {
+      margin: 0 auto;
+      margin-left: 0;
+      flex: 1 1;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+    }
+
+    h2 {
+      font-size: 37px;
+    }
   }
 
   .photographers {
@@ -385,10 +442,19 @@
       margin-left: 0;
       max-width: initial;
       padding-top: 40px;
+
+      h5 {
+        margin: 0 auto;
+      }
     }
 
     .slider-photograph {
       margin: 0 15px;
+    }
+
+    .slider-photograph-arrow {
+      margin: 0 auto;
+      margin-top: 30px;
     }
   }
 
@@ -489,6 +555,8 @@
   .platform {
     p {
       padding: 0 15px;
+      max-width: 75%;
+      margin: 0 auto;
     }
   }
 
@@ -500,12 +568,21 @@
 }
 
 @media screen and (max-width: 650px) {
-  .tools .item{
-    flex-direction: column;
-    text-align: center;
+  .tools  {
+    .item {
+      flex-direction: column;
+      text-align: center;
 
-    .photo{
-      margin: 0 0 35px;
+      .photo {
+        margin: 0 0 35px;
+      }
+    }
+
+    .item:nth-child(2),
+    .item:nth-child(4) {
+      .photo {
+        margin-right: 0;
+      }
     }
   }
   .form__exclusive {
@@ -569,6 +646,21 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .main {
+    .instblock {
+      left: -35px;
+    }
+  }
+
+  .offering {
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
 @media screen and (max-width: 550px) {
   h2 {
     line-height: 40px;
@@ -576,7 +668,8 @@
 
   .main .instblock{
     top: auto;
-    bottom: -50px;
+    bottom: -20px;
+    left: 0px;
   }
   .main .grid-half > .image {
     padding-left: 35px;
@@ -659,6 +752,24 @@
   .instblock.three-image h6,
   .instblock.two-image h6 {
     font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .items {
+    flex-direction: column;
+    align-items: center;
+
+    .item {
+      margin: 7px 0;
+    }
+  }
+
+  .partner {
+    h2 {
+      font-size: 27px;
+      line-height: 40px;
+    }
   }
 }
 

@@ -65,10 +65,12 @@
           padding: 0 30px;
           padding-right: 46px;
           height: 66px;
+          white-space: nowrap;
         }
 
         th:nth-child(4) {
           position: relative;
+
           &:after {
             content: 'MOST POPULAR';
             position: absolute;
@@ -307,6 +309,11 @@
 
   @media screen and (max-width: 900px) {
     .tab__pricing {
+      table {
+        td:first-child {
+          min-width: 150px;
+        }
+      }
       tr:first-child {
         th {
           font-size: 22px!important;
@@ -329,12 +336,6 @@
   @media screen and (max-width: 768px) {
     .center {
       padding: 0 15px;
-    }
-
-    .main-header {
-      .main-menu{
-        margin-left: -15px;
-      }
     }
 
     .section {

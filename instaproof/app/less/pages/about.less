@@ -101,7 +101,10 @@
   .citation {
     background: #FAF8F2;
     text-align: center;
-    padding: 100px 245px 93px;
+    padding: 100px 0 93px;
+    .center {
+      max-width: 700px;
+    }
     h2 {
       font-family: 'cormorantitalic', sans-serif;
       font-size: 42px;
@@ -185,13 +188,8 @@
   }
 
   @media screen and (max-width: 768px) {
-    .main-header {
-      .main-menu{
-        margin-left: -15px;
-      }
-    }
     .quote {
-      padding: 50px 0;
+      padding: 50px;
     }
     .about-text {
       .flex {
