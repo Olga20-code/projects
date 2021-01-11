@@ -1,6 +1,9 @@
 @import url(./default.less);
 @import url(./mixin.less);
 
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Rubik', sans-serif;
+
 .link-btn {
 	background: @yellow;
 	padding: 10px 20px;
@@ -15,7 +18,7 @@
 .center{
 	position: relative;
 	max-width: 1440px;
-	padding: 0 16px;
+	padding: 0 32px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -27,9 +30,13 @@
 	line-height: 14px;
 	font-weight: 600;
 	position: absolute;
-	right: 3px;
-	top: 32px;
+	right: 20px;
+	top: 35px;
 	transition: all 0.4s ease;
+
+	@media screen and (max-width: 450px) {
+		top: 25px;
+	}
 
 	input {
 		display: none;
@@ -51,7 +58,7 @@
 		background: @violet;
 		position: absolute;
 		height: 2px;
-		width: 25px;
+		width: 29px;
 		border-radius: 4px;
 		transition: all .5s;
 	}
@@ -61,10 +68,10 @@
 	    top: 0px;
 	  }
 	  div:nth-child(2) {
-	    top: 8px;
+	    top: 10px;
 	  }
 	  div:nth-child(3) {
-	    top: 15px;
+	    top: 20px;
 	  }
 	}
 
@@ -88,7 +95,7 @@
 	  }
 	}
 
-	@media screen and (max-width: 1250px) {
+	@media screen and (max-width: 1150px) {
 		display: flex;
 	}
 }
@@ -190,7 +197,6 @@
 	a {
 		display: flex;
 		align-items: center;
-		letter-spacing: 1px;
 
 		&:hover {
 			color: @yellow;
@@ -199,7 +205,10 @@
 		img {
 			max-width: 19px;
 			max-height: 19px;
-			margin-right: 12px;
+		}
+
+		span {
+			margin-left: 11px;
 		}
 	}
 }
@@ -222,21 +231,11 @@
 .main-header {
 	.container {
 		position: relative;
-		z-index: 5;
 
 		.main-header__photo {
 			display: flex;
 			justify-content: center;
-			padding: 12px 0;
-
-			@media screen and (max-width: 1250px) {
-				padding-top: 20px;
-				padding-bottom: 61px;
-			}
-			
-			img {
-				margin-left: 17px;
-			}
+			padding: 15px 0;
 
 			a {
 				img {
@@ -252,9 +251,9 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 0 23px;
+			padding: 0 40px;
 
-			@media screen and (max-width: 1250px) {
+			@media screen and (max-width: 1150px) {
 				display: none;
 			}
 
@@ -264,26 +263,14 @@
 
 				li {
 					a {
-						padding: 30px 12px;
-						padding-bottom: 28px;
-						border-bottom: 2px solid transparent;
+						padding: 30px 9px;
 
 						&:hover {
-							color: #FCC24C;
-							border-bottom: 2px solid #FCC24C;
+							background: #f5af1b;
 						}
 					}
 				}
 			}
-		}
-
-		.menu-head__container {
-			max-width: 1440px;
-			margin: 0 auto;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
 		}
 	}
 }
@@ -293,48 +280,20 @@
 }
 
 .main {
-	position: relative;
+	background: url(../img/main/1.png) no-repeat;
+	background-size: cover;
 
-	&:before {
-		content: '';
-		position: absolute;
-		background: url(../img/main/1.png) no-repeat;
+	@media screen and (max-width: 1350px) {
+		background-size: contain;
+	}
+
+	@media screen and (max-width: 1024px) {
 		background-size: cover;
-		width: 100%;
-		height: 107%;
-		top: -45px;
-		left: 0;
-	}
-
-	@media screen and (max-width: 1360px) {
-		&:before {
-			background-size: contain;
-		}
-	}
-
-	@media screen and (max-width: 1150px) {
-		&:before {
-			background-size: cover;
-			height: 111%;
-		}
 	}
 
 	@media screen and (max-width: 800px) {
-		&:before {
-			background-size: cover;
-			width: 137%;
-			height: 109%;
-			left: -274px;
-		}
-	}
-
-	@media screen and (max-width: 700px) {
-		&:before {
-			background-size: cover;
-			width: 135%!important;
-			height: 55%!important;
-			left: -111px!important;
-		}
+		margin-left: -200px;
+		background-size: contain;
 	}
 
 	.center {
@@ -342,27 +301,32 @@
 	}
 
 	.container {
-		padding: 120px 0;
-		padding-bottom: 104px;
-		margin-left: 32px;
+		padding: 150px 0;
 		max-width: 471px;
-		z-index: 2;
 
-		@media screen and (max-width: 1360px) {
-			padding-top: 202px;
-			margin-left: 0;
+		@media screen and (max-width: 1350px) {
+			max-width: 100%;
 			padding-bottom: 0;
+			padding-top: 34%;
+		}
+
+		@media screen and (max-width: 1150px) {
+			padding-top: 37%;
+		}
+
+		@media screen and (max-width: 800px) {
+			margin-left: 200px;
+			padding-top: 50%;
 		}
 
 		.main-cater {
 			background: @yellow;
 			padding: 30px 45px;
-			padding-right: 115px;
+			padding-right: 125px;
 
 			@media screen and (max-width: 1150px) {
-				padding: 17px 21px;
+				padding: 11px 21px;
 				padding-right: 0;
-				padding-bottom: 8px;
 			}
 
 			h1 {
@@ -372,9 +336,12 @@
 					font-size: 40px;
 				}
 
-				@media screen and (max-width: 1150px) {
-					line-height: 40px;
-					letter-spacing: -3px;
+				@media screen and (max-width: 800px) {
+					font-size: 36px;
+				}
+
+				@media screen and (max-width: 450px) {
+					line-height: 35px;
 				}
 			}
 		}
@@ -382,30 +349,34 @@
 		.main-trust {
 			background: rgba(225, 225, 225, 0.8);
 			padding: 16px 45px;
-			padding-bottom: 45px;
-			display: flex;
-			flex-direction: column;
+			padding-bottom: 35px;
 
 			@media screen and (max-width: 1150px) {
-				padding: 16px 0;
-				padding-bottom: 28px;
-				padding-right: 0;
-				align-items: center;
+				padding: 11px 21px;
+				padding-bottom: 20px;
+			}
+
+			@media screen and (max-width: 800px) {
+				background: @white;
+				margin: -2px 0;
+				padding-bottom: 30px;
 			}
 
 			h4 {
-				padding-bottom: 26px;
+				padding-bottom: 42px;
 
 				@media screen and (max-width: 1150px) {
-					font-size: 24px;
-					line-height: 30px;
-					padding-bottom: 15px;
+					font-size: 30px;
 				}
-			}
 
-			.link-btn {
-				font-size: 14px;
-				max-width: 167px;
+				@media screen and (max-width: 1024px) {
+					padding-bottom: 10px;
+				}
+
+				@media screen and (max-width: 600px) {
+					line-height: 30px;
+					padding-bottom: 25px;
+				}
 			}
 		}
 	}
@@ -417,16 +388,11 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
-		padding: 40px 28px;
-		padding-bottom: 33px;
-		padding-left: 56px;
+		padding: 35px 0;
 
 		@media screen and (max-width: 1024px){
 			flex-direction: column;
 			align-items: center;
-
-			padding: 25px 0;
-			padding-left: 29px;
 		}
 
 		.call-us {
@@ -442,11 +408,14 @@
 				font-weight: 300;
 				line-height: 30px;
 				padding-bottom: 24px;
-				letter-spacing: .5px;
 
 				@media screen and (max-width: 1150px) {
+					font-size: 30px;
+				}
+
+				@media screen and (max-width: 1024px) {
 					font-size: 24px;
-					padding-bottom: 3px;
+					text-align: center;
 				}
 			}
 			
@@ -457,16 +426,7 @@
 				}
 
 				.phone {
-					@media screen and (max-width: 1150px) {
-						margin-left: -38px;
-						margin-bottom: 16px;
-					}
-
 					a {
-						span {
-							font-size: 22px;
-						}
-
 						img {
 							max-width: 36px;
 							max-height: 36px;
@@ -477,16 +437,6 @@
 						}
 					}
 				}
-
-				.link-btn {
-					margin-left: 21px;
-					font-size: 15px;
-					padding: 10px 25px;
-
-					@media screen and (max-width: 1024px) {
-						margin-left: -10px;
-					}
-				}
 			}
 		}
 
@@ -494,11 +444,9 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
-			padding-top: 6px;
 
 			@media screen and (max-width: 1024px) {
-				margin-top: 21px;
-				margin-bottom: 17px;
+				margin-top: 30px;
 			}
 
 			p {
@@ -507,33 +455,17 @@
 				line-height: 26px;
 				text-align: right;
 				font-weight: 500;
+
 				color: @white;
-			}
 
-			.geo {
-				position: relative;
-
-				&:before {
-					content: '';
-					position: absolute;
-					z-index: 2;
-					background: url(../img/svg/geolock.svg) no-repeat;
-					width: 13px;
-					height: 16px;
-					top: 6px;
-					right: 181px;
+				img {
+					margin-top: 5px;
 				}
-			}
-
-			p+p {
-				margin-top: 0;
 			}
 
 			a {
 				text-transform: none;
 				color: @yellow;
-				font-size: 14px;
-				margin-top: 2px;
 
 				&:hover {
 					color: @white;
@@ -551,14 +483,15 @@
 	}
 	.container {
 		background: #E5E5E5;
-		padding: 36px 70px;
+		padding: 33px 58px;
 		margin: 30px 0;
 
 		@media screen and (max-width: 1024px) {
 			margin-top: 0;
-			margin-bottom: 16px;
-			padding: 32px 5px;
-			padding-left: 43px;
+		}
+
+		@media screen and (max-width: 800px) {
+			padding: 20px;
 		}
 	}
 }
@@ -566,32 +499,22 @@
 .services {
 	.container {
 		.bg-main;
-		padding: 33px 72px;
-		padding-right: 29px;
-		margin-top: 69px;
-		padding-bottom: 68px;
+		padding-bottom: 120px;
 
 		@media screen and (max-width: 1024px) {
-			padding: 0;
-			margin-top: 0;
+			padding: 30px;
+			padding-bottom: 0;
 			background: none;
 			box-shadow: none;
-			padding-left: 5px;
-			padding-top: 1px;
 		}
 
 		.services-up {
 			display: flex;
 			justify-content: space-between;
-			padding-right: 71px;
-
-			@media screen and (max-width: 500px) {
-				padding-right: 18px;
-			}
 
 			h2 {
-				@media screen and (max-width: 1024px) {
-					font-size: 32px;
+				@media screen and (max-width: 500px) {
+					font-size: 28px;
 				}
 			}
 
@@ -601,34 +524,22 @@
 
 				a {
 					color: #A8A8A8;
-					font-size: 14px;
-
-					@media screen and (max-width: 500px) {
-						padding-top: 5px;
-						text-transform: none;
-					}
 
 					&:hover {
 						color: @yellow;
-					}
-				}
 
-				a {
-					position: relative;
-
-					&:after {
-						content: '';
-						position: absolute;
-						z-index: 2;
-						background: url(../img/svg/next.svg) no-repeat;
-						width: 32px;
-						height: 10px;
-						bottom: 18px;
-						left: 75px;
+						svg {
+							path {
+								fill: @yellow;
+								.transition;
+							}
+						}
 					}
 
-					@media screen and (max-width: 500px) {
-						&:after {
+					svg {
+						margin-left: 27px;
+
+						@media screen and (max-width: 500px) {
 							display: none;
 						}
 					}
@@ -651,22 +562,18 @@
 			.services-item {
 				max-width: 391px;
 				width: 100%;
-				margin: 8px 0;
-				margin-right: 40px;
-				margin-bottom: 57px;
+				margin: 35px 0;
+				margin-right: 19px;
 				padding: 30px 0;
 				flex: 1 1 300px;
 
 				img {
 					margin-bottom: 35px;
-					margin-left: 5px;
-					max-height: 90px;
+					max-height: 105px;
 					height: 100%;
 				}
 
 				h5 {
-					margin-bottom: 15px;
-
 					a {
 						margin-bottom: 15px;
 						font-family: 'Rubik', sans-serif;
@@ -674,7 +581,6 @@
 						line-height: 33px;
 						font-weight: 500;
 						color: @violet;
-						text-transform: none;
 
 						&:hover {
 							color: @yellow;
@@ -683,23 +589,8 @@
 				}
 
 				p {
-					max-height: 159px;
+					max-height: 170px;
 					height: 100%;
-				}
-
-				.link-btn {
-					padding: 10px 29px;
-					font-size: 14px;
-				}
-			}
-
-			.special {
-				img {
-					margin-bottom: 38px;
-				}
-
-				p {
-					max-height: 132px;
 				}
 			}
 		}
@@ -718,27 +609,20 @@
 				.bg-main;
 
 				@media screen and (max-width: 1024px){
-					padding: 24px 25px;
-					padding-bottom: 40px;
-					margin: 0;
-					margin-top: 13px;
+					padding: 25px;
+				}
+
+				@media screen and (max-width: 500px){
+					margin-right: 0;
+					padding: 25px;
 				}
 
 				img {
 					margin-bottom: 35px;
 					height: 105px;
-
-					@media screen and (max-width: 500px) {
-						margin-left: 0;
-						height: 88px;
-					}
 				}
 
 				h5 {
-					@media screen and (max-width: 1024px) {
-						padding-top: 4px;
-					}
-
 					a {
 						margin-bottom: 15px;
 						font-family: 'Rubik', sans-serif;
@@ -746,10 +630,14 @@
 						line-height: 33px;
 						font-weight: 500;
 						color: @violet;
-						text-transform: none;
 
 						@media screen and (max-width: 1024px) {
-							font-size: 26px;
+							font-size: 22px;
+						}
+
+						@media screen and (max-width: 500px) {
+							font-size: 20px;
+							font-weight: 400;
 						}
 
 						&:hover {
@@ -762,17 +650,15 @@
 					height: 170px;
 
 					@media screen and (max-width: 1024px) {
-						padding-top: 14px;
-						font-size: 16px;
-						margin-left: -4px;
-						margin-bottom: 25px;
+						max-height: 120px;
+						overflow: hidden;
+						text-overflow: clip;
+						margin-bottom: 40px;
 					}
-				}
 
-				.link-btn {
-					padding: 11px 25px;
-					font-size: 14px;
-					padding-left: 27px;
+					@media screen and (max-width: 500px) {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -780,11 +666,6 @@
 		.slick-dots {
 			display: flex!important;
 			justify-content: center;
-
-			@media screen and (max-width: 1024px) {
-				margin-top: 26px;
-				margin-left: 15px;	
-			}
 
 			li {
 				button {
@@ -817,20 +698,15 @@
 
 	.container {
 		background: @violet;
-		margin: 40px 0;
-		padding: 56px 67px;
-		padding-bottom: 51px;
+		margin: 49px 0;
+		padding: 50px 52px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		@media screen and (max-width: 1100px) {
 			flex-direction: column;
 			align-items: center;
-		}
-
-		@media screen and (max-width: 1024px) {
-			margin: 36px 0;
-			margin-bottom: 28px;
 		}
 
 		@media screen and (max-width: 900px){
@@ -838,26 +714,29 @@
 		}
 
 		.advant-text {
-			max-width: 370px;
-			width: 100%;
-			margin-top: -5px;
+			max-width: 360px;
+			margin-left: 20px;
 
 			@media screen and (max-width: 1100px) {
 				max-width: 100%;
-				width: 100%;
 				display: flex;
 				flex-direction: column;
-				padding: 56px 20px;
-				margin-left: 41px;
-				padding-bottom: 35px;
+				align-items: center;
+			}
+
+			@media screen and (max-width: 650px) {
+				padding: 35px;
 			}
 
 			h3 {
-				text-transform: none;
-
-				@media screen and (max-width: 1024px) {
+				@media screen and (max-width: 650px) {
 					font-size: 32px;
-					line-height: 36px;
+					line-height: 30px;
+					text-align: center;
+				}
+
+				@media screen and (max-width: 500px) {
+					font-size: 25px;
 				}
 			}
 
@@ -866,14 +745,7 @@
 				line-height: 24px;
 				font-weight: 300;
 				color: @white;
-				padding: 17px 0;
-				padding-bottom: 25px;
-
-				@media screen and (max-width: 1024px) {
-					padding: 40px 0;
-					padding-bottom: 17px;
-					letter-spacing: .3px;
-				}
+				padding: 20px 0;
 
 				span {
 					font-weight: 500;
@@ -884,37 +756,22 @@
 				@media screen and (max-width: 650px) {
 					flex-direction: column;
 					align-items: center;
-					margin: 0 30px;
 				}
 
 				.phone {
 					@media screen and (max-width: 650px) {
 						padding: 35px 0;
 						padding-top: 15px;
-						padding-bottom: 18px;
-						margin-left: -45px;
 					}
 
 					a {
 						font-size: 18px;
 						line-height: 28px;
 
-						@media screen and (max-width: 650px) {
-							font-size: 23px;
-						}
-
 						img {
 							max-width: 36px;
 							max-height: 36px;
 						}
-					}
-				}
-
-				.link-btn {
-					@media screen and (max-width: 650px) {
-						margin-left: -34px;
-						padding: 8px 19px;
-						font-size: 14px;
 					}
 				}
 			}
@@ -930,19 +787,12 @@
 	}
 	.container {
 		.bg-main;
-		padding: 40px 57px;
-		padding-left: 72px;
 		padding-bottom: 50px;
-		margin-top: 60px;
 
 		@media screen and (max-width: 800px) {
 			background: none;
 			box-shadow: none;
 			padding: 0;
-			padding-right: 0;
-			margin-left: 20px;
-			margin-top: 0;
-			padding-bottom: 40px;
 		}
 
 		.dentists-up {
@@ -951,14 +801,11 @@
 
 			@media screen and (max-width: 800px) {
 				padding: 0 20px;
-				padding-right: 0;
 			}
 
 			h2 {
-				text-transform: none;
-
-				@media screen and (max-width: 800px) {
-					font-size: 32px;
+				@media screen and (max-width: 500px) {
+					font-size: 28px;
 				}
 			}
 
@@ -973,13 +820,23 @@
 				a {
 					color: #A8A8A8;
 
-					@media screen and (max-width: 800px) {
-						margin-top: 10px;
-						text-transform: none;
-					}
-
 					&:hover {
 						color: @yellow;
+
+						svg {
+							path {
+								fill: @yellow;
+								.transition;
+							}
+						}
+					}
+
+					svg {
+						margin-left: 27px;
+
+						@media screen and (max-width: 500px) {
+							display: none;
+						}
 					}
 				}
 			}
@@ -988,7 +845,7 @@
 		p {
 			max-width: 872px;
 			width: 100%;
-			margin: 31px 0;
+			margin: 20px 0;
 
 			@media screen and (max-width: 1250px) {
 				margin: 0;
@@ -1009,29 +866,21 @@
 			}
 
 			.dentists-item {
-				margin-right: 20px;
-				position: relative;
-				padding-bottom: 70px;
+				margin: 0 15px;
 
 				@media screen and (max-width: 1024px) {
-					margin: 16px 5px;
-					padding-left: 15px;
+					margin: 50px 15px;
 				}
 
 				@media screen and (max-width: 800px) {
-					margin-right: 15px;
 					background: @white;
 					box-shadow: 0 0 15px rgba(0,0,0,.05);
 				}
 
 				img {
+					margin-bottom: 24px;
 					object-fit: cover;
 					width: 100%;
-
-					@media screen and (max-width: 800px) {
-						width: 91%;
-						margin-bottom: 19px;
-					}
 				}
 
 				h5 {
@@ -1043,13 +892,15 @@
 						color: @violet;
 
 						@media screen and (max-width: 1150px) {
-							font-size: 26px;
-							font-weight: 300;
-							letter-spacing: 1px;
+							font-size: 24px;
 						}
 
 						@media screen and (max-width: 1024px) {
 							padding: 0 25px;
+						}
+
+						@media screen and (max-width: 500px) {
+							font-size: 14px;
 						}
 
 						&:hover {
@@ -1062,7 +913,6 @@
 					max-height: 170px;
 					height: 100%;
 					margin-bottom: 37px;
-					margin: 15px 0;
 
 					@media screen and (max-width: 1250px) {
 						max-height: 140px;
@@ -1081,154 +931,13 @@
 				}
 
 				.link-btn {
-					position: absolute;
-					bottom: 10px;
-					left: 17px;
-					width: 128px;
-					height: 40px;
-
-					font-size: 14px;
-					padding: 10px 20px;
-    			padding-left: 30px;
+					line-height: 50px;
 
 					@media screen and (max-width: 800px) {
 						margin: 15px 25px;
 					}
 				}
 			}
-
-			.first {
-				img {
-					margin-bottom: 30px;
-				}
-
-				@media screen and (max-width: 1024px) {
-					.link-btn {
-						bottom: 18px;
-						left: 14px;
-					}
-				}
-
-				@media screen and (max-width: 800px) {
-					padding-bottom: 88px;
-
-					img {
-						max-height: 100%;
-					}
-
-					.link-btn {
-						bottom: 0px!important;
-						left: 20px!important;
-					}
-				}
-			}
-
-			.second {
-				@media screen and (max-width: 1380px) {
-					.link-btn {
-						bottom: 5px!important;
-					}
-				}
-
-				@media screen and (max-width: 1024px) {
-					img {
-						width: 100%;
-						margin-bottom: 19px;
-						max-height: 270px;
-					}
-
-					h5 {
-						a {
-							font-size: 28px;
-							padding: 0 15px;
-						}
-					}
-
-					p {
-						padding: 0 15px;
-						padding-left: 25px!important;
-					}
-
-					.link-btn {
-						bottom: -18px!important;
-						left: 15px!important;
-					}
-				}
-
-				@media screen and (max-width: 800px) {
-					padding-left: 0;
-
-					img {
-						max-height: 100%;
-						height: 321px;
-					}
-
-					p {
-						padding-left: 50px!important;
-					}
-
-					h5 {
-						a {
-							padding-left: 40px!important;
-						}
-					}
-
-					.link-btn {
-						bottom: 0px!important;
-						left: 14px;
-					}
-				}
-			}
-
-			.third {
-				@media screen and (max-width: 800px) {
-					padding-left: 0;
-					padding-bottom: 70px;
-
-					img {
-						max-height: 100%;
-						height: 321px;
-					}
-
-					p {
-						padding-left: 60px!important;
-					}
-
-					h5 {
-						a {
-							padding-left: 40px!important;
-						}
-					}
-
-					.link-btn {
-						left: 60px!important;
-					}
-				}
-
-				img {
-					width: 100%;
-					margin-bottom: 30px;
-				}
-
-				h5 {
-					a {
-						font-size: 28px;
-						padding: 0 10px;
-						padding-left: 0;
-					}
-				}
-
-				p {
-					@media screen and (max-width:500px) {
-						padding-left: 25px!important;
-					}
-				}
-
-				.link-btn {
-					margin: 0;
-				}
-			}
-
 		}
 
 		.slick-track {
@@ -1241,13 +950,9 @@
 			display: flex!important;
 			justify-content: center;
 			position: absolute;
-			bottom: -7px;
+			bottom: 0;
 			left: 0;
-			right: 0;
-			
-			@media screen and (max-width: 1024px) {
-				bottom: -35px;
-			}
+    	right: 0;
 
 			li {
 				button {
@@ -1280,87 +985,57 @@
 
 	.container {
 		.bg-main;
-		padding: 40px 0;
-		margin: 32px 0;
-		padding-bottom: 0;
-		
+		margin: 50px 0;
+
 		@media screen and (max-width: 800px) {
 			background: none;
 			box-shadow: none;
-			padding: 0 30px;
-			padding-right: 0;
-			margin-top: 13px;
+			padding: 0;
 		}
 
 		h2 {
-			padding-left: 73px;
-
 			@media screen and (max-width: 800px) {
 				padding: 0 20px;
-				font-size: 33px;
 			}
 		}
 
 		.reviews-slider {
-			padding: 25px 0;
+			padding: 30px 0;
 			display: flex;
 			justify-content: space-around;
-			padding-left: 73px;
 
 			@media screen and (max-width: 800px) {
 				justify-content: center;
-				margin-left: 0;
-				padding-left: 19px;
-				padding-top: 14px;
-				padding-bottom: 0;
+				margin-left: 20px;
 			}
 
 			.reviews-item {
-				margin-left: 19px;
-				margin-right: 35px;
-
+				margin: 0 19px;
 
 				@media screen and (max-width: 800px) {
-					padding: 22px 30px;
+					padding: 20px 30px;
 					background: @white;
 					box-shadow: 0 0 15px rgba(0,0,0,.05);
-					margin: 0;
-					margin-right: 5px;
-					padding-left: 40px;
-					padding-right: 15px;
-					padding-bottom: 34px;
+					margin: 0 10px;
 				}
 
 				.reviews-item__photo {
 					display: flex;
 					margin-bottom: 26px;
 
-					@media screen and (max-width: 800px) {
-						margin-bottom: 18px;
-					}
-
 					.reviews-item__initial {
 						margin-left: 24px;
-						margin-top: 9px;
 
-						@media screen and (max-width: 800px) {
-							margin-left: 24px;
-							margin-top: 7px;
-							max-width: 140px;
-						}
-
-						img {
-							@media screen and (max-width: 800px) {
-								width: 100px;
-							}
+						@media screen and (max-width: 500px) {
+							margin-left: 5px;
 						}
 
 						h4 {
 							font-size: 16px;
 							line-height: 19px;
 
-							@media screen and (max-width: 800px) {
-								font-size: 16px;
+							@media screen and (max-width: 500px) {
+								font-size: 13px;
 							}
 						}
 
@@ -1371,14 +1046,14 @@
 							padding: 5px 0 15px 0;
 
 							@media screen and (max-width: 500px) {
-								font-size: 14px;
-								padding: 7px 0 1px;
+								font-size: 10px;
+								padding: 0;
 							}
 						}
 
 						img {
 							@media screen and (max-width: 500px) {
-								max-width: 100%;
+								max-width: 80px;
 							}
 						}
 					}
@@ -1387,7 +1062,7 @@
 				h6 {
 					color: #ED9F00;
 					text-transform: none;
-					max-height: 108px;
+					max-height: 106px;
 					height: 100%;
 
 					@media screen and (max-width: 1300px) {
@@ -1399,7 +1074,16 @@
 					}
 
 					@media screen and (max-width: 1100px) {
+						font-size: 19px;
+					}
+
+					@media screen and (max-width: 500px) {
 						font-size: 18px;
+						line-height: 25px;
+					}
+
+					@media screen and (max-width: 500px) {
+						font-size: 14px;
 					}
 				}
 
@@ -1408,17 +1092,23 @@
 					max-height: 157px;
 					height: 100%;
 					margin-bottom: 25px;
-					line-height: 30px;
 
 					@media screen and (max-width: 1300px) {
-						margin-bottom: 74px;
+						margin-bottom: 69px;
 					}
 
 					@media screen and (max-width: 1100px) {
-						line-height: 30px;
-						font-size: 15px;
-						padding-top: 35px;
-						padding-right: 25px;
+						line-height: 23px;
+						margin-bottom: 20px;
+					}
+
+					@media screen and (max-width: 500px) {
+						margin-bottom: 55px;
+						line-height: 25px;
+					}
+
+					@media screen and (max-width: 500px) {
+						font-size: 14px;
 					}
 				}
 
@@ -1438,28 +1128,15 @@
 		.slick-track {
 			margin: 0 -19px;
 			margin-bottom: 30px;
-			width: 100%;
-		}
-
-		.slick-list {
-			width: 100%;
 		}
 
 		.slick-dots {
 			display: flex!important;
 			justify-content: center;
 			position: absolute;
-			bottom: -11px;
-			left: 16px;
-			right: 0;
-			
-			@media screen and (max-width: 1024px) {
-				bottom: 10px;
-			}
-
-			@media screen and (max-width: 1024px) {
-				bottom: -5px;
-			}
+			bottom: 0;
+			left: 0;
+    	right: 0;
 
 			li {
 				button {
@@ -1484,15 +1161,8 @@
 }
 
 .about {
-	.center {
-		@media screen and (max-width: 1024px) {
-			padding: 0;
-		}
-	}
-
 	.container {
 		.bg-main;
-		padding: 33px 0;
 		margin: 50px 0;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -1501,8 +1171,6 @@
 
 		@media screen and (max-width: 1024px) {
 			align-items: center;
-			margin-top: 40px;
-			margin-bottom: 10px;
 		}
 
 		@media screen and (max-width: 900px) {
@@ -1516,29 +1184,19 @@
 			width: 100%;
 			max-height: 545px;
 			height: 100%;
-
-			img {
-				@media screen and (max-width: 900px) {
-					max-width: 120px;
-					margin-left: 105px;
-					margin-top: 9px;
-				}
-			}
 		}
 
 		.about-text {
 			max-width: 484px;
-			padding-top: 41px;
-			margin-left: -215px;
+			padding-top: 44px;
 
 			@media screen and (max-width: 900px) {
 				max-width: 100%;
-				text-align: left;
+				text-align: center;
 			}
 
 			@media screen and (max-width: 1024px) {
-				padding-top: 31px;
-				margin-left: 21px;
+				padding-top: 20px;
 			}
 
 			h4, h5 {
@@ -1550,9 +1208,8 @@
 				max-width: 376px;
 
 				@media screen and (max-width: 1024px) {
-					font-size: 35px;
-					line-height: 42px;
-					padding-right: 50px;
+					font-size: 30px;
+					line-height: 30px;
 				}
 
 				@media screen and (max-width: 900px) {
@@ -1565,13 +1222,7 @@
 				font-weight: 400;
 				color: @yellow;
 				padding: 10px 0;
-				padding-bottom: 27px;
-				letter-spacing: .2px;
-
-				@media screen and (max-width: 1024px) {
-					padding: 12px 0;
-					padding-bottom: 9px;
-				}
+				padding-bottom: 15px;
 			}
 
 			p {
@@ -1581,37 +1232,29 @@
 				color: @violet;
 
 				@media screen and (max-width: 1024px) {
-					font-size: 15px;
-					letter-spacing: .16px;
-					line-height: 30px;
+					font-size: 14px;
 				}
 			}
 
 			.call-click {
 				flex-direction: column;
 				align-items: flex-start;
-				padding: 32px 0;
+				padding: 36px 0;
 
 				@media screen and (max-width: 900px) {
 					align-items: center;
-					padding-top: 28px;
 				}
 
 				.phone {
-					margin-bottom: 22px;
-
-					@media screen and (max-width: 900px) {
-						margin-left: -9px;
-						margin-bottom: 39px;
-					}
+					margin-bottom: 26px;
 
 					a {
-						font-size: 22px;
+						font-size: 24px;
 						line-height: 28px;
 						color: @violet;
 
 						@media screen and (max-width: 400px) {
-							font-size: 22px;
+							font-size: 18px;
 						}
 
 						&:hover {
@@ -1625,16 +1268,15 @@
 							height: 100%;
 
 							@media screen and (max-width: 1024px) {
-								
+								max-width: 25px;
+								max-height: 25px;;
 							}
 						}
 					}
 				}
 
 				.link-btn {
-					margin-left: -5px;
-					font-size: 15px;
-					padding-left: 24px;
+					margin-left: 0;
 				}
 			}
 		}
@@ -1642,40 +1284,27 @@
 }
 
 .certificates {
-	.container {
-		padding-bottom: 0;
-
-		@media screen and (max-width: 1380px) {
-			padding-top: 50px;
-		}
-
-		@media screen and (max-width: 1024px) {
-			padding: 0 30px;
-			padding-bottom: 34px;
-		}
-
-		h2 {
-			display: none;
-
-			@media screen and (max-width: 1024px) {
-				display: flex;
-				font-size: 33px;
-			}
-		}
-	}
-
 	.certificates-slider {
-		padding-bottom: 50px;
-		margin-top: -85px;
+		padding-bottom: 42px;
 
 		@media screen and (max-width: 1024px) {
-			margin-top: 10px;
+			margin-top: -50px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			margin-top: -80px;
+		}
+
+		.certificates-item {
+			img {
+				max-width: 166px;
+				width: 100%;
+			}
 		}
 	}
 
 	.slick-list {
 		margin: 0 auto;
-		max-width: 1209px;
 	}
 
 	.slick-track {
@@ -1687,8 +1316,8 @@
 		display: flex!important;
 		justify-content: center;
 		position: absolute;
-		bottom: 2px;
-		left: 16px;
+		bottom: 10px;
+		left: 0;
 		right: 0;
 
 		li {
@@ -1718,15 +1347,7 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
-		padding: 45px 59px;
-		padding-left: 73px;
-
-		@media screen and (max-width: 1024px) {
-			padding: 48px 0;
-			padding-left: 0px;
-			margin-left: -46px;
-			padding-bottom: 27px;
-		}
+		padding: 38px 0;
 
 		@media screen and (max-width: 900px) {
 			flex-direction: column;
@@ -1742,12 +1363,6 @@
 				padding: 11px 0;
 				font-size: 24px;
 				line-height: 28px;
-				letter-spacing: -.5px;
-
-				@media screen and (max-width: 1024px) {
-					padding-bottom: 16px;
-					text-transform: none;
-				}
 			}
 
 			h6 {
@@ -1755,7 +1370,7 @@
 				font-size: 18px;
 				line-height: 26px;
 				font-weight: normal;
-				letter-spacing: 1px;
+				padding: 5px 0 0;
 
 				@media screen and (max-width: 600px) {
 					font-size: 16px;
@@ -1764,17 +1379,13 @@
 
 			.office-sund {
 				color: @yellow;
-				padding-top: 28px;
+				padding-top: 25px;
 			}
 
 			.main-footer__social {
 				display: flex;
-				padding-top: 50px;
-				padding-bottom: 20px;
-
-				@media screen and (max-width: 900px) {
-					display: none!important;
-				}
+				padding-top: 32px;
+				padding-bottom: 30px;
 
 				a {
 					margin-right: 14px;
@@ -1791,45 +1402,18 @@
 		}
 
 		.main-footer__load {
-			margin-left: 93px;
-			margin-top: -7px;
-			
-			@media screen and (max-width: 900px) {
-				margin-left: 47px;
-				margin-top: 26px;
-			}
 			
 			h6 {
 				font-family: 'Rubik', sans-serif;
 				font-size: 18px;
 				line-height: 26px;
 				font-weight: normal;
-				padding: 12px 0;
-				padding-bottom: 28px;
+				padding: 17px 0;
 				color: @white;
 				max-width: 241px;
 
-				@media screen and (max-width: 900px) {
-					text-transform: none;
-				}
-			}
-
-			.link-btn {
-				font-size: 15px;
-				padding: 10px 40px;
-			}
-
-			.main-footer__social {
-				display: none;
-
-				@media screen and (max-width: 900px) {
-					display: flex;
-					margin-top: 73px;
-					margin-left: 30px;
-
-					a {
-						margin: 0 7px;
-					}
+				@media screen and (max-width: 450px) {
+					font-size: 12px;
 				}
 			}
 		}
@@ -1840,8 +1424,7 @@
 			}
 
 			@media screen and (max-width: 900px) {
-				margin-top: 46px;
-				margin-left: 26px;
+				margin-top: 50px;
 			}
 
 			h5 {
@@ -1858,9 +1441,6 @@
 				padding: 17px 0;
 				padding-bottom: 0;
 				color: @white;
-				padding-bottom: 3px;
-				letter-spacing: -.2px;
-				padding-bottom: 4px;
 			}
 
 			a {
@@ -1874,29 +1454,20 @@
 			.call-click {
 				flex-direction: column;
 				align-items: baseline;
-				padding-top: 95px;
+				padding-top: 89px;
 
 				@media screen and (max-width: 900px) {
-					padding-top: 62px;
+					padding-top: 40px;
 				}
 
 				h5 {
 					padding-bottom: 16px;
 					font-size: 24px;
 					line-height: 28px;
-					padding-left: 10px;
-
-					@media screen and (max-width: 900px) {
-						padding-left: 0;
-					}
 				}
 
 				.phone {
-					padding-top: 5px;
-
 					a {
-						letter-spacing: -.3px;
-
 						img {
 							max-width: 36px;
 							max-height: 36px;
@@ -1918,14 +1489,10 @@
 					font-weight: 300;
 					font-size: 18px;
 					line-height: 26px;
+					margin-left: 0;
 					text-transform: inherit;
-					padding: 12px 0;
-					margin-left: 115px;
-
-					@media screen and (max-width: 900px) {
-						margin-left: 110px;
-						padding: 1px 0;
-					}
+					padding: 15px 0;
+					margin-left: 45%;
 
 					&:hover {
 						color: @yellow;
