@@ -39,31 +39,29 @@ $(document).ready(function() {
 
   $('input[type=tel]').forceNumbericOnly();
 
-  $(function() {
-    var Accordion = function(el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
 
-      // Variables privadas
-      var links = this.el.find('.link');
-      // Evento
-      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-    }
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
 
-    Accordion.prototype.dropdown = function(e) {
-      var $el = e.data.el,
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el,
         $this = $(this),
         $next = $this.next();
 
-      $next.stop().slideToggle();
-      $this.parent().toggleClass('open');
+    $next.stop().slideToggle();
+    $this.parent().toggleClass('open');
 
-      if (!e.data.multiple) {
-        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-      };
-    }
-    var accordion = new Accordion($('#accordion'), false);
-  });
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+  var accordion = new Accordion($('#accordion'), false);
 
   $('.slider-galery').slick({
     slidesToShow: 1,
@@ -99,31 +97,29 @@ $(document).ready(function() {
     infinite: false
   });
 
-  $(function() {
-    var Accordion = function(el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
 
-      // Variables privadas
-      var links = this.el.find('.link__click');
-      // Evento
-      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-    }
+    // Variables privadas
+    var links = this.el.find('.link__click');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
 
-    Accordion.prototype.dropdown = function(e) {
-      var $el = e.data.el,
-          $this = $(this),
-          $next = $this.next();
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el,
+        $this = $(this),
+        $next = $this.next();
 
-      $next.stop().slideToggle();
-      $this.parent().toggleClass('open');
+    $next.stop().slideToggle();
+    $this.parent().toggleClass('open');
 
-      if (!e.data.multiple) {
-        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-      };
-    }
-    var accordion = new Accordion($('#accordion__two'), false);
-  });
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+  var accordion = new Accordion($('#accordion__two'), false);
 
   $('.slider-text').slick({
     slidesToShow: 1,
@@ -133,17 +129,7 @@ $(document).ready(function() {
     asNavFor: '.slider-photographer',
     autoplay: true,
     autoplaySpeed: 3000,
-    infinite: true,
-    responsive: [
-        {
-            breakpoint: 900,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 0,
-                autoplay: false,
-            }
-        }
-    ]
+    infinite: true
   });
   $('.slider-photographer').slick({
     slidesToShow: 5,
@@ -157,17 +143,17 @@ $(document).ready(function() {
     infinite: true,
     responsive: [
       {
-        breakpoint: 770,
+        breakpoint: 900,
         settings: {
          slidesToShow: 3,
          slidesToScroll: 1
         }
       },
       {
-          breakpoint: 900,
+          breakpoint: 770,
           settings: {
               slidesToShow: 1,
-              slidesToScroll: 0,
+              slidesToScroll: 1,
               autoplay: false,
           }
       }
@@ -183,62 +169,29 @@ $(document).ready(function() {
     $('.'+id).addClass('active')
   });
 
-  $(function() {
-    var Accordion = function(el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
 
-      // Variables privadas
-      var links = this.el.find('.link__faq');
-      // Evento
-      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-    }
+    // Variables privadas
+    var links = this.el.find('.link__faq');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
 
-    Accordion.prototype.dropdown = function(e) {
-      var $el = e.data.el,
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el,
         $this = $(this),
         $next = $this.next();
 
-      $next.stop().slideToggle();
-      $this.parent().toggleClass('open');
+    $next.stop().slideToggle();
+    $next.stop().slideToggle();
+    $this.parent().toggleClass('open');
 
-      if (!e.data.multiple) {
-        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-      };
-    }
-    var accordion = new Accordion($('#accordion__faq'), false);
-  });
-
-  // $('.form').magnificPopup({
-	// 	type: 'inline',
-	// 	preloader: false,
-	// 	focus: '#name',
-
-	// 	callbacks: {
-	// 		beforeOpen: function() {
-	// 			if($(window).width() < 700) {
-	// 				this.st.focus = false;
-	// 			} else {
-	// 				this.st.focus = '#name';
-	// 			}
-	// 		}
-	// 	}
-  // });
-
-  // $('.form__sign').magnificPopup({
-  // 	type: 'inline',
-  // 	preloader: false,
-  // 	focus: '#name',
-
-  // 	callbacks: {
-  // 		beforeOpen: function() {
-  // 			if($(window).width() < 700) {
-  // 				this.st.focus = false;
-  // 			} else {
-  // 				this.st.focus = '#name';
-  // 			}
-  // 		}
-  // 	}
-  // });
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+  var accordion = new Accordion($('#accordion__faq'), false);
 
 });
