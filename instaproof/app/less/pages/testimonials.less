@@ -126,7 +126,7 @@
       padding-bottom: 50px;
       line-height: 22px;
       span {
-        font-size: 40px;
+        font-size: 30px;
         font-family: 'cormorantitalic', sans-serif;
         font-weight: 600;
         padding: 0 10px;
@@ -189,6 +189,14 @@
 
   .follow {
     padding: 38px 0 31px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .main-testimonials {
+      .slider-photographer {
+        padding: 0 150px;
+      }
+    }
   }
 
   @media screen and (max-width: 1079px) {
@@ -310,6 +318,7 @@
         margin: 40px 15px;
         padding: 10px;
         padding-top: 50px;
+        min-height: 100%;
         &:nth-child(odd){
           background-color: @seashell;
         }
