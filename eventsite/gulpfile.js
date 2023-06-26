@@ -66,9 +66,10 @@ gulp.task('libscss', ['less'], function(){
 		.pipe(gulp.dest('app/css/'))
 });
 
-gulp.task('watch', ['browser-sync', 'libscss', 'libsjs'], function() {
+gulp.task('watch', ['browser-sync', 'libscss', 'img', 'libsjs'], function() {
 	gulp.watch('app/less/**/*.less', ['less']);
 	gulp.watch('app/js/**/*.js', ['scripts']);
+	gulp.watch('app/img/**/**.*', ['img']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
@@ -78,13 +79,16 @@ gulp.task('clean', function() {
 
 gulp.task('img', function() {
 	return gulp.src('app/img/**/*')
-		.pipe(cache(imagemin({
-		// .pipe(imagemin({ // Зжимаємо зображення без кешування
-			interlaced: true,
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
-		}))/**/)
+		.pipe(imagemin(
+			[
+				imagemin.gifsicle({interlaced: true}),
+				imagemin.mozjpeg({progressive: true}),
+				imagemin.optipng({optimizationLevel: 5}),
+			],
+			{
+				verbose: true
+			}
+		))
 		.pipe(gulp.dest('dist/img'));
 });
 
