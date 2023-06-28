@@ -1,68 +1,71 @@
-[
+{
+  "data": [
     {
-      title: "Заголовок новини 1",
-      date: "01.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/1.jpg'
+      "title": "Заголовок новини 1",
+      "date": "01.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/1.jpg"
     },
     {
-      title: "Заголовок новини 2",
-      date: "02.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/2.jpg'
+      "title": "Заголовок новини 2",
+      "date": "02.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/2.jpg"
     },
     {
-      title: "Заголовок новини 3",
-      date: "03.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/3.jpg'
+      "title": "Заголовок новини 3",
+      "date": "03.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/3.jpg"
     },
     {
-      title: "Заголовок новини 4",
-      date: "04.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/4.jpg'
+      "title": "Заголовок новини 4",
+      "date": "04.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/4.jpg"
     },
     {
-      title: "Заголовок новини 5",
-      date: "05.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/5.jpg'
+      "title": "Заголовок новини 5",
+      "date": "05.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/5.jpg"
     },
     {
-      title: "Заголовок новини 6",
-      date: "06.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/6.jpg'
+      "title": "Заголовок новини 6",
+      "date": "06.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/6.jpg"
     },
     {
-      title: "Заголовок новини 7",
-      date: "07.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/7.jpg'
+      "title": "Заголовок новини 7",
+      "date": "07.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/7.jpg"
     },
     {
-      title: "Заголовок новини 8",
-      date: "08.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/8.jpg'
+      "title": "Заголовок новини 8",
+      "date": "08.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/8.jpg"
     },
     {
-      title: "Заголовок новини 9",
-      date: "01.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/9.jpg'
+      "title": "Заголовок новини 9",
+      "date": "01.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/9.jpg"
     },
     {
-      title: "Заголовок новини 10",
-      date: "10.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/10.jpg'
+      "title": "Заголовок новини 10",
+      "date": "10.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/10.jpg"
     },
     {
-      title: "Заголовок новини 9",
-      date: "01.02.2015",
-      description: "Коротий опис",
-      image: 'https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/1.jpg'
+      "title": "Заголовок новини 9",
+      "date": "01.02.2015",
+      "description": "Коротий опис",
+      "image": "https://raw.githubusercontent.com/Olga20-code/projects/master/MobileLabs/list/1.jpg"
     }
   ]
+
+  }
